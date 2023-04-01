@@ -87,9 +87,13 @@ h6 {
   font-family:fantasy;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
+#header .logo h1 a{
   color: #fff;
+  text-decoration: none;
+}
+
+#header .logo h1 a:hover {
+  color: #57aae1;
   text-decoration: none;
 }
 
@@ -544,33 +548,33 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Eventi
 --------------------------------------------------------------*/
-.about {
+.eventi {
   padding: 10px 0;
 }
 
-.about h3 {
+.eventi h3 {
   font-weight: 600;
   font-size: 32px;
 }
 
-.about ul {
+.eventi ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.about ul li+li {
+.eventi ul li+li {
   margin-top: 10px;
 }
 
-.about ul li {
+.eventi ul li {
   position: relative;
   padding-left: 26px;
 }
 
-.about ul i {
+.eventi ul i {
   position: absolute;
   left: 0;
   top: 0;
@@ -578,22 +582,22 @@ section {
   color: #3498db;
 }
 
-.about .icon-boxes {
+.eventi .icon-boxes {
   padding-top: 10px;
 }
 
-.about .icon-boxes h4 {
+.eventi .icon-boxes h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-.about .icon-boxes i {
+.eventi .icon-boxes i {
   font-size: 48px;
   color: #3498db;
 }
 
-.about .icon-boxes p {
+.eventi .icon-boxes p {
   font-size: 15px;
   color: #848484;
 }
@@ -682,46 +686,59 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Musei
 --------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
+.musei .icon-box {
   border-radius: 6px;
   background: #fff;
   transition: ease-in-out 0.3s;
+  display: flex;
 }
 
-.services .icon-box i {
+.musei .icon-box i {
   float: left;
   color: #3498db;
   font-size: 40px;
   line-height: 0;
 }
 
-.services .icon-box h4 {
-  margin-left: 70px;
+.musei .icon-box h4 {
+  margin-left: 20px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .icon-box h4 a {
+.musei .icon-box h4 a {
   color: #384046;
   transition: 0.3s;
 }
 
-.services .icon-box p {
-  margin-left: 70px;
+.musei .icon-box p {
+  margin-left: 20px;
   line-height: 24px;
   font-size: 14px;
 }
 
-.services .icon-box:hover {
+.musei .icon-box:hover {
   box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
 }
 
-.services .icon-box:hover h4 a {
+.musei .icon-box:hover h4 a {
   color: #3498db;
+}
+
+.icon-box .musei-section-img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.musei .icon-box div{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*--------------------------------------------------------------
@@ -952,19 +969,27 @@ section {
   overflow: hidden;
 }
 
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px 30px 0 30px;
-  margin: 30px 15px;
+.text-on-image h1{
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  width: 100%;
   text-align: center;
-  min-height: 350px;
+  color: #fff;
+}
+
+.testimonials .testimonial-item {
+  border-radius: 20px;
+  height: 500px;
+  width: 350px;
+  box-sizing: content-box;
+  text-align: center;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  object-fit:cover;
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
+  width: 300px;
   border: 4px solid #fff;
   margin: 0 auto;
 }
