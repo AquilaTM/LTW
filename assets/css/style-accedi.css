@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    height: 130vh; /* Imposta l'altezza della pagina al 100% della finestra del browser */
+  }
+  .parteCentrale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .immagine_account{
+    transform-origin: center center;
+    transform: scale(0);
+    animation: ingrandimento 1s ease-out forwards; /*animazione dura un secondo e elemento mantiene il scala finale con forwards*/
+    padding:29px 29px 29px 35px;
+  }
+  
+  @keyframes ingrandimento{
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform:scale(1);
+    }
+  }
+  .titolo_account{
+    text-align: center;
+    padding:0px 0px 0px 0px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family:fantasy;
+  }
+  
+  
+  
+  .nome_utente{
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px 20px 0px 0px;
+    width: 250px;
+    height: 60px;
+    padding: 16px 16px 16px 24.5px ;
+    background-color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  
+  }
+  #account_name{
+    border: 0px solid rgb(255, 255, 255);
+    
+  }
+  input[type="text"]#account_name:focus {
+    outline: none; /* rimuove il contorno di default */
+    border-bottom: 1px solid black; /* aggiunge una sbarra bassa */
+  }
+  #account_password{
+    border: 0px solid rgb(255, 255, 255);
+  }
+  
+  input[type="text"]#account_password:focus {
+    outline: none; /* rimuove il contorno di default */
+    border-bottom: 1px solid black; /* aggiunge una sbarra bassa */
+  }
+  .password_utente{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px 0px 20px 20px;
+    width: 250px;
+    height: 60px;
+    padding: 16px 16px 16px 24.5px ;
+    background-color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  }
+  
+  @keyframes fadeIn{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  
+  .registrazione{
+    text-align: center;
+    padding-top: 30px;
+    color:black;
+  }
+  
+  .pulsante_accede{
+    position: absolute;
+    top: 50%;
+    left: 190px;
+    transform: translateY(-50%);
+    height: 50px;
+   
+  }
