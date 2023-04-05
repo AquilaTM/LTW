@@ -86,7 +86,8 @@
 
   <main id="main">
 
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- ======== Eventi Section ======== -->
+    <section id="eventi" class="eventi section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -94,36 +95,53 @@
           <p>Scegli una categoria di Eventi</p>
         </div>
 
-        <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-            <div class="card swiper-slide">
-              <img src="assets/img/about.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h1>Concerti</h1>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img">
+                <div class="card-body">
+                  <h1>Concerti</h1>
+                </div>
               </div>
-            </div><!-- End eventi item -->
+            </div>
 
-            <div class="card swiper-slide">
-              <img src="assets/img/about.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h1>Concerti</h1>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h1>Rave Illegali</h1>
+                </div>
               </div>
-            </div><!-- End eventi item -->
+            </div>
 
-            <div class="card swiper-slide">
-              <img src="assets/img/about.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h1>Concerti</h1>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h1>Rave Illegali</h1>
+                </div>
               </div>
-            </div><!-- End eventi item -->
+            </div>
 
-            <div class="card swiper-slide">
-              <img src="assets/img/about.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h1>Concerti</h1>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1>Concerti</h1>
+                </div>
               </div>
-            </div><!-- End eventi item -->
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1>Concerti</h1>
+                </div>
+              </div>
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
@@ -131,6 +149,20 @@
 
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- ======== End eventi Section ======== -->
 
     <!--
     <section id="skills" class="skills">
