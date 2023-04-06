@@ -1,0 +1,294 @@
+body {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    height: 160vh; /* Imposta l'altezza della pagina al 100% della finestra del browser */
+}
+
+#colosse_img{
+  position:flex;
+  left:100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  right:100px;
+  padding: 100px;
+}
+
+h1 {
+    position:flex;
+    display: block;
+    font-size: 32px;
+    margin-block-start: 10.72px;
+    margin-block-end: 10.72px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+h2 {
+  position:relative;
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
+#scritta2,#scritta3{
+  position:relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.nome_contenitore,.cognome_contenitore{
+  display: inline-block;
+}
+.nome_contenitore{
+  position: relative;
+  margin-right: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 350px;
+  height: 60px;
+  background-color: #ffffff;
+}
+.cognome_contenitore{
+  position: relative;
+  margin-left: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 350px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+
+#name, #subname{
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:15px;
+  left:2px;
+  width: 50%;
+
+}
+
+input[type="text"]#name:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+input[type="text"]#subname:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+.data_contenitore{
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 805px;
+  height: 60px;
+  background-color: #ffffff;
+
+}
+
+
+#data{  
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:15px;
+  left:2px;
+
+}
+
+input[type="date"]#data:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+.bordo{
+  border-bottom: 1px solid rgb(58, 58, 58);
+  opacity: 0.15;
+  margin-top: 40px;
+}
+
+.email_contenitore{
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 805px;
+  height: 60px;
+  background-color: #ffffff;
+
+}
+
+#email{
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:15px;
+  left:2px;
+  width: 50%;
+}
+
+input[type="email"]#email:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+.password_contenitore{
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 805px;
+  height: 60px;
+  background-color: #ffffff;
+
+}
+
+#password{
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:15px;
+  left:2px;
+  width: 50%;
+}
+
+input[type="password"]#password:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+.prefissi_contenitore{
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 805px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+#prefissi{
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:17px;
+  left:2px;
+  width: 98%;
+}
+
+#prefissi:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+.telefono_contenitore{
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px 20px 20px 20px;
+  width: 805px;
+  height: 60px;
+  background-color: #ffffff;
+
+}
+
+#telefono{
+  position: relative;
+  border: 0px solid rgb(255, 255, 255);
+  top:15px;
+  left:2px;
+  width:50%;
+}
+
+input[type="text"]#telefono:focus {
+  outline: none; /* rimuove il contorno di default */
+  border-bottom: 0px solid black; /* aggiunge una sbarra bassa */
+}
+
+
+.contenitore_bottoni {
+  position:flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left:330px;
+}
+
+
+@media (max-width: 1000px) {
+  .cognome_contenitore {
+    margin-left: 0px; /* Impostazione del margine per le finestre più piccole di 768px */
+    margin-top:10px;
+  }
+  .nome_contenitore{
+    margin-left: 50px; /* Impostazione del margine per le finestre più piccole di 768px */
+    margin-right:0px;
+    margin-top:10px;
+  }
+  .data_contenitore{
+    width: 700px;
+    margin-left: 50px;
+  }
+  .email_contenitore{
+    width: 700px;
+    margin-left: 50px;
+  }
+  .password_contenitore{
+    width: 700px;
+    margin-left: 50px;
+  }
+  .prefissi_contenitore{
+    width: 700px;
+    margin-left: 50px;
+  }
+  .telefono_contenitore{
+    width: 700px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    height: 200vh; /* Imposta l'altezza della pagina al 100% della finestra del browser */
+}
+  .cognome_contenitore {
+    margin-left:30px; /* Impostazione del margine per le finestre più piccole di 768px */
+    margin-top:10px;
+    width: 300px;
+  }
+  .nome_contenitore{
+    margin-left:30px; /* Impostazione del margine per le finestre più piccole di 768px */
+    margin-right:0px;
+    margin-top:10px;
+    width: 300px;
+  }
+  .data_contenitore{
+    width: 300px;
+    margin-left:30px;
+  }
+  .email_contenitore{
+    width: 300px;
+    margin-left:30px;
+  }
+  .password_contenitore{
+    width: 300px;
+    margin-left:30px;
+  }
+  .prefissi_contenitore{
+    width: 300px;
+    margin-left:30px;
+  }
+  .telefono_contenitore{
+    width: 300px;
+    margin-left:30px;
+    
+  }
+  .contenitore_bottoni{
+    margin-left:100px;
+  }
+}
