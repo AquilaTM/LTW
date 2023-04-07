@@ -4,6 +4,14 @@
   src: url(../fonts/Poppins-Regular.ttf);
 }
 
+h1,h2,h3,h4,p{
+  cursor: default;
+}
+
+a{
+  cursor: pointer;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -17,10 +25,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(../img/Roma-login.jpg) no-repeat;
+  background: url(../img/login/Roma-login.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 body:before {
@@ -35,8 +42,8 @@ body:before {
 }
 
 .wrapper{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   position: relative;
   width: 400px;
   height: 440px;
