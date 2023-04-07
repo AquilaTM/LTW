@@ -52,23 +52,15 @@
           <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
           <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
-          <li><a class="nav-link scrollto" href="#testimonial">Aree Verdi</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" id="sign-in-dropdown">Sign In</a>
-              <ul class="dropdown-menu dropdown-menu-position">
-                <li><input type="text" placeholder="Nome Utente" class="form-control"></li>
-                <li><input type="password" placeholder="Password" class="form-control"></li>
-                <li><button class="btn btn-primary">Log In</button></li>
-              </ul>
-            </div>
-          </li> 
+          <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
+          <li><a class="nav-link" id="sign-in" href="pagina-login.html">Sign Up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="header-social-links d-flex align-items-center">
-        <a href="#" class="appstore"><i class="bi bi-apple"></i></a>
-        <a href="#" class="playstore"><i class="bi bi-google-play"></i></a>
+      <div class="header-account-dropdowns d-flex align-items-center">
+        <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>
 
     </div>
@@ -148,18 +140,6 @@
 
       </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
 
     <!-- ======== End eventi Section ======== -->
 
@@ -480,8 +460,8 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= testimonial Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- ======= Aree Verdi Section ======= -->
+    <section id="aree-verdi" class="aree-verdi section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -489,80 +469,71 @@
           <p>Esplora le aree verdi di Roma e lasciati trasportare dalla bellezza della natura. Scegli tra parchi storici, giardini botanici e panorami mozzafiato e regalati un momento di pace e serenità nel cuore della città eterna!</p>
         </div>
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h1>Parco 1</h1>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h1>Rave Illegali</h1>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h1>Rave Illegali</h1>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1>Concerti</h1>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+              <div class="card">
+                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1>Concerti</h1>
+                </div>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
     </section><!-- End testimonial Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -578,16 +549,6 @@
             <div class="member">
               <img src="assets/img/team/team-1.jpg" alt="">
               <h4>Riccardo Aquilanti</h4>
-              <span>Chief Executive Officer</span>
-              <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
           </div>
 
@@ -595,16 +556,6 @@
             <div class="member">
               <img src="/assets/img/download.jpg" alt="">
               <h4>Valerio Lubrano</h4>
-              <span>Product</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
           </div>
 
@@ -612,16 +563,6 @@
             <div class="member">
               <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Matteo Ancona</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
           </div>
 
@@ -629,46 +570,6 @@
 
       </div>
     </section><!-- End Team Section -->
-
-    <!-- ======= login Section ======= -->
-    <section id="login" class="login section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Log In</h2>
-          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
-        </div>
-
-        <div class="row mt-5 justify-content-center">
-          <div class="col-lg-10">
-            <form action="forms/login.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End login Section -->
 
   </main><!-- End #main -->
 
