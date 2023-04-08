@@ -41,12 +41,12 @@
   
         <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
           <ul>
-            <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-            <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
-            <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
-            <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
-            <li><a class="nav-link" id="sign-in" href="pagina-signup.html">Sign Up</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#eventi">Eventi</a></li>
+            <li><a class="nav-link" href="#musei">Musei</a></li>
+            <li><a class="nav-link" href="#portfolio">Monumenti</a></li>
+            <li><a class="nav-link" href="#aree-verdi">Aree Verdi</a></li>
+            <li><a class="nav-link" id="sign-in" href="pagina-login.html">Sign Up</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -65,13 +65,13 @@
         <form action="#">
           <div class="input-box">
             <span class="icon bi bi-person-badge"></span>
-            <input type="email" required>
+            <input id="email-login" type="email" onkeyup="notEmpty(this.id)" required>
             <label>email</label>
           </div>
           <div class="input-box">
             <span class="icon bi bi-lock-fill"></span>
-            <input type="password" required>
-            <label>Password</label>
+            <input id="password-login" type="password" onkeyup="notEmpty(this.id)" required>
+            <label>password</label>
           </div>
           <div class="remember-forgot">
             <label><input type="checkbox">Ricordati di me</label>
@@ -89,29 +89,30 @@
         <form action="#">
           <div class="nome-cognome">
             <div class="input-box-nc">
-              <input class="" type="text" required>
-              <label>Nome</label>
+              <input id="nome" type="text" onkeyup="notEmpty(this.id)" required>
+              <label>nome</label>
             </div>
             <div class="input-box-nc">
-              <input type="text" required>
-              <label>Cognome</label>
+              <input id="cognome" type="text" onkeyup="notEmpty(this.id)" required>
+              <label>cognome</label>
             </div>
           </div>
           <div class="input-box">
-            <input type="email" required>
-            <label>E-mail</label>
+            <span class="icon bi bi-at"></span>
+            <input id="email-signup" type="email" onkeyup="notEmpty(this.id)" required>
+            <label>e-mail</label>
           </div>
           <div class="input-box">
-            <input type="date" required>
-            <label>Data di Nascita</label>
+            <input id="birthdate" type="text" onkeyup="notEmpty(this.id)" required>
+            <label>data di nascita</label>
           </div>
           <div class="input-box">
-            <input type="number" required>
-            <label>Numero di Telefono</label>
+            <input id="tel" type="tel" onkeyup="notEmpty(this.id)" required>
+            <label>numero di telefono</label>
           </div>
           <div class="input-box">
-            <input type="password" required>
-            <label>Password</label>
+            <input id="password-signup" type="password" onkeyup="notEmpty(this.id)" required>
+            <label>password</label>
           </div>
           <button type="submit" class="login-btn">Registrati</button>
           <div class="login-register">
@@ -122,5 +123,6 @@
     </div>
 
     <script src="/assets/js/login-switch.js"></script>
+    <script src="/assets/js/label-behaviour.js"></script>
   </body>
 </html>
