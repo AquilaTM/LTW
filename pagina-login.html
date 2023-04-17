@@ -62,15 +62,15 @@
     <div class="wrapper">
       <div class="form-box login">
         <h2>Login</h2>
-        <form action="#">
+        <form action="login.php" method="POST">
           <div class="input-box">
             <span class="icon bi bi-person-badge"></span>
-            <input id="email-login" type="email" onkeyup="notEmpty(this.id)" required>
+            <input name="email" id="email-login" type="email" onkeyup="notEmpty(this.id)" required>
             <label>email</label>
           </div>
           <div class="input-box">
             <span class="icon bi bi-lock-fill"></span>
-            <input id="password-login" type="password" onkeyup="notEmpty(this.id)" required>
+            <input name="password" id="password-login" type="password" onkeyup="notEmpty(this.id)" required>
             <label>password</label>
           </div>
           <div class="remember-forgot">
@@ -86,32 +86,32 @@
 
       <div class="form-box register">
         <h2>Registrazione</h2>
-        <form action="#">
+        <form action="registrazione.php" method="POST">
           <div class="nome-cognome">
             <div class="input-box-nc">
-              <input id="nome" type="text" onkeyup="notEmpty(this.id)" required>
+              <input name="nome" id="nome" type="text" onkeyup="notEmpty(this.id)" required>
               <label>nome</label>
             </div>
             <div class="input-box-nc">
-              <input id="cognome" type="text" onkeyup="notEmpty(this.id)" required>
+              <input name="cognome" id="cognome" type="text" onkeyup="notEmpty(this.id)" required>
               <label>cognome</label>
             </div>
           </div>
           <div class="input-box">
             <span class="icon bi bi-at"></span>
-            <input id="email-signup" type="email" onkeyup="notEmpty(this.id)" required>
+            <input name="email1" id="email-signup" type="email" onkeyup="notEmpty(this.id)" required>
             <label>e-mail</label>
           </div>
           <div class="input-box">
-            <input id="birthdate" type="text" onkeyup="notEmpty(this.id)" required>
+            <input name="data_dinascita" id="birthdate" type="text" onkeyup="notEmpty(this.id)" required>
             <label>data di nascita</label>
           </div>
           <div class="input-box">
-            <input id="tel" type="tel" onkeyup="notEmpty(this.id)" required>
+            <input name="numero_telefono" id="tel" type="tel" onkeyup="notEmpty(this.id)" required>
             <label>numero di telefono</label>
           </div>
           <div class="input-box">
-            <input id="password-signup" type="password" onkeyup="notEmpty(this.id)" required>
+            <input name="password" id="password-signup" type="password" onkeyup="notEmpty(this.id)" required>
             <label>password</label>
           </div>
           <button type="submit" class="login-btn">Registrati</button>
