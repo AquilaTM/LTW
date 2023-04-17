@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     header("Location: /");
 }else{
@@ -19,18 +20,20 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
                 if(!($tuple=pg_fetch_array($result, null, PGSQL_ASSOC))){
                     echo"errore email non registrata";
                 }else{
-                    $q2 = "select * from utente where email = $1 and paswd = $2";
+                    $q2 = "select * from utenti where email = $1 and password = $2";
                     $result = pg_query_params($dbconn, $q2, array($email,$password));
                     if (!($tuple=pg_fetch_array($result, null, PGSQL_ASSOC))){
                         echo"password sbagliata";
                     }else{
-                        $nome=$tuple["nome"];
-                        session_start();
                         if(!isset($_SESSION["nome"])){
-                            $_SESSION["nome"]=$_GET["nome"];
+                            $_SESSION["nome"]=$_POST["email"];
                             $_SESSION["condizione"]=true;
+                            header("Location: ./index.php");
                         }else{ //se esiste 
                             $_SESSION["condizione"]=true;
+                            $_SESSION["nome"]=$_POST["email"];
+                            header("Location: ./index.php");
+                            //header utile per dire a che pagina andare
 
                         }
                     }

@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,33 +42,27 @@
         </a>
       </div>
     <?php
-      if(($_SESSION["condizione"])){
+      if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
         echo '<nav id="navbar" class="navbar order-last order-lg-0 dropdown">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-          <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
-          <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
-          <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
-          <li><a class="nav-link" id="sign-in" href="pagina-login.html">Sign Up</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <p>devo entrare</p>
       </nav><!-- .navbar -->
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
         <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>';
-      }
-      
-      ?>
+      }else{
+        echo '<nav id="navbar" class="navbar order-last order-lg-0 dropdown">
+        <p>sono entrato</p>
+        <a href=logout.php><button>bottone uscita</button></a>
+      </nav><!-- .navbar -->
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
-      </div>'
+        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>';
 
-    </div>
+      }
+      ?>
   </header><!-- End Header Section -->
 
   <!-- ======= Home Section ======= -->
