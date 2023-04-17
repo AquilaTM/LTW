@@ -28,7 +28,7 @@ else {
                     $q2 = "INSERT INTO utenti VALUES ($1,$2,$3,$4,$5,$6)";
                     $data = pg_query_params($dbconn, $q2,array($nome, $cognome,$email, $telefono, $data_dinascita,$password));
                     if ($data) {
-                        echo " Registrazione completata. Puoi iniziare a usare il sito";
+                        header("Location: ./pagina-login.html");
                     }
                 }
              }
