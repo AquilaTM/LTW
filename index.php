@@ -21,8 +21,6 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -43,7 +41,8 @@
       </div>
     <?php
       if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
-        echo '<nav id="navbar" class="navbar order-last order-lg-0 dropdown">
+        echo '
+        <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
         <ul>
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
           <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
@@ -53,22 +52,29 @@
           <li><a class="nav-link" id="sign-in" href="pagina-login.html">Sign Up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        </nav><!-- .navbar -->
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
         <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>';
       }else{
-        echo '<nav id="navbar" class="navbar order-last order-lg-0 dropdown">
-        <p>sono entrato</p>
-        <a href=logout.php><button>bottone uscita</button></a>
-      </nav><!-- .navbar -->
+        echo '
+        <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
+          <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
+          <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
-      <div class="header-account-dropdowns d-flex align-items-center">
-        <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>';
-
+        <div class="header-account-dropdowns d-flex align-items-center">
+          <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+          <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        </div>';
       }
       ?>
   </header><!-- End Header Section -->
@@ -78,7 +84,17 @@
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Life In Rome</h1>
       <h2>Un sito dove esplorare e conoscere gli eventi, i musei, i monumenti e le aree verdi della nostra città.</h2>
-      <a href="pagina-login.html" class="btn-get-started scrollto">Sign Up</a>
+      
+      <?php
+        if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
+          echo('
+          <a href="pagina-login.html" class="log-in">Log In</a>
+          <a href="pagina-login.html" class="btn-get-started">Sign Up</a>');
+        }
+        else{
+          echo('<a href="logout.php" class="btn-get-started">Log Out</a>');
+        }
+      ?>
     </div>
   </section><!-- End Home Section -->
 
