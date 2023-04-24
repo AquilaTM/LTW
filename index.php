@@ -73,7 +73,7 @@
 
         <div class="header-account-dropdowns d-flex align-items-center">
           <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-          <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
+          <a  href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
         </div>';
       }
       ?>
