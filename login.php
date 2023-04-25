@@ -3,7 +3,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     header("Location: /");
 }else{
-    $dbconn = pg_connect("host=localhost port=5432 dbname=prova user=postgres password=riaq4500") or die("errore entrato" . pg_lost_error());
+    $dbconn = pg_connect("host=localhost port=5432 dbname=db_server user=postgres password=valerio101") or die("errore entrato" . pg_lost_error());
 }
 ?>
 
@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
                     if (!($tuple=pg_fetch_array($result, null, PGSQL_ASSOC))){
                         echo"password sbagliata";
                     }else{
-                        if(!isset($_SESSION["nome"])){
-                            $_SESSION["nome"]=$_POST["email_login"];
+                        if(!isset($_SESSION["email"])){
+                            $_SESSION["email"]=$_POST["email_login"];
                             $_SESSION["condizione"]=true;
                             header("Location: ./index.php");
                         }else{ //se esiste 
                             $_SESSION["condizione"]=true;
-                            $_SESSION["nome"]=$_POST["email_login"];
+                            $_SESSION["email"]=$_POST["email_login"];
                             header("Location: ./index.php");
                             //header utile per dire a che pagina andare
 
