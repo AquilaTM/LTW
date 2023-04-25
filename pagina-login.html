@@ -23,6 +23,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/style-login.css" rel="stylesheet">
+
+  <!-- JQuery-->
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -62,12 +66,12 @@
         <form action="login.php" method="post">
           <div class="input-box">
             <span class="icon bi bi-at"></span>
-            <input name="email_login" id="email-login" type="email" onkeyup="notEmpty(this.id)" required>
+            <input name="email_login" id="email-login" type="email" oninput="notEmpty(this.id)" autocomplete=off required>
             <label>email</label>
           </div>
           <div class="input-box">
             <span class="icon bi bi-lock"></span>
-            <input name="password_login" id="password-login" type="password" onkeyup="notEmpty(this.id)" required>
+            <input name="password_login" id="password-login" type="password" oninput="notEmpty(this.id)" autocomplete=off required>
             <label>password</label>
           </div>
           <div class="remember-forgot">
@@ -86,30 +90,30 @@
         <form action="registrazione.php" method="post">
           <div class="nome-cognome">
             <div class="input-box-nc">
-              <input name="nome" id="nome" type="text" onkeyup="notEmpty(this.id)" required>
+              <input name="nome" id="nome" type="text" oninput="notEmpty(this.id)" autocomplete=off required>
               <label>nome</label>
             </div>
             <div class="input-box-nc">
-              <input name="cognome" id="cognome" type="text" onkeyup="notEmpty(this.id)" required>
+              <input name="cognome" id="cognome" type="text" oninput="notEmpty(this.id)" autocomplete=off required>
               <label>cognome</label>
             </div>
           </div>
           <div class="input-box">
             <span class="icon bi bi-at"></span>
-            <input name="email_signup" id="email-signup" type="email" onkeyup="notEmpty(this.id)" required>
+            <input name="email_signup" id="email-signup" type="email" oninput="notEmpty(this.id)" autocomplete=off required>
             <label>e-mail</label>
           </div>
           <div class="input-box">
-            <input name="data_nascita" id="birthdate" type="date" required>
+            <input name="data_nascita" id="birthdate" type="date" autocomplete=off required>
           </div>
           <div class="input-box">
             <span class="icon bi bi-phone"></span>
-            <input name="numero_telefono" id="tel" type="tel" onkeyup="notEmpty(this.id)" required>
+            <input name="numero_telefono" id="tel" type="tel" oninput="notEmpty(this.id)" autocomplete=off required>
             <label>numero di telefono</label>
           </div>
           <div class="input-box">
             <span class="icon bi bi-lock"></span>
-            <input name="password_signup" id="password-signup" type="password" onkeyup="notEmpty(this.id)" required>
+            <input name="password_signup" id="password-signup" type="password" oninput="notEmpty(this.id)" autocomplete=off required>
             <label>password</label>
           </div>
           <button type="submit" class="login-btn">Registrati</button>
@@ -122,14 +126,6 @@
 
     <script src="/assets/js/login-switch.js"></script>
     <script src="/assets/js/label-behaviour.js"></script>
-    <script type="text/javascript">
-      $('.input-box').datepicker({
-          todayBtn: "linked",
-          language: "it",
-          autoclose: true,
-          todayHighlight: true,
-          format: 'dd/mm/yyyy' 
-      });
    </script>
   </body>
 </html>
