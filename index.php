@@ -106,7 +106,7 @@
 
         <div class="section-title">
           <h2>Eventi</h2>
-          <p>Scegli una categoria di Eventi</p>
+          <p>Partecipa ai migliori eventi di Eventi</p>
         </div>
 
         <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
@@ -114,45 +114,45 @@
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img">
+                <img src="assets/img/concertoPrimoMaggio.jpg" class="card-img">
                 <div class="card-body">
-                  <h1>Concerti</h1>
+                  <h1>Concerto Primo Maggio</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top">
+                <img src="assets/img/Boccea Street.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Rave Illegali</h1>
+                  <h1>Boccea Street</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top">
+                <img src="assets/img/festival scienze.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Rave Illegali</h1>
+                  <h1>Festival delle Scienze</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <img src="assets/img/vinalia.jpeg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Concerti</h1>
+                  <h1>Vinalia Priora</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <img src="assets/img/rugantino al sistina.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Concerti</h1>
+                  <h1>Rugantino al Sistina</h1>
                 </div>
               </div>
             </div>
@@ -352,9 +352,9 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Antica Roma</li>
+              <li data-filter=".filter-card">Religione</li>
+              <li data-filter=".filter-web">Fontane</li>
             </ul>
           </div>
         </div>
@@ -368,8 +368,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 1</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Colosseo</a></h4>
+                <p>Antica Roma</p>
               </div>
             </div>
           </div>
@@ -381,8 +381,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 3</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">Fontana di trevi</a></h4>
+                <p>Fontana</p>
               </div>
             </div>
           </div>
@@ -394,8 +394,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 2</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Ara Pacis</a></h4>
+                <p>Antica Roma</p>
               </div>
             </div>
           </div>
@@ -407,8 +407,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 2</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">San Pietro</a></h4>
+                <p>Religione</p>
               </div>
             </div>
           </div>
@@ -420,8 +420,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 2</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">Fontana Dei Quattro Fiumi</a></h4>
+                <p>Fontana</p>
               </div>
             </div>
           </div>
@@ -433,8 +433,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 3</a></h4>
-                <p>App</p>
+                <h4><a href="portfolio-details.html">Pantheon</a></h4>
+                <p>Antica Roma</p>
               </div>
             </div>
           </div>
@@ -446,8 +446,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 1</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">Castel Sant'Angelo</a></h4>
+                <p>Religione</p>
               </div>
             </div>
           </div>
@@ -459,8 +459,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Card 3</a></h4>
-                <p>Card</p>
+                <h4><a href="portfolio-details.html">Cappella Sistina</a></h4>
+                <p>Religione</p>
               </div>
             </div>
           </div>
@@ -472,8 +472,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Web 1</a></h4>
-                <p>Web</p>
+                <h4><a href="portfolio-details.html">La Barcaccia</a></h4>
+                <p>Fontana</p>
               </div>
             </div>
           </div>
@@ -497,45 +497,45 @@
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top">
+                <img src="assets/img/villa ada.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Parco 1</h1>
+                  <h1>Villa Ada</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top">
+                <img src="assets/img/villa pamphili.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Rave Illegali</h1>
+                  <h1>Villa Pamphili</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top">
+                <img src="assets/img/villa torlonia.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Rave Illegali</h1>
+                  <h1>Villa torlonia</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <img src="assets/img/villa borghese.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Concerti</h1>
+                  <h1>Villa Borghese</h1>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/about.jpg" class="card-img-top" alt="">
+                <img src="assets/img/villa paganini.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Concerti</h1>
+                  <h1>Villa Paganini</h1>
                 </div>
               </div>
             </div>
