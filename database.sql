@@ -15,4 +15,4 @@ CREATE TABLE acquista(
     evento1 INT NOT NULL,
     evento2 INT NOT NULL,
     evento3 INT NOT NULL
-    )
+);
