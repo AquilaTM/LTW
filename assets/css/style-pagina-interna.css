@@ -285,6 +285,10 @@ h1,h2,h3,h4,p{
     filter: brightness(70%);
 }
 
+.terza p{
+    color: #fff;
+}
+
 @media (min-width: 992px) {
     .terza-parte-text {
       padding: 5rem;
