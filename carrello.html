@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/carrello.js"></script>
+</head>
+<body>
+    <form action="carrello.php" method="post">
+    <div>
+        Evento 1:
+        <br></br>
+        <button type="button" class="evento1">+</button>
+        <input type="text" name="conta_evento1" class="contatore_evento1" value="0" readonly></input>
+        <button type="button" class="evento1_-">-</button>
+    </div>
+    <div>
+        Evento 2:
+        <button type="button" class="evento2">+</button>
+        <input type="text" name="conta_evento2" class="contatore_evento2" value="0" readonly></input>
+        <button  type="button" class="evento2_-">-</button>
+   
+        <button type="submit" class="acquista">Acquista</input>
+        <p>costo totale:</p>
+        <p class="contatore_totale">0</p>
+    </div>
+    </form>
+</body>
+</html>
