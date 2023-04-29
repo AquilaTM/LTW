@@ -17,7 +17,13 @@ else {
                 $q1="SELECT* from utenti where email= $1";
                 $result=pg_query_params($dbconn, $q1, array($email));
                 if ($tuple=pg_fetch_array($result, null, PGSQL_ASSOC)){
-                    echo "email gia usata";
+                    echo "<script>Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Email gia in uso!'
+                      }).then(function() {
+                        window.location.href = 'pagina-login.html';
+                      });</script>";
                 }
                 else {
                     $nome = $_POST['nome'];

@@ -18,13 +18,24 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
                 $q1 ="SELECT * FROM utenti where email=$1";
                 $result=pg_query_params($dbconn,$q1,array($email));
                 if(!($tuple=pg_fetch_array($result, null, PGSQL_ASSOC))){
-                    echo 'lkmfl'; 
-                    //echo '<script>alert("email non registrata!");</script>';
+                    echo "<script>Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Email sbagliata!'
+                      }).then(function() {
+                        window.location.href = 'pagina-login.html';
+                      });</script>";
                 }else{
                     $q2 = "select * from utenti where email = $1 and password = $2";
                     $result = pg_query_params($dbconn, $q2, array($email,$password));
                     if (!($tuple=pg_fetch_array($result, null, PGSQL_ASSOC))){
-                        echo"password sbagliata";
+                        echo "<script>Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Password sbagliata!'
+                          }).then(function() {
+                            window.location.href = 'pagina-login.html';
+                          });</script>";
                     }else{
                         if(!isset($_SESSION["email"])){
                             $_SESSION["email"]=$_POST["email_login"];
