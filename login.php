@@ -9,7 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+    <!--Libreria sweetalert per Pop up-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
     <body>
         <?php
             if($dbconn){
