@@ -239,8 +239,7 @@ h1,h2,h3,h4,p{
     backdrop-filter: blur(30px);
     box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
     height: 100%;
-    width: fit-content;
-    max-width: 40%;
+    width: 40%;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -250,10 +249,12 @@ h1,h2,h3,h4,p{
 
 .description-box h4{
     color: rgba(0, 0, 0, 0.8);
+    font-size: x-large;
 }
 
 .description-box p{
     color: rgba(0, 0, 0, 0.8);
+    font-size: calc(0.1rem + 0.5vh + 0.5vw);
 }
 
 .row{
