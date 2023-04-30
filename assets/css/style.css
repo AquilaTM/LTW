@@ -439,6 +439,7 @@ h1,h2,p {
   color: #fff;
   background: #820016;
   text-transform: uppercase;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 }
 
 #home .log-in {
@@ -455,7 +456,7 @@ h1,h2,p {
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, .5);
   text-transform: uppercase;
-  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 }
 
 #home .btn-get-started:hover {
