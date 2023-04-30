@@ -167,7 +167,7 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * Monuments isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -195,14 +195,14 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate monuments lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * monuments details slider
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
@@ -219,7 +219,7 @@
   });
 
   /**
-   * Testimonials slider
+   * Aree verdi slider
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
