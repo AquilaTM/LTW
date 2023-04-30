@@ -1,0 +1,102 @@
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #fff; }
+  
+  p {
+    color: #b3b3b3;
+    font-weight: 300; }
+  
+  h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    
+a, a:hover {
+    text-decoration: none !important; }
+  
+  .content {
+    padding: 7rem 0; }
+  
+  h2 {
+    font-size: 20px; }
+  
+  /*Accordion style*/
+  .custom-accordion .accordion-item {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+}
+    .custom-accordion .accordion-item .btn-link {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      text-decoration: none;
+      text-align: left;
+      color: #999;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      background: #fff;
+      padding-left: 0px; }
+      .custom-accordion .accordion-item .btn-link:before {
+        font-family:'Bootstrap-icons';
+        content: "\F282";
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0px;
+        background: #efefef;
+        padding: 1px 5px;
+        font-size: 18px;
+        border-radius: 4px; }
+      .custom-accordion .accordion-item .btn-link[aria-expanded="true"]:before {
+        font-family:'Bootstrap-icons';
+        content: "\F286";
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0px;
+        background: #820016;
+    }
+    .custom-accordion .accordion-item.active {
+      z-index: 2; }
+      .custom-accordion .accordion-item.active .btn-link {
+        color: #820016; }
+    .custom-accordion .accordion-item .accordion-body {
+      padding: 20px 20px 20px 20px;
+      color: #888; }
+  
+#eventi li{
+  list-style-type: none;
+  height: fit-content;
+
+}
+
+#eventi li p{
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.eventi li div{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+
+.acquisto-biglietti{
+  display: flex;
+  justify-content:space-between;
+  width: 200px;
+}
