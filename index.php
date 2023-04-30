@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/salvo-pagina-interna.js"></script>
+
 </head>
 
 <body">
@@ -285,7 +288,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/musei-vaticani.webp">
               <div>
-                <h4><a href="#">Musei Vaticani</a></h4>
+                <h4><a class="Musei-Vaticani" href="pagina-interna.html">Musei Vaticani</a></h4><!--cambiato//////////////////////////////// -->
                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
               </div>
             </div>
@@ -294,7 +297,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/musei-capitolini.webp">
               <div>
-                <h4><a href="#">Musei Capitolini</a></h4>
+                <h4><a class="Capitolini" href="pagina-interna.html">Musei Capitolini</a></h4> <!--cambiato//////////////////////////////// -->
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -303,7 +306,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/galleria-borghese.jpg">
               <div>
-                <h4><a href="#">Galleria Borghese</a></h4>
+                <h4><a  class="borghese" href="pagina-interna.html" >Galleria Borghese</a></h4>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -312,7 +315,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/galleria-doria-pamphilj.jpeg">
               <div>
-                <h4><a href="#">Galleria Doria Pamphilj</a></h4>
+                <h4><a class="doria-pamphiji" href="pagina-interna.html">Galleria Doria Pamphilj</a></h4>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -321,7 +324,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/museo-nazionale-di-arte-moderna.jpg">
               <div>
-                <h4><a href="#">Museo Nazionale di Arte Moderna e Contemporanea</a></h4>
+                <h4><a class="museo-nazionale" href="pagina-interna.html">Museo Nazionale di Arte Moderna e Contemporanea</a></h4>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -330,7 +333,7 @@
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/maxxi.jpg">
               <div>
-                <h4><a href="#">MAXXI</a></h4>
+                <h4><a class="MAXXI" href="pagina-interna.html">MAXXI</a></h4>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -354,8 +357,8 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Antica Roma</li>
-              <li data-filter=".filter-card">Religione</li>
-              <li data-filter=".filter-web">Fontane</li>
+              <li data-filter=".filter-card">monumenti commemorativi</li>
+              <li data-filter=".filter-web">Piazze</li>
             </ul>
           </div>
         </div>
@@ -365,11 +368,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/bg-colosseo.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Colosseo</a></h4>
+                <h4><a class="colosseo" href="pagina-interna.html">Colosseo</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
@@ -378,12 +381,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/piazza di spagna.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Fontana di trevi</a></h4>
-                <p>Fontana</p>
+                <h4><a class="piazza-spagna" href="pagina-interna.html">Piazza di spagna</a></h4>
+                <p>piazza</p>
               </div>
             </div>
           </div>
@@ -391,11 +394,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/ara pacis.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Ara Pacis</a></h4>
+                <h4><a class="ara_pacis" href="pagina-interna.html">Ara Pacis</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
@@ -404,12 +407,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/san pietro.jpeg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">San Pietro</a></h4>
-                <p>Religione</p>
+                <h4><a class="san-pietro" href="pagina-interna.html">San Pietro</a></h4>
+                <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
@@ -417,12 +420,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/piazza navona.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Fontana Dei Quattro Fiumi</a></h4>
-                <p>Fontana</p>
+                <h4><a class="piazza-navona" href="pagina-interna.html">Piazza Navona</a></h4>
+                <p>piazza</p>
               </div>
             </div>
           </div>
@@ -430,11 +433,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/pantheon.jpeg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Pantheon</a></h4>
+                <h4><a class="pantheon" href="pagina-interna.html" >Pantheon</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
@@ -443,12 +446,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                <img src="assets/img/castel sant'angelo.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Castel Sant'Angelo</a></h4>
-                <p>Religione</p>
+                <h4><a class="sant-angelo" href="pagina-interna.html">Castel Sant'Angelo</a></h4>
+                <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
@@ -456,12 +459,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                <img src="assets/img/altare della patria.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">Cappella Sistina</a></h4>
-                <p>Religione</p>
+                <h4><a class="altare-patria" href="pagina-interna.html">Altare della Patria</a></h4>
+                <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
@@ -469,12 +472,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                <img src="assets/img/piazza del popolo.jpg" class="img-fluid" alt="">
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">La Barcaccia</a></h4>
-                <p>Fontana</p>
+                <h4><a class="piazza-popolo" href="pagina-interna.html">Piazza del Popolo</a></h4>
+                <p>piazza</p>
               </div>
             </div>
           </div>

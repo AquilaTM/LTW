@@ -27,6 +27,216 @@ h1,h2,h3,h4,p{
     background-size: cover;
 }
 
+.hero1{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/ara\ pacis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero2{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/altare\ della\ patria.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero3{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/castel\ sant\'angelo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero4{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/pantheon.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero5{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/san\ pietro.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero6{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/musei\ vaticani.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero7{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria-borghese.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero8{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/MAXXI.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero9{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria\ nazionale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero10{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria\ doria\ pamphiji.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero11{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/musei\ capitolini.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero12{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/nero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero13{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ di\ spagna.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero14{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ navona.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero15{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ del\ popolo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
 .hero:before {
     content: "";
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
@@ -36,6 +246,160 @@ h1,h2,h3,h4,p{
     left: 0;
     right: 0;
   }
+  .hero1:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero2:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 55%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero3:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 35%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero4:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .hero5:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero6:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero7:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+  .hero8:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero9:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero10:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero11:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .hero12:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero13:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero14:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero15:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
 
 .container{
   display: flex;
