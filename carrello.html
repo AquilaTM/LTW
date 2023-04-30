@@ -16,6 +16,8 @@
     <!-- Our CSS Files -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/style-carrello.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 
@@ -48,25 +50,8 @@
                         <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Eventi</button>
                     </h2>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion_1">
-                        <div class="accordion-body">
-                            <ul class="eventi">
-                                <li><div class="evento1">
-                                    <p>Evento 1</p>
-                                    <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-                                        <button class="btn btn-danger" type="button" data-touchspin-up>+</button>
-                                        <input type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
-                                        <button class="btn btn-primary" type="button" data-touchspin-down>-</button>
-                                    </div>
-                                </div></li>
-                                <li><div class="evento2">
-                                    <p>Evento 2</p>
-                                    <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-                                        <button class="btn btn-danger" type="button" data-touchspin-up>+</button>
-                                        <input type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
-                                        <button class="btn btn-primary" type="button" data-touchspin-down>-</button>
-                                    </div>
-                                </div></li>
-                            </ul>
+                        <div id="eventi" class="accordion-body">
+                        <eventocrea></eventocrea>   
                         </div>
                     </div>
                 </div>
@@ -111,5 +96,6 @@
             <p class="contatore_totale">0</p>
         </div>
     </form> -->
+    <script src="./assets/js/carrellovue.js"></script>
 </body>
 </html>
