@@ -5,8 +5,17 @@
         $result=pg_query($sql);
         while($row=pg_fetch_array($result,null,PGSQL_ASSOC)){
                 $arr=array(
-                    "evento1"=>$row["primoevento"],
-                    "evento2"=>$row["evento2"]
+                    "evento1"=>$row["evento1"],
+                    "evento2"=>$row["evento2"],
+                    "evento3"=>$row["evento3"],
+                    "evento4"=>$row["evento4"],
+                    "evento5"=>$row["evento5"],
+                    "museo1"=>$row["museo1"],
+                    "museo2"=>$row["museo2"],
+                    "museo3"=>$row["museo3"],
+                    "museo4"=>$row["museo4"],
+                    "museo5"=>$row["museo5"],
+                    "museo6"=>$row["museo6"],
                 );
             }
         echo json_encode($arr);
