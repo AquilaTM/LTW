@@ -30,7 +30,7 @@ app.component("eventocrea",{
             numero_biglietti1:0,
             numero_biglietti2:0,
             nome_classi_eventi:[
-            {n_biglietti:0,cart:0,id:1,nome:"Evento 1",classe_nome:"evento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
+            {n_biglietti:0,cart:0,id:1,nome:"Biglietto Colosseo",classe_nome:"evento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
             {n_biglietti:0,cart:0,id:2,nome:"Evento 2",classe_nome:"evento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
             ],
             numero_biglietti:[],
