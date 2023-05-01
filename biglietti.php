@@ -16,6 +16,16 @@
                     "museo4"=>$row["museo4"],
                     "museo5"=>$row["museo5"],
                     "museo6"=>$row["museo6"],
+                    "monumento1"=>$row["monumento1"],
+                    "monumento2"=>$row["monumento2"],
+                    "monumento3"=>$row["monumento3"],
+                    "monumento4"=>$row["monumento4"],
+                    "monumento5"=>$row["monumento5"],
+                    "monumento6"=>$row["monumento6"],
+                    "monumento7"=>$row["monumento7"],
+                    "monumento8"=>$row["monumento8"],
+                    "monumento9"=>$row["monumento9"],
+                    
                 );
             }
         echo json_encode($arr);

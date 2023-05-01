@@ -64,7 +64,7 @@ app.component("eventocrea",{
             }
         },
         decrementaCounter2(){
-            if(this.nome_classi_eventi.cart[1]>0){
+            if(this.nome_classi_eventi[1].cart>0){
                 this.nome_classi_eventi[1].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[1].n_biglietti++;
@@ -78,7 +78,7 @@ app.component("eventocrea",{
             }
         },
         decrementaCounter3(){
-            if(this.nome_classi_eventi.cart[2]>0){
+            if(this.nome_classi_eventi[2].cart>0){
                 this.nome_classi_eventi[2].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[2].n_biglietti++;
@@ -92,7 +92,7 @@ app.component("eventocrea",{
             }
         },
         decrementaCounter4(){
-            if(this.nome_classi_eventi.cart[3]>0){
+            if(this.nome_classi_eventi[3].cart>0){
                 this.nome_classi_eventi[3].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[3].n_biglietti++;
@@ -106,7 +106,7 @@ app.component("eventocrea",{
             }
         },
         decrementaCounter5(){
-            if(this.nome_classi_eventi.cart[4]>0){
+            if(this.nome_classi_eventi[4].cart>0){
                 this.nome_classi_eventi[4].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[4].n_biglietti++;
@@ -181,7 +181,7 @@ app.component("museocrea",{
             }
         },
         decrementaCounter7(){
-            if(this.nome_classi_eventi.cart[1]>0){
+            if(this.nome_classi_eventi[1].cart>0){
                 this.nome_classi_eventi[1].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[1].n_biglietti++;
@@ -195,7 +195,7 @@ app.component("museocrea",{
             }
         },
         decrementaCounter8(){
-            if(this.nome_classi_eventi.cart[2]>0){
+            if(this.nome_classi_eventi[2].cart>0){
                 this.nome_classi_eventi[2].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[2].n_biglietti++;
@@ -209,7 +209,7 @@ app.component("museocrea",{
             }
         },
         decrementaCounter9(){
-            if(this.nome_classi_eventi.cart[3]>0){
+            if(this.nome_classi_eventi[3].cart>0){
                 this.nome_classi_eventi[3].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[3].n_biglietti++;
@@ -223,7 +223,7 @@ app.component("museocrea",{
             }
         },
         decrementaCounter10(){
-            if(this.nome_classi_eventi.cart[4]>0){
+            if(this.nome_classi_eventi[4].cart>0){
                 this.nome_classi_eventi[4].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[4].n_biglietti++;
@@ -237,7 +237,7 @@ app.component("museocrea",{
             }
         },
         decrementaCounter11(){
-            if(this.nome_classi_eventi.cart[5]>0){
+            if(this.nome_classi_eventi[5].cart>0){
                 this.nome_classi_eventi[5].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[5].n_biglietti++;
@@ -254,6 +254,189 @@ app.component("museocrea",{
             this.nome_classi_eventi[3].n_biglietti=this.numero_biglietti.museo4;
             this.nome_classi_eventi[4].n_biglietti=this.numero_biglietti.museo5;
             this.nome_classi_eventi[5].n_biglietti=this.numero_biglietti.museo6;
+            
+        })
+    }
+
+});
+app.component("monumenticrea",{
+    template:` 
+    <ul class="eventi" v-for="x in nome_classi_eventi" :key="x.id">
+    <li><div :class="x.classe_nome">
+    <p>{{x.nome}}</p>
+    <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
+        <button @click="x.nome_funzioneI" class="btn btn-danger" type="button" data-touchspin-up>+</button>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
+        <button @click="x.nome_funzioneD" class="btn btn-primary" type="button" data-touchspin-down>-</button>
+        <p v-if="x.n_biglietti > 10">Disponibile</p>
+        <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
+        <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
+
+    </div>
+</div></li>
+</ul>`,
+    data(){ //mettiamo tutti e varibiali che stanno nello script sopra
+        return{
+            nome_classi_eventi:[
+            {n_biglietti:0,cart:0,id:12,nome:"Colosseo",classe_nome:"monumento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
+            {n_biglietti:0,cart:0,id:13,nome:"Piazza di spagna",classe_nome:"monumento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
+            {n_biglietti:0,cart:0,id:14,nome:"Ara Pacis",classe_nome:"monumento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
+            {n_biglietti:0,cart:0,id:15,nome:"San Pietro",classe_nome:"monumento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
+            {n_biglietti:0,cart:0,id:16,nome:"Piazza Navona",classe_nome:"monumento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
+            {n_biglietti:0,cart:0,id:17,nome:"Pantheon",classe_nome:"munumento6",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
+            {n_biglietti:0,cart:0,id:18,nome:"Castel Sant'Angelo",classe_nome:"monumento7",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
+            {n_biglietti:0,cart:0,id:19,nome:"Altare della Patria",classe_nome:"monumento8",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
+            {n_biglietti:0,cart:0,id:20,nome:"Piazza del Popolo",classe_nome:"monumento9",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
+        ],  
+            numero_biglietti:[],
+        }
+        
+    },
+    methods:{ 
+        incrementaCounter1(){
+            if(this.nome_classi_eventi[0].n_biglietti>0){
+                this.nome_classi_eventi[0].cart++;
+                this.cart_tot++;
+                console.log(this.nome_classi_eventi[0].cart);
+                this.nome_classi_eventi[0].n_biglietti--;
+            }
+        },
+        decrementaCounter1(){
+            if(this.nome_classi_eventi[0].cart>0){
+                this.nome_classi_eventi[0].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[0].n_biglietti++;
+            }
+        },
+        incrementaCounter2(){
+            if(this.nome_classi_eventi[1].n_biglietti>0){
+                this.nome_classi_eventi[1].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[1].n_biglietti--;
+            }
+        },
+        decrementaCounter2(){
+            if(this.nome_classi_eventi[1].cart>0){
+                this.nome_classi_eventi[1].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[1].n_biglietti++;
+            }
+        },
+        incrementaCounter3(){
+            if(this.nome_classi_eventi[2].n_biglietti>0){
+                this.nome_classi_eventi[2].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[2].n_biglietti--;
+            }
+        },
+        decrementaCounter3(){
+            if(this.nome_classi_eventi[2].cart>0){
+                this.nome_classi_eventi[2].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[2].n_biglietti++;
+            }
+        },
+        incrementaCounter4(){
+            if(this.nome_classi_eventi[3].n_biglietti>0){
+                this.nome_classi_eventi[3].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[3].n_biglietti--;
+            }
+        },
+        decrementaCounter4(){
+            if(this.nome_classi_eventi[3].cart>0){
+                this.nome_classi_eventi[3].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[3].n_biglietti++;
+            }
+        },
+        incrementaCounter5(){
+            if(this.nome_classi_eventi[4].n_biglietti>0){
+                this.nome_classi_eventi[4].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[4].n_biglietti--;
+            }
+        },
+        decrementaCounter5(){
+            if(this.nome_classi_eventi[4].cart>0){
+                this.nome_classi_eventi[4].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[4].n_biglietti++;
+            }
+        },
+        incrementaCounter6(){
+            if(this.nome_classi_eventi[5].n_biglietti>0){
+                this.nome_classi_eventi[5].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[5].n_biglietti--;
+            }
+        },
+        decrementaCounter6(){
+            if(this.nome_classi_eventi[5].cart>0){
+                this.nome_classi_eventi[5].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[5].n_biglietti++;
+            }
+        },
+        incrementaCounter7(){
+            if(this.nome_classi_eventi[6].n_biglietti>0){
+                this.nome_classi_eventi[6].cart++;
+                this.cart_tot++;
+                console.log(this.nome_classi_eventi[0].cart);
+                this.nome_classi_eventi[6].n_biglietti--;
+            }
+        },
+        decrementaCounter7(){
+            if(this.nome_classi_eventi[6].cart>0){
+                this.nome_classi_eventi[6].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[6].n_biglietti++;
+            }
+        },
+        incrementaCounter8(){
+            if(this.nome_classi_eventi[7].n_biglietti>0){
+                this.nome_classi_eventi[7].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[7].n_biglietti--;
+            }
+        },
+        decrementaCounter8(){
+            if(this.nome_classi_eventi[7].cart>0){
+                this.nome_classi_eventi[7].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[7].n_biglietti++;
+            }
+        },
+        incrementaCounter9(){
+            if(this.nome_classi_eventi[8].n_biglietti>0){
+                this.nome_classi_eventi[8].cart++;
+                this.cart_tot++;
+                this.nome_classi_eventi[8].n_biglietti--;
+            }
+        },
+        decrementaCounter9(){
+            if(this.nome_classi_eventi[8].cart>0){
+                this.nome_classi_eventi[8].cart--;
+                this.cart_tot--;
+                this.nome_classi_eventi[8].n_biglietti++;
+            }
+        },
+        
+    },
+    mounted(){ //fa al'inizio del server
+        $.get("biglietti.php",(data,state)=>{
+            console.log(data); 
+            this.numero_biglietti = JSON.parse(data);
+            this.nome_classi_eventi[0].n_biglietti=this.numero_biglietti.monumento1;
+            this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.monumento2;
+            this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.monumento3;
+            this.nome_classi_eventi[3].n_biglietti=this.numero_biglietti.monumento4;
+            this.nome_classi_eventi[4].n_biglietti=this.numero_biglietti.monumento5;
+            this.nome_classi_eventi[5].n_biglietti=this.numero_biglietti.monumento6;
+            this.nome_classi_eventi[6].n_biglietti=this.numero_biglietti.monumento7;
+            this.nome_classi_eventi[7].n_biglietti=this.numero_biglietti.monumento8;
+            this.nome_classi_eventi[8].n_biglietti=this.numero_biglietti.monumento9;
+        
             
         })
     }
