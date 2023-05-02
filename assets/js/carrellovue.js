@@ -22,9 +22,9 @@ app.component("eventocrea",{
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-        <button @click="x.nome_funzioneI" class="btn btn-danger" type="button" data-touchspin-up>+</button>
+        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
         <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
-        <button @click="x.nome_funzioneD" class="btn btn-primary" type="button" data-touchspin-down>-</button>
+        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
@@ -150,9 +150,9 @@ app.component("museocrea",{
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-        <button @click="x.nome_funzioneI" class="btn btn-danger" type="button" data-touchspin-up>+</button>
+        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
         <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
-        <button @click="x.nome_funzioneD" class="btn btn-primary" type="button" data-touchspin-down>-</button>
+        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
@@ -282,9 +282,9 @@ app.component("monumenticrea",{
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-        <button @click="x.nome_funzioneI" class="btn btn-danger" type="button" data-touchspin-up>+</button>
+        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
         <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
-        <button @click="x.nome_funzioneD" class="btn btn-primary" type="button" data-touchspin-down>-</button>
+        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
