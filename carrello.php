@@ -18,11 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 
 <?php
  
- $email=$_SESSION["email"];
- $conta_evento1=$_POST["conta_evento1"];
- $conta_evento2=$_POST["conta_evento2"];
- $q1="UPDATE acquista SET evento1=$conta_evento1,evento2=$conta_evento2, museo1=5 WHERE email='$email'";
- $result=pg_query($q1) or die("Query failed:".pg_last_error());
+ //$email=$_SESSION["email"];
+ $conta_evento1=pg_escape_string($_POST['evento11']);
+ $conta_evento2=pg_escape_string($_POST['evento12']);
+ //$conta_evento2=$_POST["conta_evento2"];
+ $query = "INSERT INTO acquista (evento1, evento2) VALUES ('$conta_evento1', '$conta_evento2')";
+ $result = pg_query($dbconn, $query);
+ //$q1="UPDATE acquista SET evento1=$conta_evento1,evento2=$conta_evento2, museo1=5 WHERE email='$email'";
+ //$result=pg_query($q1) or die("Query failed:".pg_last_error());
+ //$conn = pg_connect("host=nomedelhost dbname=nomedeldatabase user=nomeutente password=password");
 
 ?>
     

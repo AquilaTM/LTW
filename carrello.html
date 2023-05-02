@@ -78,7 +78,13 @@
                 </div>
             </div>
         </div>
-        <div class="btn-acquista"><button class="my-5 text-center btn btn-primary">Acquista - Importo totale: </button></div>
+        <form class="content" action="carrello.php" method="POST">
+            <input name="evento11" :value="cart1"></input>
+            <input name="evento12" :value="cart2"></input>
+            <div class="btn-acquista"><button  class="my-5 text-center btn btn-primary">Acquista - Importo totale: </button></div>
+        </form>
+       
+        
     </div>
 
     <!-- <form action="carrello.php" method="post">
