@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,7 +116,7 @@
             </div>
         </div>
         <!-- riga due-->
-        <div class="row justify-content-center">
+        <div id="biglietto"class="row justify-content-center">
             <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="terza text-center h-100">
@@ -134,6 +137,13 @@
         </div>
     </div>
 </section>
+<?php
+      if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
+        echo '';
+      }else{
+        echo '';
+      }
+?>
 
 
 <script>

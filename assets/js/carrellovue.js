@@ -2,10 +2,17 @@
 let app =Vue.createApp({ //costruttore
     data: function(){ //mettiamo coppie chiave-valore
        return{
-          cart1:0,
+          cart1:5,
+          cart2:5,
+          cart3:5,
+          cart4:5,
+          cart5:5,
           cart_tot:0,
         }
     },
+    
+    
+    
    
 });
 
@@ -43,6 +50,7 @@ app.component("eventocrea",{
     methods:{ 
         incrementaCounter1(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
+                this.cart1++;
                 this.nome_classi_eventi[0].cart++;
                 this.cart_tot++;
                 console.log(this.nome_classi_eventi[0].cart);
@@ -51,6 +59,7 @@ app.component("eventocrea",{
         },
         decrementaCounter1(){
             if(this.nome_classi_eventi[0].cart>0){
+                this.cart1--;
                 this.nome_classi_eventi[0].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[0].n_biglietti++;
@@ -58,6 +67,7 @@ app.component("eventocrea",{
         },
         incrementaCounter2(){
             if(this.nome_classi_eventi[1].n_biglietti>0){
+                this.cart2++;
                 this.nome_classi_eventi[1].cart++;
                 this.cart_tot++;
                 this.nome_classi_eventi[1].n_biglietti--;
@@ -65,6 +75,7 @@ app.component("eventocrea",{
         },
         decrementaCounter2(){
             if(this.nome_classi_eventi[1].cart>0){
+                this.cart2--;
                 this.nome_classi_eventi[1].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[1].n_biglietti++;
@@ -72,6 +83,7 @@ app.component("eventocrea",{
         },
         incrementaCounter3(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
+                this.cart3++;
                 this.nome_classi_eventi[2].cart++;
                 this.cart_tot++;
                 this.nome_classi_eventi[2].n_biglietti--;
@@ -79,6 +91,7 @@ app.component("eventocrea",{
         },
         decrementaCounter3(){
             if(this.nome_classi_eventi[2].cart>0){
+                this.cart3--;
                 this.nome_classi_eventi[2].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[2].n_biglietti++;
@@ -86,6 +99,7 @@ app.component("eventocrea",{
         },
         incrementaCounter4(){
             if(this.nome_classi_eventi[3].n_biglietti>0){
+                this.cart4++;
                 this.nome_classi_eventi[3].cart++;
                 this.cart_tot++;
                 this.nome_classi_eventi[3].n_biglietti--;
@@ -93,6 +107,7 @@ app.component("eventocrea",{
         },
         decrementaCounter4(){
             if(this.nome_classi_eventi[3].cart>0){
+                this.cart4--;
                 this.nome_classi_eventi[3].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[3].n_biglietti++;
@@ -100,6 +115,7 @@ app.component("eventocrea",{
         },
         incrementaCounter5(){
             if(this.nome_classi_eventi[4].n_biglietti>0){
+                this.cart5++;
                 this.nome_classi_eventi[4].cart++;
                 this.cart_tot++;
                 this.nome_classi_eventi[4].n_biglietti--;
@@ -107,6 +123,7 @@ app.component("eventocrea",{
         },
         decrementaCounter5(){
             if(this.nome_classi_eventi[4].cart>0){
+                this.cart5--;
                 this.nome_classi_eventi[4].cart--;
                 this.cart_tot--;
                 this.nome_classi_eventi[4].n_biglietti++;

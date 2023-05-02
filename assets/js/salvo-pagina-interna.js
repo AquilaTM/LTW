@@ -7,6 +7,7 @@ $(document).ready(function(){
         localStorage.setItem("storia","I Musei Vaticani hanno una lunga e ricca storia che risale al XV secolo, quando il Papa Sisto IV fondò la Biblioteca Vaticana nel 1475, dando così inizio alla collezione di manoscritti e libri antichi. Nel corso del tempo, i Papi successivi hanno continuato ad arricchire le collezioni con opere d'arte e oggetti di valore. Nel 1506, Papa Giulio II acquistò la statua del Laocoonte e, poco dopo, commissionò a Michelangelo il famoso ciclo di affreschi nella Cappella Sistina. Nel 1514, Papa Leone X aprì la Biblioteca Vaticana al pubblico, dando inizio alla tradizione di accessibilità delle collezioni papali.Nel 1756, Papa Benedetto XIV aprì la Pinacoteca Vaticana, una galleria d'arte che raccoglieva le opere più importanti della collezione pontificia. Nel corso dei secoli successivi, i Musei Vaticani si sono arricchiti di nuove collezioni e nuovi spazi espositivi, tra cui la Sala degli Animali, il Museo Egizio, il Museo Pio-Clementino e la Stanza di Raffaello. Nel XX secolo, i Musei Vaticani sono stati ulteriormente ampliati e modernizzati, con la creazione di nuovi edifici espositivi e la realizzazione di importanti opere di restauro e conservazione. Oggi i Musei Vaticani sono uno dei più importanti musei del mondo, con una collezione di opere d'arte e oggetti di valore che spaziano dall'antichità al Rinascimento, fino ai tempi moderni.")
         localStorage.setItem("immagine","/assets/img/musei vaticani storia.jpg")
         localStorage.setItem("hero","hero6")
+        localStorage.setItem("nonvedo",false)
     });
  
      $(".Capitolini").click(function(){
@@ -16,6 +17,7 @@ $(document).ready(function(){
         localStorage.setItem("storia","I Musei Capitolini sono un complesso museale situato sulla collina del Campidoglio a Roma, in Italia. Il complesso è composto da tre edifici principali: Palazzo dei Conservatori, Palazzo Nuovo e Palazzo Senatorio, che ospitano una vasta collezione di opere d'arte e oggetti archeologici. \n La collezione del museo è stata fondata nel 1471, quando il papa Sisto IV donò al popolo romano una serie di antichità provenienti dal suo palazzo. Nel corso dei secoli, la collezione è stata arricchita grazie a numerose acquisizioni, soprattutto nel Rinascimento, quando i papi e le famiglie aristocratiche romane acquistavano opere d'arte per decorare le loro dimore.\n Oggi i Musei Capitolini sono considerati uno dei più importanti musei d'arte e di archeologia al mondo. Tra le opere più famose esposte ci sono la statua di Marco Aurelio a cavallo, la Lupa Capitolina, la Venere Capitolina, il Galata morente e molte altre opere di grande valore artistico e storico. \n Oltre alle opere d'arte, i Musei Capitolini offrono anche una vista spettacolare sulla città di Roma, con la piazza del Campidoglio, progettata da Michelangelo, al centro. Il museo è stato ampliato e ristrutturato più volte nel corso dei secoli ed è stato aperto al pubblico nel 1734. Oggi i Musei Capitolini sono una delle principali attrazioni turistiche di Roma, visitati da milioni di turisti ogni anno.")
         localStorage.setItem("immagine","/assets/img/musei capitolini storia.jpg")
         localStorage.setItem("hero","hero11")
+        localStorage.setItem("nonvedo",false)
 
      });
 
@@ -26,6 +28,7 @@ $(document).ready(function(){
         localStorage.setItem("storia","La Galleria Borghese è un museo d'arte situato a Roma, nel parco della Villa Borghese. Fu fondata nel 1613 da Scipione Borghese, un collezionista d'arte e cardinale della Chiesa cattolica. Scipione Borghese era un mecenate delle arti e un appassionato collezionista, che aveva raccolto opere di artisti del calibro di Raffaello, Caravaggio, Tiziano e Bernini.\n La collezione della Galleria Borghese si arricchì ulteriormente con il passare del tempo, grazie ai successivi membri della famiglia Borghese che continuavano ad aggiungere opere d'arte alla collezione. Nel 1808, la collezione venne acquisita dallo Stato italiano e la Galleria Borghese divenne un museo pubblico.\n La Galleria Borghese è famosa per le sue opere d'arte di grande valore e bellezza, tra cui il Ratto di Proserpina e il David di Bernini, la Madonna dei Palafrenieri di Caravaggio, la Venere vincitrice di Canova e molte altre opere di artisti famosi. La Galleria Borghese è uno dei musei d'arte più importanti al mondo e continua ad attirare visitatori da tutto il mondo per ammirare le sue collezioni.")
         localStorage.setItem("immagine","/assets/img/galleria borghese storia.jpg")
         localStorage.setItem("hero","hero7")
+        localStorage.setItem("nonvedo",false)
      });
 
      $(".doria-pamphiji").click(function(){
@@ -35,6 +38,7 @@ $(document).ready(function(){
         localStorage.setItem("storia"," La Galleria Doria Pamphilj è una galleria d'arte che si trova a Roma, in Italia, all'interno del Palazzo Doria Pamphilj. La galleria è stata fondata nel 1651 dalla famiglia Pamphilj, una delle famiglie nobili romane più importanti dell'epoca. \n La collezione d'arte della galleria è stata accumulata nel corso dei secoli attraverso matrimoni e acquisizioni, ed è una delle più grandi e prestigiose di Roma. La galleria contiene opere di artisti italiani e internazionali del Rinascimento e del Barocco, tra cui Raffaello, Tiziano, Caravaggio, Bernini e Velázquez.\n Nel corso dei secoli, il palazzo e la galleria sono stati ampliati e rinnovati. Nel XIX secolo, la galleria è stata aperta al pubblico per la prima volta, diventando uno dei luoghi d'arte più visitati di Roma. \nOggi, la Galleria Doria Pamphilj continua a essere gestita dalla famiglia Pamphilj ed è aperta al pubblico. È un'importante attrazione turistica a Roma, non solo per la sua collezione d'arte, ma anche per il palazzo stesso, con le sue sale riccamente decorate e le sue magnifiche sale da ballo.")
         localStorage.setItem("immagine","/assets/img/galleria doria pamphiji storia.jpg")
         localStorage.setItem("hero","hero10")
+        localStorage.setItem("nonvedo",false)
      });
 
      $(".museo-nazionale").click(function(){
@@ -44,6 +48,7 @@ $(document).ready(function(){
         localStorage.setItem("storia","La Galleria Nazionale d'Arte Moderna e Contemporanea, nota anche come GNAM, è un museo d'arte situato a Roma, Italia. Fondato nel 1883, è uno dei più antichi musei d'arte moderna del mondo. La GNAM ospita una vasta collezione di opere d'arte italiane e straniere che coprono un arco temporale che va dal neoclassicismo del XIX secolo all'arte contemporanea. \n La collezione permanente della GNAM comprende oltre 20.000 opere, tra cui dipinti, sculture, fotografie, disegni, stampe e installazioni d'arte contemporanea. Tra gli artisti rappresentati nella collezione ci sono Giacomo Balla, Umberto Boccioni, Carlo Carrà, Giorgio de Chirico, Alberto Burri, Lucio Fontana, Alighiero Boetti, Mario Merz e molti altri. \n La GNAM organizza anche mostre temporanee e eventi culturali per presentare al pubblico l'arte contemporanea italiana e internazionale. Il museo si trova nel parco di Villa Borghese, in un edificio progettato dall'architetto Cesare Bazzani e ampliato in seguito da altri architetti. La Galleria Nazionale d'Arte Moderna e Contemporanea è una tappa importante per gli amanti dell'arte che visitano Roma.")
         localStorage.setItem("immagine","/assets/img/galleria nazionale storia.jpg")
         localStorage.setItem("hero","hero9")
+        localStorage.setItem("nonvedo",false)
      });
 
      $(".MAXXI").click(function(){
@@ -53,6 +58,7 @@ $(document).ready(function(){
         localStorage.setItem("storia","  Il MAXXI, acronimo di Museo nazionale delle arti del XXI secolo, è un museo d'arte moderna e contemporanea situato a Roma, nel quartiere Flaminio. È stato inaugurato nel 2010 ed è stato progettato dall'architetto anglo-iracheno Zaha Hadid, che ha vinto un concorso internazionale per la sua realizzazione. \n Il MAXXI si presenta come un edificio innovativo e futuristico, caratterizzato da linee sinuose, curve e superfici lisce. È composto da due sezioni principali: una sezione permanente, che ospita la collezione del museo, e una sezione temporanea, che ospita mostre e progetti artistici contemporanei. \n La collezione permanente del MAXXI è dedicata all'arte del XXI secolo e comprende opere di artisti italiani e internazionali, tra cui Anish Kapoor, Francesco Vezzoli, Michelangelo Pistoletto, Yayoi Kusama e molti altri. Il museo organizza anche mostre temporanee di artisti emergenti e affermati, nonché eventi e progetti culturali. \n Il MAXXI è diventato un importante punto di riferimento per l'arte moderna e contemporanea in Italia e nel mondo, grazie alla sua architettura innovativa e alle sue collezioni di valore.")
         localStorage.setItem("immagine","/assets/img/MAXXI storia.jpg")
         localStorage.setItem("hero","hero8")
+        localStorage.setItem("nonvedo",false)
      });
      
      //inizio monumenti
@@ -64,6 +70,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Il Colosseo era anticamente chiamato Amphitheatrum Flavium e fu progettato come arena di spettacoli per contenere un numero di spettatori compreso fra i 50mila e i 75mila. La sua edificazione fu voluta per ordine di Vespasiano nel 72 e l'anfiteatro fu inaugurato 8 anni dopo, sotto il regno di Tito. Originariamente aveva un'altezza di 52 metri per una superficie interna di oltre 3300 mq. La sua pianta e l'architettura esterna sono chiaramente ispirati allo stile imperiale molto in voga in quel secolo. Si tratta di un piccolo capolavoro di architettura in quanto la sua struttura ad archi si basa su un complesso sistema di architravi davvero innovativo per l'epoca. La sua edificazione fu pensata per realizzare un luogo dove offrire spettacoli pubblici a spese dello stato e intrattenere la popolazione. Proprio per questo le sue dimensioni erano così imponenti tanto da meritargli nel medioevo l'appellativo di colosseum, traducibile con colossale, che si riferiva alla sua imponenza. Nel corso dei secoli l'appellativo sostituì completamente il nome proprio dell'anfiteatro Flavio che oggi è conosciuto da tutti proprio come Colosseo. Al di sotto dell'arena dei combattimenti fu realizzato un complesso sistema di corridoi e di stanze per ospitare i protagonisti degli spettacoli che venivano messi in scena. Al Colosseo si esibivano i gladiatori per gli incontri di lotta ma venivano inscenate anche rievocazioni di battaglie storiche oppure simulazioni di incredibili cacce. Recenti studi hanno invece dimostrato come sia totalmente priva di fondamento storico la notizia che vuole il Colosseo teatro di uccisioni di massa di cristiani, sbranati dai leoni, all'epoca di Nerone e di Caligola.")
       localStorage.setItem("immagine","/assets/img/colosseum-description.jpg")
       localStorage.setItem("hero","hero")
+      localStorage.setItem("nonvedo",false)
   });
 
    $(".ara_pacis").click(function(){
@@ -73,6 +80,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","L'Ara Pacis è un'antica struttura religiosa romana situata a Roma, in Italia, costruita nel 13 a.C. per commemorare la vittoria dell'imperatore Augusto nelle guerre galliche.\n L'Ara Pacis fu costruita su iniziativa del Senato romano per celebrare la Pax Romana, la pace duratura che Augusto aveva portato all'Impero romano dopo anni di conflitti e guerre. La struttura è costituita da un altare all'aperto circondato da mura di marmo decorati con rilievi che rappresentano scene di sacrifici e di processioni religiose.\nGli artisti che crearono i rilievi dell'Ara Pacis furono molto abili nel rappresentare le figure umane e gli animali in modo realistico, e le loro opere d'arte sono considerate tra le più belle e raffinate dell'antica Roma.\n L'Ara Pacis è stata abbandonata e dimenticata per molti secoli dopo la caduta dell'Impero romano, ma è stata riscoperta e restaurata nel corso del XIX secolo. Oggi è uno dei più importanti siti archeologici di Roma e una delle attrazioni turistiche più popolari della città.")
       localStorage.setItem("immagine","/assets/img/ara pacis-storia.jpeg")
       localStorage.setItem("hero","hero1")
+      localStorage.setItem("nonvedo",false)
 
    });
 
@@ -83,6 +91,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Il Pantheon è un antico tempio romano situato a Roma, Italia, noto per la sua grande cupola di forma emisferica. La sua costruzione risale al periodo compreso tra il 27 a.C. e il 14 d.C., durante il regno dell'imperatore Augusto, ma fu completato sotto il regno dell'imperatore Adriano nel 126 d.C.\n Il Pantheon originale fu costruito come un tempio dedicato a tutti gli dei dell'Olimpo, da cui deriva il suo nome 'Pantheon' che significa 'tutti gli dèi'. Tuttavia, dopo la conversione dell'impero romano al cristianesimo, il tempio fu trasformato in una chiesa cristiana nel 609 d.C. dal papa Bonifacio IV.\n Il Pantheon è stato modificato e restaurato nel corso dei secoli, ma ha conservato gran parte della sua forma originale. La sua grande cupola, che ha un diametro di 43,3 metri, è considerata un'opera architettonica di grande importanza e un capolavoro della tecnologia romana antica. È stata la più grande cupola del mondo fino al XVII secolo.\n Oggi, il Pantheon è uno dei principali monumenti turistici di Roma e viene utilizzato ancora come chiesa, anche se è aperto ai visitatori durante il giorno per ammirare la sua straordinaria architettura e storia.")
       localStorage.setItem("immagine","/assets/img/pantheon storia.jpg")
       localStorage.setItem("hero","hero4")
+      localStorage.setItem("nonvedo",true)
    });
 
    $(".san-pietro").click(function(){
@@ -92,6 +101,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","La basilica fu costruita nel XVI secolo sul sito della tomba di San Pietro, che si trova sotto l'altare maggiore. Il progetto originale fu affidato a Donato Bramante, ma dopo la sua morte nel 1514, il progetto passò a molti altri architetti tra cui Michelangelo, che fu incaricato di costruire la cupola che domina il cielo di Roma. \n La basilica presenta un'architettura grandiosa, con un vasto portico, una navata centrale e numerose cappelle laterali, alcune delle quali contengono opere d'arte di grandi maestri come Michelangelo e Bernini. \n All'interno della basilica, si possono ammirare numerosi tesori artistici e religiosi, tra cui la statua di San Pietro seduto, la Pietà di Michelangelo e il baldacchino di Bernini sopra l'altare maggiore.\n La Basilica di San Pietro è anche il luogo in cui si svolgono le principali cerimonie della Chiesa cattolica, tra cui la Messa papale e la celebrazione della Pasqua. La sua grandiosità e bellezza la rendono una delle principali attrazioni turistiche di Roma e del mondo intero.")
       localStorage.setItem("immagine","/assets/img/san pietro storia.jpg")
       localStorage.setItem("hero","hero5")
+      localStorage.setItem("nonvedo",false)
    });
 
    $(".sant-angelo").click(function(){
@@ -101,6 +111,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Castel Sant'Angelo è un maestoso mausoleo situato sulla riva destra del fiume Tevere, a Roma. La sua storia risale all'anno 130 d.C. quando l'imperatore romano Adriano fece costruire questo monumentale mausoleo per sé e per la sua famiglia.\n Il mausoleo consisteva in una grande torre circolare di pietra e marmo, alta circa 60 metri, con un diametro di circa 64 metri. Nel corso dei secoli, il castello ha svolto diverse funzioni, tra cui quella di fortezza, residenza papale, prigione e museo.\n Durante il Medioevo, il castello fu trasformato in una fortezza e divenne una delle principali roccaforti di Roma, poiché la sua posizione strategica permetteva di controllare l'accesso al centro della città. Durante il sacco di Roma del 1527, il castello fu usato come rifugio per il papa Clemente VII, che si nascose qui per oltre sette mesi, mentre la città era saccheggiata dalle truppe di Carlo V.\n Nel corso dei secoli successivi, il castello subì numerose trasformazioni e ampliamenti. Nel XVII secolo, fu trasformato in residenza papale, con l'aggiunta di un'ala barocca, e nel XIX secolo, fu utilizzato come prigione. Durante il periodo della Repubblica romana del 1849, il castello fu utilizzato come quartier generale dell'esercito francese, che riuscì a sedare la rivolta e a ripristinare il potere papale.")
       localStorage.setItem("immagine","/assets/img/Castel Sant'Angelo storia.jpg")
       localStorage.setItem("hero","hero3")
+      localStorage.setItem("nonvedo",false)
    });
 
    $(".altare-patria").click(function(){
@@ -110,6 +121,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","L'Altare della Patria è un monumento situato a Roma, in Italia, costruito per onorare Vittorio Emanuele II, il primo re d'Italia. Il monumento è stato inaugurato nel 1911, in occasione del cinquantenario dell'unificazione italiana. \n La costruzione dell'Altare della Patria venne decisa nel 1885, ma la sua realizzazione fu molto controversa. L'idea di costruire un monumento a Vittorio Emanuele II era stata proposta da Enrico Bindi, un architetto italiano, ma molti critici ritennero che il progetto fosse eccessivamente monumentale e costoso.\n Il progetto fu affidato all'architetto Giuseppe Sacconi, che si ispirò all'architettura classica per creare una struttura imponente che includesse un grande altare all'aperto e una serie di edifici e monumenti circostanti. Il monumento comprende anche una grande statua equestre di Vittorio Emanuele II e una serie di bassorilievi che rappresentano importanti eventi storici dell'Italia. \n L'Altare della Patria è diventato un simbolo dell'identità nazionale italiana e un luogo di celebrazione per molte importanti occasioni, come la Festa della Repubblica e la Giornata dell'Unità Nazionale e delle Forze Armate. Tuttavia, è stato anche oggetto di molte critiche da parte di coloro che lo considerano troppo imponente e troppo costoso per la sua funzione simbolica.")
       localStorage.setItem("immagine","/assets/img/altare della patria storia.jpg")
       localStorage.setItem("hero","hero2")
+      localStorage.setItem("nonvedo",true)
    });
 
    $(".piazza-spagna").click(function(){
@@ -119,6 +131,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Piazza di Spagna è una delle piazze più famose e belle di Roma, situata nella zona del Tridente, tra Via del Babuino e Via dei Condotti. La piazza prende il nome dalla vicina ambasciata spagnola, che si trova ai piedi della scalinata che porta alla chiesa di Trinità dei Monti.\n La piazza ha una storia antica, risalente al XV secolo, ma ha acquisito la sua attuale forma nel XVIII secolo, grazie alla ristrutturazione voluta dal pontefice Benedetto XIV. Durante questo intervento, furono realizzati la famosa scalinata di Trinità dei Monti, che unisce la piazza alla chiesa, e la Fontana della Barcaccia, opera del celebre scultore barocco Gian Lorenzo Bernini.\n La piazza ha sempre rappresentato un luogo di incontro e di scambio culturale, grazie alla sua vicinanza con la Scuola di Spagna e alla presenza di numerosi artisti e letterati che vi si sono stabiliti nei secoli. La piazza ha ospitato anche importanti eventi storici, come la parata del 2 giugno, giorno della Festa della Repubblica, e la celebrazione della fine della Prima Guerra Mondiale.\n Oggi, Piazza di Spagna è una delle piazze più amate e visitate di Roma, meta di turisti e di romani che vi si recano per ammirare la bellezza della scalinata, la Fontana della Barcaccia e le numerose boutique di alta moda che si affacciano sulla piazza.")
       localStorage.setItem("immagine","/assets/img/piazza di spagna storia.jpg")
       localStorage.setItem("hero","hero13")
+      localStorage.setItem("nonvedo",true)
    });
 
    $(".piazza-navona").click(function(){
@@ -128,6 +141,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Piazza Navona è una delle piazze più famose e suggestive di Roma, situata nel centro storico della città, a pochi passi dal Pantheon e dal Campo de' Fiori. La piazza ha una forma allungata, dovuta alla presenza dell'antico Stadio di Domiziano, su cui sorge la piazza stessa. \n La piazza è caratterizzata dalla presenza di tre fontane, tra cui la famosa Fontana dei Quattro Fiumi, opera del celebre scultore barocco Gian Lorenzo Bernini, che rappresenta i quattro fiumi più importanti del mondo: il Nilo, il Danubio, il Gange e il Rio della Plata. La piazza è inoltre circondata da numerosi edifici storici, tra cui la Chiesa di Sant'Agnese in Agone, opera dell'architetto barocco Francesco Borromini.\n La storia della piazza è molto antica, risalente all'epoca romana, quando l'area era occupata dallo Stadio di Domiziano, che poteva ospitare fino a 30.000 spettatori. Nel corso dei secoli, la piazza è stata soggetta a numerose trasformazioni e ristrutturazioni, fino ad assumere la sua attuale forma nel XVII secolo. \n Oggi, Piazza Navona è una delle piazze più affascinanti e vivaci di Roma, meta di turisti e di romani che vi si recano per ammirare la bellezza delle fontane, degli edifici storici e dei numerosi artisti di strada che vi si esibiscono. La piazza è inoltre famosa per i suoi caffè storici e le numerose trattorie e ristoranti che vi si affacciano, dove è possibile gustare i piatti tipici della cucina romana.")
       localStorage.setItem("immagine","/assets/img/piazza navona storia.jpg")
       localStorage.setItem("hero","hero14")
+      localStorage.setItem("nonvedo",true)
    });
 
    $(".piazza-popolo").click(function(){
@@ -137,6 +151,7 @@ $(document).ready(function(){
       localStorage.setItem("storia","Piazza del Popolo è una delle piazze più importanti di Roma, situata nella zona nord della città, all'inizio di Via del Corso, la strada principale del centro storico. La piazza ha una forma ellittica e si estende su una superficie di circa 36.000 metri quadrati.\n La storia della piazza risale all'epoca romana, quando in questo luogo era presente il Circo Flaminio, uno dei più grandi e importanti della città. Nel corso dei secoli, la piazza è stata soggetta a numerose trasformazioni e ristrutturazioni, fino ad assumere la sua attuale forma nel XIX secolo, durante il pontificato di Pio IX.\n La piazza è dominata da tre grandi portali, chiamati Porta del Popolo, che rappresentano l'accesso alla città provenendo dal nord, e da due chiese gemelle, Santa Maria dei Miracoli e Santa Maria in Montesanto, che si trovano ai lati della piazza. Al centro della piazza si trova la celebre Fontana del Nettuno, opera del celebre scultore romano Giuseppe Pannini. \n L'obelisco di Piazza del Popolo è uno dei monumenti più antichi e rappresentativi della piazza. Si tratta di un antico obelisco egiziano, alto circa 24 metri, risalente al XIII secolo a.C., che venne portato a Roma nel 10 d.C. dall'imperatore Augusto.\n L'obelisco originariamente si trovava nel Circo Massimo, ma nel XVI secolo venne trasferito nella piazza attuale, dove fu collocato al centro della Fontana dell'Obelisco, un'opera realizzata nel 1589 da Domenico Fontana, su commissione del papa Sisto V.\n Nel 1816 l'obelisco fu restaurato e venne posto sulla base attuale, progettata dall'architetto neoclassico Valadier. La base dell'obelisco è decorata con quattro leoni in bronzo, opera del celebre scultore Antonio Canova. L'obelisco di Piazza del Popolo è diventato uno dei simboli della città di Roma e della piazza stessa, oltre ad essere uno dei più antichi e prestigiosi obelischi egiziani presenti in Europa.")
       localStorage.setItem("immagine","/assets/img/piazza del popolo storia.jpg")
       localStorage.setItem("hero","hero15")
+      localStorage.setItem("nonvedo",true)
    });
  });
 
