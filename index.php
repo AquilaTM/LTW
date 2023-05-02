@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
           <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
           <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
+          <li><a class="nav-link scrollto" href="#monumenti">Monumenti</a></li>
           <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
           <li><a class="nav-link" id="sign-in" href="pagina-login.html">Sign Up</a></li>
         </ul>
@@ -60,7 +60,7 @@
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>';
       }else{
         echo '
@@ -69,7 +69,7 @@
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
           <li><a class="nav-link scrollto" href="#eventi">Eventi</a></li>
           <li><a class="nav-link scrollto" href="#musei">Musei</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Monumenti</a></li>
+          <li><a class="nav-link scrollto" href="#monumenti">Monumenti</a></li>
           <li><a class="nav-link scrollto" href="#aree-verdi">Aree Verdi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,7 +77,7 @@
 
         <div class="header-account-dropdowns d-flex align-items-center">
           <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-          <a  href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
         </div>';
       }
       ?>
@@ -344,7 +344,7 @@
     </section><!-- End Musei Section -->
 
     <!-- ======= Monumenti Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="monumenti" class="monumenti">
       <div class="container">
 
         <div class="section-title">
@@ -354,7 +354,7 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <ul id="portfolio-flters">
+            <ul id="monumenti-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Antica Roma</li>
               <li data-filter=".filter-card">monumenti commemorativi</li>
@@ -363,119 +363,119 @@
           </div>
         </div>
 
-        <div class="row portfolio-container">
+        <div class="row monumenti-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-app wow fadeInUp">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/bg-colosseo.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="colosseo" href="pagina-interna.php">Colosseo</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/piazza di spagna.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="piazza-spagna" href="pagina-interna.php">Piazza di spagna</a></h4>
                 <p>piazza</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/ara pacis.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="ara_pacis" href="pagina-interna.php">Ara Pacis</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-card wow fadeInUp">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/san pietro.jpeg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="san-pietro" href="pagina-interna.php">San Pietro</a></h4>
                 <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/piazza navona.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="piazza-navona" href="pagina-interna.php">Piazza Navona</a></h4>
                 <p>piazza</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/pantheon.jpeg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="pantheon" href="pagina-interna.php" >Pantheon</a></h4>
                 <p>Antica Roma</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-card wow fadeInUp">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/castel sant'angelo.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="sant-angelo" href="pagina-interna.php">Castel Sant'Angelo</a></h4>
                 <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/altare della patria.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="altare-patria" href="pagina-interna.php">Altare della Patria</a></h4>
                 <p>monumenti commemorativi</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
+          <div class="col-lg-4 col-md-6 monumenti-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="monumenti-wrap">
               <figure>
                 <img src="assets/img/piazza del popolo.jpg" class="img-fluid" alt="">
               </figure>
 
-              <div class="portfolio-info">
+              <div class="monumenti-info">
                 <h4><a class="piazza-popolo" href="pagina-interna.php">Piazza del Popolo</a></h4>
                 <p>piazza</p>
               </div>
@@ -485,7 +485,7 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End monumenti Section -->
 
     <!-- ======= Aree Verdi Section ======= -->
     <section id="aree-verdi" class="aree-verdi section-bg">
@@ -581,7 +581,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="/assets/img/download.jpg" alt="">
+              <img src="/assets/img/team/team-2.jpg" alt="">
               <h4>Valerio Lubrano</h4>
             </div>
           </div>

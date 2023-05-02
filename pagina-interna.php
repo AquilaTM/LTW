@@ -131,7 +131,7 @@
                         <button class="btn btn-primary" type="button" data-touchspin-up>+</button>
                     </div>
                     <p>Importo totale: x,xx€</p>
-                    <button class="btn btn-dark">Compra</button>
+                    <button id="compra" class="btn btn-dark">Compra</button>
                 </div>
             </div>
         </div>
@@ -139,9 +139,9 @@
 </section>
 <?php
       if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
-        echo '';
+        echo '<script>document.getElementById("compra").disabled = true;</script>';
       }else{
-        echo '';
+        echo '<script>document.getElementById("compra").disabled = false;</script>';
       }
 ?>
 

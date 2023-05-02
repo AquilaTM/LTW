@@ -121,7 +121,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scrool with offset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -170,23 +170,23 @@
    * Monuments isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let monumentiContainer = select('.monumenti-container');
+    if (monumentiContainer) {
+      let monumentiIsotope = new Isotope(monumentiContainer, {
+        itemSelector: '.monumenti-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let monumentiFilters = select('#monumenti-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#monumenti-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        monumentiFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        monumentiIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
       }, true);
@@ -195,16 +195,9 @@
   });
 
   /**
-   * Initiate monuments lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
    * monuments details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.monumenti-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {

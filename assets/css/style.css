@@ -660,18 +660,18 @@ section {
 /*--------------------------------------------------------------
 # Monumenti
 --------------------------------------------------------------*/
-.portfolio {
+.monumenti {
   padding: 60px 0;
 }
 
-.portfolio #portfolio-flters {
+.monumenti #monumenti-flters {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.monumenti #monumenti-flters li {
   cursor: pointer;
   margin: 0 15px 15px 0;
   display: inline-block;
@@ -686,32 +686,32 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.monumenti #monumenti-flters li:hover,
+.monumenti #monumenti-flters li.filter-active {
   background: #820016;
   color: #fff;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.monumenti #monumenti-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.monumenti .monumenti-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap:hover {
+.monumenti .monumenti-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio .portfolio-item {
+.monumenti .monumenti-item {
   position: relative;
   height: 360px;
   overflow: hidden;
 }
 
-.portfolio .portfolio-item figure {
+.monumenti .monumenti-item figure {
   background: #000;
   overflow: hidden;
   height: 240px;
@@ -721,19 +721,19 @@ section {
   object-fit: cover;
 }
 
-.portfolio .portfolio-item figure img {
+.monumenti .monumenti-item figure img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.portfolio .portfolio-item figure:hover img {
+.monumenti .monumenti-item figure:hover img {
   opacity: 0.4;
   transition: 0.4s;
 }
 
-.portfolio .portfolio-item figure .link-preview,
-.portfolio .portfolio-item figure .link-details {
+.monumenti .monumenti-item figure .link-preview,
+.monumenti .monumenti-item figure .link-details {
   position: absolute;
   display: flex;
   align-items: center;
@@ -750,43 +750,43 @@ section {
   font-size: 20px;
 }
 
-.portfolio .portfolio-item figure .link-preview i,
-.portfolio .portfolio-item figure .link-details i {
+.monumenti .monumenti-item figure .link-preview i,
+.monumenti .monumenti-item figure .link-details i {
   color: #384046;
   line-height: 0;
 }
 
-.portfolio .portfolio-item figure .link-preview:hover,
-.portfolio .portfolio-item figure .link-details:hover {
+.monumenti .monumenti-item figure .link-preview:hover,
+.monumenti .monumenti-item figure .link-details:hover {
   background: #820016;
 }
 
-.portfolio .portfolio-item figure .link-preview:hover i,
-.portfolio .portfolio-item figure .link-details:hover i {
+.monumenti .monumenti-item figure .link-preview:hover i,
+.monumenti .monumenti-item figure .link-details:hover i {
   color: #fff;
 }
 
-.portfolio .portfolio-item figure .link-preview {
+.monumenti .monumenti-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-.portfolio .portfolio-item figure .link-details {
+.monumenti .monumenti-item figure .link-details {
   right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-.portfolio .portfolio-item figure:hover .link-preview {
+.monumenti .monumenti-item figure:hover .link-preview {
   opacity: 1;
   left: calc(50% - 44px);
 }
 
-.portfolio .portfolio-item figure:hover .link-details {
+.monumenti .monumenti-item figure:hover .link-details {
   opacity: 1;
   right: calc(50% - 44px);
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.monumenti .monumenti-item .monumenti-info {
   background: #fff;
   text-align: center;
   padding: 30px;
@@ -794,7 +794,7 @@ section {
   border-radius: 0 0 3px 3px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.monumenti .monumenti-item .monumenti-info h4 {
   font-size: 18px;
   line-height: 1px;
   font-weight: 700;
@@ -802,15 +802,15 @@ section {
   padding-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 a {
+.monumenti .monumenti-item .monumenti-info h4 a {
   color: #333;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 a:hover {
+.monumenti .monumenti-item .monumenti-info h4 a:hover {
   color: #820016;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.monumenti .monumenti-item .monumenti-info p {
   padding: 0;
   margin: 0;
   color: #b8b8b8;
@@ -820,22 +820,22 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# monumenti Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.monumenti-details {
   padding-top: 0;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.monumenti-details .monumenti-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.monumenti-details .monumenti-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.monumenti-details .monumenti-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -843,16 +843,16 @@ section {
   border: 1px solid #820016;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.monumenti-details .monumenti-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #820016;
 }
 
-.portfolio-details .portfolio-info {
+.monumenti-details .monumenti-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(56, 64, 70, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.monumenti-details .monumenti-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -860,27 +860,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.monumenti-details .monumenti-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.monumenti-details .monumenti-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.monumenti-details .monumenti-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.monumenti-details .monumenti-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.monumenti-details .monumenti-description p {
   padding: 0;
 }
 
