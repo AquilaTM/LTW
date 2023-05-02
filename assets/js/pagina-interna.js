@@ -7,5 +7,10 @@ $(document).ready(function(){
        $(".storia").text(localStorage.getItem("storia"))
        $("#introduction").attr("class",localStorage.getItem("hero"));
        $(".description-image").attr("src",localStorage.getItem("immagine"))
-       $("#biglietto").attr("hidden",localStorage.getItem("nonvedo"))
+       var mostraTag = localStorage.getItem("vedo"); 
+       if (mostraTag === "true") {
+              $("#biglietto").show();
+            } else {
+              $("#biglietto").hide();
+            }
 });
