@@ -17,6 +17,7 @@
     <!-- Our CSS Files -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/style-carrello.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://unpkg.com/vue"></script>
 </head>
@@ -79,7 +80,7 @@
             </div>
         </div>
         <form action="carrello.php" method="POST">
-            <div class="btn-acquista"><button  class="my-5 text-center btn btn-primary">Acquista <small>(Importo totale: 0€)</small></button></div>
+            <div class="btn-acquista"><button  class="my-5 text-center btn btn-primary">Acquista <small id="importo-totale">(Importo totale:0€)</small></button></div>
             <input name="concerto-primo-maggio" :value="cart11" type="hidden"></input>
             <input name="boccea-street" :value="cart12" type="hidden"></input>
             <input name="festival-delle-scienze" :value="cart13" type="hidden"></input>
