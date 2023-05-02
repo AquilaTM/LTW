@@ -30,11 +30,11 @@ app.component("eventocrea",{
             numero_biglietti1:0,
             numero_biglietti2:0,
             nome_classi_eventi:[
-            {n_biglietti:0,cart:0,id:1,nome:"Concerto Primo Maggio",classe_nome:"evento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
-            {n_biglietti:0,cart:0,id:2,nome:"Boccea Street",classe_nome:"evento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
-            {n_biglietti:0,cart:0,id:3,nome:"Festival delle Scienze",classe_nome:"evento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
-            {n_biglietti:0,cart:0,id:4,nome:"Vinalia Priora",classe_nome:"evento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
-            {n_biglietti:0,cart:0,id:5,nome:"Rugantino al Sistina",classe_nome:"evento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
+            {n_biglietti:0,cart:0,id:1,nome:"Concerto Primo Maggio - Costo Biglietto: 20€",classe_nome:"evento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
+            {n_biglietti:0,cart:0,id:2,nome:"Boccea Street - Costo Biglietto: 14€",classe_nome:"evento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
+            {n_biglietti:0,cart:0,id:3,nome:"Festival delle Scienze - Costo Biglietto: 32€",classe_nome:"evento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
+            {n_biglietti:0,cart:0,id:4,nome:"Vinalia Priora - Costo Biglietto: 15€",classe_nome:"evento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
+            {n_biglietti:0,cart:0,id:5,nome:"Rugantino al Sistina - Costo Biglietto: 50€",classe_nome:"evento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
             ],
             numero_biglietti:[],
         }
@@ -146,12 +146,12 @@ app.component("museocrea",{
     data(){ //mettiamo tutti e varibiali che stanno nello script sopra
         return{
             nome_classi_eventi:[
-            {n_biglietti:0,cart:0,id:6,nome:"Musei Vaticani",classe_nome:"museo1",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
-            {n_biglietti:0,cart:0,id:7,nome:"Musei Capitolini",classe_nome:"museo2",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
-            {n_biglietti:0,cart:0,id:8,nome:"Galleria Borghese",classe_nome:"museo3",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
-            {n_biglietti:0,cart:0,id:9,nome:"Galleria Doria Pamphilj",classe_nome:"museo4",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
-            {n_biglietti:0,cart:0,id:10,nome:"Museo Nazionale di Arte Moderna e Contemporanea",classe_nome:"museo5",nome_funzioneI:() => {this.incrementaCounter10();},nome_funzioneD:() => {this.decrementaCounter10();}},
-            {n_biglietti:0,cart:0,id:11,nome:"MAXXI",classe_nome:"museo6",nome_funzioneI:() => {this.incrementaCounter11();},nome_funzioneD:() => {this.decrementaCounter11();}},
+            {n_biglietti:0,cart:0,id:6,nome:"Musei Vaticani - Costo Biglietto: 18€",classe_nome:"museo1",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
+            {n_biglietti:0,cart:0,id:7,nome:"Musei Capitolini - Costo Biglietto: 11€",classe_nome:"museo2",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
+            {n_biglietti:0,cart:0,id:8,nome:"Galleria Borghese - Costo Biglietto: 13€",classe_nome:"museo3",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
+            {n_biglietti:0,cart:0,id:9,nome:"Galleria Doria Pamphilj - Costo Biglietto: 15€",classe_nome:"museo4",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
+            {n_biglietti:0,cart:0,id:10,nome:"Museo Nazionale di Arte Moderna e Contemporanea - Costo Biglietto: 10€",classe_nome:"museo5",nome_funzioneI:() => {this.incrementaCounter10();},nome_funzioneD:() => {this.decrementaCounter10();}},
+            {n_biglietti:0,cart:0,id:11,nome:"MAXXI - Costo Biglietto: 12€",classe_nome:"museo6",nome_funzioneI:() => {this.incrementaCounter11();},nome_funzioneD:() => {this.decrementaCounter11();}},
         ],
             numero_biglietti:[],
         }
@@ -278,15 +278,15 @@ app.component("monumenticrea",{
     data(){ //mettiamo tutti e varibiali che stanno nello script sopra
         return{
             nome_classi_eventi:[
-            {n_biglietti:0,cart:0,id:12,nome:"Colosseo",classe_nome:"monumento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
-            {n_biglietti:0,cart:0,id:13,nome:"Piazza di spagna",classe_nome:"monumento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
-            {n_biglietti:0,cart:0,id:14,nome:"Ara Pacis",classe_nome:"monumento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
-            {n_biglietti:0,cart:0,id:15,nome:"San Pietro",classe_nome:"monumento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
-            {n_biglietti:0,cart:0,id:16,nome:"Piazza Navona",classe_nome:"monumento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
-            {n_biglietti:0,cart:0,id:17,nome:"Pantheon",classe_nome:"munumento6",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
-            {n_biglietti:0,cart:0,id:18,nome:"Castel Sant'Angelo",classe_nome:"monumento7",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
-            {n_biglietti:0,cart:0,id:19,nome:"Altare della Patria",classe_nome:"monumento8",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
-            {n_biglietti:0,cart:0,id:20,nome:"Piazza del Popolo",classe_nome:"monumento9",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
+            {n_biglietti:0,cart:0,id:12,nome:"Colosseo - Costo Biglietto: 16€",classe_nome:"monumento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
+            {n_biglietti:0,cart:0,id:13,nome:"Piazza di spagna - Costo Biglietto: 0€",classe_nome:"monumento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
+            {n_biglietti:0,cart:0,id:14,nome:"Ara Pacis - Costo Biglietto: 14€",classe_nome:"monumento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
+            {n_biglietti:0,cart:0,id:15,nome:"San Pietro - Costo Biglietto: 0€",classe_nome:"monumento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
+            {n_biglietti:0,cart:0,id:16,nome:"Piazza Navona - Costo Biglietto: 0€",classe_nome:"monumento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
+            {n_biglietti:0,cart:0,id:17,nome:"Pantheon - Costo Biglietto: 0€",classe_nome:"munumento6",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
+            {n_biglietti:0,cart:0,id:18,nome:"Castel Sant'Angelo - Costo Biglietto: 15€",classe_nome:"monumento7",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
+            {n_biglietti:0,cart:0,id:19,nome:"Altare della Patria - Costo Biglietto: 18€",classe_nome:"monumento8",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
+            {n_biglietti:0,cart:0,id:20,nome:"Piazza del Popolo - Costo Biglietto: 0€",classe_nome:"monumento9",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
         ],  
             numero_biglietti:[],
         }
