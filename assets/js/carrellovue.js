@@ -1,5 +1,20 @@
 
 var cart_tot=0;
+var cart11=0;
+var cart12=0;
+var cart13=0;
+var cart14=0;
+var cart15=0;
+var cart21=0;
+var cart22=0;
+var cart23=0;
+var cart24=0;
+var cart25=0;
+var cart26=0;
+var cart31=0;
+var cart32=0;
+var cart33=0;
+var cart34=0;
 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
 let app =Vue.createApp({ //costruttore
     data: function(){ //mettiamo coppie chiave-valore
@@ -39,19 +54,14 @@ app.component("eventocrea",{
             {n_biglietti:0,cart:0,id:5,nome:"Rugantino al Sistina - Costo Biglietto: 50€",classe_nome:"evento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
             ],
             numero_biglietti:[],
-            cart11:0,
-            cart12:0,
-            cart13:0,
-            cart14:0,
-            cart15:0,
         }
         
     },
     methods:{ 
         incrementaCounter1(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
-                this.cart11++;
-                console.log(this.cart11);
+                cart11++;
+                $("#evento1").val(cart11);
                 this.nome_classi_eventi[0].cart++;
                 cart_tot+=20;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -61,7 +71,8 @@ app.component("eventocrea",{
         },
         decrementaCounter1(){
             if(this.nome_classi_eventi[0].cart>0){
-                this.cart11--;
+                cart11--;
+                $("#evento1").val(cart11);
                 this.nome_classi_eventi[0].cart--;
                 cart_tot-=20;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -70,7 +81,8 @@ app.component("eventocrea",{
         },
         incrementaCounter2(){
             if(this.nome_classi_eventi[1].n_biglietti>0){
-                this.cart12++;
+                cart12++;
+                $("#evento2").val(cart12);
                 this.nome_classi_eventi[1].cart++;
                 cart_tot+=14;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -79,7 +91,8 @@ app.component("eventocrea",{
         },
         decrementaCounter2(){
             if(this.nome_classi_eventi[1].cart>0){
-                this.cart12--;
+                cart12--;
+                $("#evento2").val(cart12);
                 this.nome_classi_eventi[1].cart--;
                 cart_tot-=14;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -88,7 +101,8 @@ app.component("eventocrea",{
         },
         incrementaCounter3(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
-                this.cart13++;
+                cart13++;
+                $("#evento3").val(cart13);
                 this.nome_classi_eventi[2].cart++;
                 this.cart_tot+=32;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -97,7 +111,8 @@ app.component("eventocrea",{
         },
         decrementaCounter3(){
             if(this.nome_classi_eventi[2].cart>0){
-                this.cart13--;
+                cart13--;
+                $("#evento3").val(cart13);
                 this.nome_classi_eventi[2].cart--;
                 this.cart_tot-=32;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -106,7 +121,8 @@ app.component("eventocrea",{
         },
         incrementaCounter4(){
             if(this.nome_classi_eventi[3].n_biglietti>0){
-                this.cart14++;
+                cart14++;
+                $("#evento4").val(cart14);
                 this.nome_classi_eventi[3].cart++;
                 this.cart_tot+=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -115,7 +131,8 @@ app.component("eventocrea",{
         },
         decrementaCounter4(){
             if(this.nome_classi_eventi[3].cart>0){
-                this.cart14--;
+                cart14--;
+                $("#evento4").val(cart14);
                 this.nome_classi_eventi[3].cart--;
                 this.cart_tot-=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -124,7 +141,8 @@ app.component("eventocrea",{
         },
         incrementaCounter5(){
             if(this.nome_classi_eventi[4].n_biglietti>0){
-                this.cart15++;
+                cart15++;
+                $("#evento5").val(cart15);
                 this.nome_classi_eventi[4].cart++;
                 this.cart_tot+=50;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -133,7 +151,8 @@ app.component("eventocrea",{
         },
         decrementaCounter5(){
             if(this.nome_classi_eventi[4].cart>0){
-                this.cart15--;
+                cart15--;
+                $("#evento5").val(cart15);
                 this.nome_classi_eventi[4].cart--;
                 this.cart_tot-=50;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -182,19 +201,14 @@ app.component("museocrea",{
             {n_biglietti:0,cart:0,id:11,nome:"MAXXI - Costo Biglietto: 12€",classe_nome:"museo6",nome_funzioneI:() => {this.incrementaCounter11();},nome_funzioneD:() => {this.decrementaCounter11();}},
         ],
             numero_biglietti:[],
-            cart21:0,
-            cart22:0,
-            cart23:0,
-            cart24:0,
-            cart25:0,
-            cart26:0,
         }
         
     },
     methods:{ 
         incrementaCounter6(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
-                this.cart21++;
+                cart21++;
+                $("#museo1").val(cart21);
                 this.nome_classi_eventi[0].cart++;
                 this.cart_tot+=18;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -204,7 +218,8 @@ app.component("museocrea",{
         },
         decrementaCounter6(){
             if(this.nome_classi_eventi[0].cart>0){
-                this.cart21--;
+                cart21--;
+                $("#museo1").val(cart21);
                 this.nome_classi_eventi[0].cart--;
                 this.cart_tot-=18;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -213,7 +228,8 @@ app.component("museocrea",{
         },
         incrementaCounter7(){
             if(this.nome_classi_eventi[1].n_biglietti>0){
-                this.cart22++;
+                cart22++;
+                $("#museo2").val(cart22);
                 this.nome_classi_eventi[1].cart++;
                 cart_tot+=11;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -222,7 +238,8 @@ app.component("museocrea",{
         },
         decrementaCounter7(){
             if(this.nome_classi_eventi[1].cart>0){
-                this.cart22--;
+                cart22--;
+                $("#museo2").val(cart22);
                 this.nome_classi_eventi[1].cart--;
                 cart_tot-=11;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -231,7 +248,8 @@ app.component("museocrea",{
         },
         incrementaCounter8(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
-                this.cart23++;
+                cart23++;
+                $("#museo3").val(cart23);
                 this.nome_classi_eventi[2].cart++;
                 cart_tot+=13;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -240,7 +258,8 @@ app.component("museocrea",{
         },
         decrementaCounter8(){
             if(this.nome_classi_eventi[2].cart>0){
-                this.cart23--;
+                cart23--;
+                $("#museo3").val(cart23);
                 this.nome_classi_eventi[2].cart--;
                 cart_tot-=13;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -249,7 +268,8 @@ app.component("museocrea",{
         },
         incrementaCounter9(){
             if(this.nome_classi_eventi[3].n_biglietti>0){
-                this.cart24++;
+                cart24++;
+                $("#museo4").val(cart24);
                 this.nome_classi_eventi[3].cart++;
                 cart_tot+=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -258,7 +278,8 @@ app.component("museocrea",{
         },
         decrementaCounter9(){
             if(this.nome_classi_eventi[3].cart>0){
-                this.cart24--;
+                cart24--;
+                $("#museo4").val(cart24);
                 this.nome_classi_eventi[3].cart--;
                 cart_tot-=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -267,7 +288,8 @@ app.component("museocrea",{
         },
         incrementaCounter10(){
             if(this.nome_classi_eventi[4].n_biglietti>0){
-                this.cart25++;
+                cart25++;
+                $("#museo5").val(cart25);
                 this.nome_classi_eventi[4].cart++;
                 cart_tot+=10;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -276,7 +298,8 @@ app.component("museocrea",{
         },
         decrementaCounter10(){
             if(this.nome_classi_eventi[4].cart>0){
-                this.cart25--;
+                cart25--;
+                $("#museo5").val(cart25);
                 this.nome_classi_eventi[4].cart--;
                 cart_tot-=10;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -285,7 +308,8 @@ app.component("museocrea",{
         },
         incrementaCounter11(){
             if(this.nome_classi_eventi[5].n_biglietti>0){
-                this.cart26++;
+                cart26++;
+                $("#museo6").val(cart26);
                 this.nome_classi_eventi[5].cart++;
                 cart_tot+=12;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -294,7 +318,8 @@ app.component("museocrea",{
         },
         decrementaCounter11(){
             if(this.nome_classi_eventi[5].cart>0){
-                this.cart26--;
+                cart26--;
+                $("#museo6").val(cart26);
                 this.nome_classi_eventi[5].cart--;
                 cart_tot-=12;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -342,17 +367,14 @@ app.component("monumenticrea",{
             {n_biglietti:0,cart:0,id:19,nome:"Altare della Patria - Costo Biglietto: 18€",classe_nome:"monumento8",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
         ],  
             numero_biglietti:[],
-            cart31:0,
-            cart32:0,
-            cart33:0,
-            cart34:0,
         }
         
     },
     methods:{ 
         incrementaCounter1(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
-                this.cart31++;
+                cart31++;
+                $("#monumento1").val(cart31);
                 this.nome_classi_eventi[0].cart++;
                 cart_tot+=16;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -362,7 +384,8 @@ app.component("monumenticrea",{
         },
         decrementaCounter1(){
             if(this.nome_classi_eventi[0].cart>0){
-                this.cart31--;
+                cart31--;
+                $("#monumento1").val(cart31);
                 this.nome_classi_eventi[0].cart--;
                 cart_tot-=16;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -371,7 +394,8 @@ app.component("monumenticrea",{
         },
         incrementaCounter3(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
-                this.cart32++;
+                cart32++;
+                $("#monumento2").val(cart32);
                 this.nome_classi_eventi[2].cart++;
                 cart_tot+=14;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -380,7 +404,8 @@ app.component("monumenticrea",{
         },
         decrementaCounter3(){
             if(this.nome_classi_eventi[2].cart>0){
-                this.cart32--;
+                cart32--;
+                $("#monumento2").val(cart32);
                 this.nome_classi_eventi[2].cart--;
                 cart_tot-=14;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -389,7 +414,8 @@ app.component("monumenticrea",{
         },
         incrementaCounter7(){
             if(this.nome_classi_eventi[6].n_biglietti>0){
-                this.cart35--;
+                cart34++;
+                $("#monumento4").val(cart34);
                 this.nome_classi_eventi[6].cart++;
                 cart_tot+=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -400,6 +426,7 @@ app.component("monumenticrea",{
         decrementaCounter7(){
             if(this.nome_classi_eventi[6].cart>0){
                 this.cart34--;
+                $("#monumento4").val(cart34);
                 this.nome_classi_eventi[6].cart--;
                 cart_tot-=15;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -408,7 +435,8 @@ app.component("monumenticrea",{
         },
         incrementaCounter8(){
             if(this.nome_classi_eventi[7].n_biglietti>0){
-                this.cart33++;
+                cart33++;
+                $("#monumento3").val(cart33);
                 this.nome_classi_eventi[7].cart++;
                 cart_tot+=18;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
@@ -417,7 +445,8 @@ app.component("monumenticrea",{
         },
         decrementaCounter8(){
             if(this.nome_classi_eventi[7].cart>0){
-                this.cart33--;
+                cart33--;
+                $("#monumento3").val(cart33);
                 this.nome_classi_eventi[7].cart--;
                 cart_tot-=18;
                 $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
