@@ -24,8 +24,9 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/account-dropdown-menu.css" rel="stylesheet">
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/salvo-pagina-interna.js"></script>
@@ -76,10 +77,37 @@
         </nav><!-- .navbar -->
 
         <div class="header-account-dropdowns d-flex align-items-center">
-          <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+          <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
           <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
-        </div>';
-      }
+        </div>
+
+        <div class="account-dropdown" id="dropdown">
+        <div class="account">
+          <div class="user-info">
+            <img src="assets/img/bg-colosseo.jpg" alt="">
+            <h4>Riccardo Aquilanti</h4>
+          </div>
+          <hr>
+          <h4>Biglietti Acquistati:</h4>
+          <ul>
+            <li><p>Concerto Primo Maggio: 0</p></li>
+            <li><p>Boccea Street: 0</p></li>
+            <li><p>Festival delle Scienze: 0</p></li>
+            <li><p>Vinalia Priora: 0</p></li>
+            <li><p>Rugantino al Sistina: 0</p></li>
+            <li><p>Musei Vaticani: 0</p></li>
+            <li><p>Galleria Borghese: 0</p></li>
+            <li><p>Galleria Doria Pamphilj: 0</p></li>
+            <li><p>Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
+            <li><p>MAXXI: 0</p></li>
+            <li><p>Colosseo: 0</p></li>
+            <li><p>Ara Pacis: 0</p></li>
+            <li><p>Castel Sant\'Angelo: 0</p></li>
+            <li><p>Altare della Patria: 0</p></li>
+            </ul>
+        </div>
+      </div>'
+      ;}
       ?>
   </header><!-- End Header Section -->
 
@@ -87,7 +115,7 @@
   <section id="home" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Life In Rome</h1>
-      <h2>Un sito dove esplorare e conoscere gli eventi, i musei, i monumenti e le aree verdi della nostra città.</h2>
+      <h2>Esplora il patrimonio artistico e naturale della città eterna e acquista biglietti per visitare le meraviglie senza tempo nel mondo dell'arte e della storia.</h2>
       
       <?php
         if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
@@ -548,7 +576,7 @@
         </div>
 
       </div>
-    </section><!-- End testimonial Section -->
+    </section><!-- End Aree Verdi Section -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -606,7 +634,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -614,7 +641,14 @@
   <script src="assets/js/label-behaviour.js"></script>
 
   <script>textFit(document.querySelector("h1"));</script>
-
+  
+  <script>
+    let dropdown = document.getElementById("dropdown");
+    
+    function toggleMenu(){
+      dropdown.classList.toggle("open");
+    }
+  </script>
 </body>
 
 </html>

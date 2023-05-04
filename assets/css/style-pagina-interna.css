@@ -622,7 +622,8 @@ h1,h2,h3,h4,p{
 }
 
 .row{
-   margin-bottom: 0px !important;
+    height: 100vh;
+    margin-bottom: 0px !important;
 }
 
 .terza{
@@ -645,8 +646,9 @@ h1,h2,h3,h4,p{
 }
 
 .img-terza{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     filter: brightness(70%);
 }
 
@@ -660,46 +662,32 @@ h1,h2,h3,h4,p{
     }
 }
 
-.text-center {
-    text-align: center !important;
+.biglietti-orari{
+    height: 100vh;
 }
 
-.justify-content-center {
-    justify-content: center !important;
+.btn-touchspin{
+    background: rgb(130, 0, 22);
+    backdrop-filter: blur(30px);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .5);
 }
 
-.align-items-center {
-    align-items: center !important;
+.btn-touchspin:hover{
+    background: rgb(130, 0, 22);
+    border: 2px solid #fff;
+    color: #fff;
 }
 
-.col-xl-4 {
-    flex: 0 0 auto;
-    width: 33%;
+#compra{
+    background-color: rgb(130, 0, 22);
+    color: white;
 }
-.col-xl-8 {
-    flex: 0 0 auto; /*comportamento flessibilita oggetto*/
-    width: 66%; /*grandezza*/
-}
-.col-lg-5 {
-    flex: 0 0 auto;
-    width: 41%;
-}
+
 .col-lg-6 {
     /* padding: 0 !important; */
     flex: 0 0 auto;
     width: 50%;
-}
-.col-lg-7 {
-    flex: 0 0 auto;
-    width: 58%;
-}
-
-.h-100 {
-    height: 100% !important;
-}
-
-.d-md-flex {
-    display: flex !important;
 }
 
 .order-lg-first {

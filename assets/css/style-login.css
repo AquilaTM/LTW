@@ -45,6 +45,7 @@ body {
   align-items: center;
   transition: height .2s ease;
   overflow: hidden;
+  margin: 20px;
 }
 
 .wrapper.active {
@@ -127,7 +128,7 @@ body {
   position: absolute;
   right: 8px;
   font-size: 1em;
-  color: #ddd;
+  color: rgb(221, 221, 221);
   margin-top: 12px;
 }
 
@@ -139,6 +140,12 @@ body {
   height: 50px;
   border-bottom: 2px solid #ddd;
   margin-top: 30px;
+}
+
+.input-box-nc:first-child{
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(221,221,221), rgba(221,221,221) 95%, rgba(221,221,221,0) 95.1%, rgba(221, 221, 221, 0) 100%);
+  border-image-slice: 1;
 }
 
 .input-box-nc label {

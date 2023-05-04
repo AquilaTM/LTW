@@ -52,13 +52,14 @@
           <li><a class="nav-link" href="#introduction">Introduzione</a></li>
           <li><a class="nav-link" href="#location">Posizione</a></li>
           <li><a class="nav-link" href="#description">Descrizione</a></li>
-          <li><a class="nav-link" href="#musei">Biglietti e Orari</a></li>
+          <li><a class="nav-link" href="#orari">Orari</a></li>
+          <li><a class="nav-link" href="#biglietti">Biglietti</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        <a href="carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>
 
     </div>
@@ -106,8 +107,9 @@
                 </p>
             </div>
         </div>
+        <div class="biglietti-orari">
         <!-- riga uno-->
-        <div class="row justify-content-center">
+        <div id="orari" class="row justify-content-center">
             <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
             <div class="col-lg-6">
                 <div class="terza text-center text-lg-left">
@@ -117,7 +119,7 @@
             </div>
         </div>
         <!-- riga due-->
-        <div id="biglietto"class="row justify-content-center">
+        <div id="biglietti"class="row justify-content-center">
             <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="terza text-center h-100">
@@ -127,9 +129,9 @@
                     margin-left: auto;
                     margin-right: auto;">
                         <p>Compra biglietti: </p>
-                        <button id="bottone_meno" class="btn btn-danger" type="button" data-touchspin-down>-</button>
-                        <input id="contatore"  value="0" class="form-control text-center" data-touchspin-input>
-                        <button id="bottone_piu" class="btn btn-primary" type="button" data-touchspin-up>+</button>
+                        <button id="bottone_meno" class="btn btn-touchspin"type="button" data-touchspin-down>-</button>
+                        <input id="contatore"type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
+                        <button id="bottone_piu" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
                     <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
