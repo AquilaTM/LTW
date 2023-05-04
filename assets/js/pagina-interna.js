@@ -13,16 +13,16 @@ $(document).ready(function(){
 
        var mostraTag = localStorage.getItem("vedo"); 
        if (mostraTag === "true") {
-              $("#biglietto").show();
+              $("#biglietti").show();
         } else {
-              $("#biglietto").hide();
+              $("#biglietti").hide();
         }
       var conta=0;
       var conta_tot=0;
       var contatore_max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
       var max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
       $("#importo").text("Importo totale: "+conta_tot+"€");
-      
+
       if ( contatore_max_numero_biglietti>5) {
         $("#disponibile").show();
         $("#ultimi").hide();
