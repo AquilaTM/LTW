@@ -1,0 +1,45 @@
+.account-dropdown{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.account-dropdown.open{
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ .account{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+ }
+
+ .user-info{
+    display: flex;
+    align-items: center;
+ }
+
+ .user-info h4{
+    font-weight: 500;
+ }
+
+ .user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+ }
+
+.account hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: #aaa;
+    margin: 15px 0 10px;
+}

@@ -121,8 +121,8 @@ a, a:hover {
 .acquisto-biglietti{
   display: flex;
   justify-content:space-between;
-  width: 250px;
-  
+  width: 300px;
+  right: 0;
 }
 
 .btn-touchspin{
@@ -140,4 +140,17 @@ a, a:hover {
 .btn-acquista{
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .eventi li div{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .acquisto-biglietti{
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+    right: 0;
+  }
 }
