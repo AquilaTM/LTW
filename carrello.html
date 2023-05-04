@@ -17,6 +17,7 @@
     <!-- Our CSS Files -->
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/style-carrello.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://unpkg.com/vue"></script>
 </head>
@@ -79,22 +80,22 @@
             </div>
         </div>
         <form action="carrello.php" method="POST">
-            <div class="btn-acquista"><button  class="my-5 text-center btn btn-primary">Acquista <small>(Importo totale: 0€)</small></button></div>
-            <input name="concerto-primo-maggio" :value="cart11" type="hidden"></input>
-            <input name="boccea-street" :value="cart12" type="hidden"></input>
-            <input name="festival-delle-scienze" :value="cart13" type="hidden"></input>
-            <input name="vinalia-priora" :value="cart14" type="hidden"></input>
-            <input name="rugantino-al-sistina" :value="cart15" type="hidden"></input>
-            <input name="musei-vaticani" :value="cart21" type="hidden"></input>
-            <input name="musei-capitolini" :value="cart22" type="hidden"></input>
-            <input name="galleria-borghese" :value="cart23" type="hidden"></input>
-            <input name="galleria-doria-pamphilj" :value="cart24" type="hidden"></input>
-            <input name="museo-nazionale-di-arte-moderna" :value="cart25" type="hidden"></input>
-            <input name="maxxi" :value="cart26" type="hidden"></input>
-            <input name="colosseo" :value="cart31" type="hidden"></input>
-            <input name="ara-pacis" :value="cart32" type="hidden"></input>
-            <input name="altare-della-patria" :value="cart33" type="hidden"></input>
-            <input name="castel-sant-angelo" :value="cart34" type="hidden"></input>
+            <div class="btn-acquista"><button  class="my-5 text-center btn btn-primary">Acquista <small id="importo-totale">(Importo totale:0€)</small></button></div>
+            <input id=evento1 name="concerto-primo-maggio" value="0" type="hidden"></input>
+            <input id=evento2 name="boccea-street" value="0" type="hidden"></input>
+            <input id=evento3 name="festival-delle-scienze" value="0" type="hidden"></input>
+            <input id=evento4 name="vinalia-priora" value="0" type="hidden"></input>
+            <input id=evento5 name="rugantino-al-sistina" value="0" type="hidden" ></input>
+            <input id=museo1 name="musei-vaticani" value="0" type="hidden"></input>
+            <input id=museo2 name="musei-capitolini" value="0" type="hidden"></input>
+            <input id=museo3 name="galleria-borghese" value="0" type="hidden"></input>
+            <input id=museo4 name="galleria-doria-pamphilj" value="0" type="hidden"></input>
+            <input id=museo5 name="museo-nazionale-di-arte-moderna" value="0" type="hidden"></input>
+            <input id=museo6 name="maxxi" value="0" type="hidden"></input>
+            <input id=monumento1 name="colosseo" value="0" type="hidden"></input>
+            <input id=monumento2 name="ara-pacis" value="0" type="hidden"></input>
+            <input id=monumento3 name="altare-della-patria" value="0" type="hidden"></input>
+            <input id=monumento4 name="castel-sant-angelo" value="0" type="hidden"></input>
         </form>
     </div>
 

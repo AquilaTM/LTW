@@ -1,16 +1,26 @@
 
+var cart_tot=0;
+var cart11=0;
+var cart12=0;
+var cart13=0;
+var cart14=0;
+var cart15=0;
+var cart21=0;
+var cart22=0;
+var cart23=0;
+var cart24=0;
+var cart25=0;
+var cart26=0;
+var cart31=0;
+var cart32=0;
+var cart33=0;
+var cart34=0;
+$('#importo-totale').text('Importo totale: ' + cart_tot + '€');
 let app =Vue.createApp({ //costruttore
     data: function(){ //mettiamo coppie chiave-valore
        return{
-          cart1:5,
-          cart2:5,
-          cart3:5,
-          cart4:5,
-          cart5:5,
-          cart_tot:0,
         }
     },
-    
     
     
    
@@ -50,82 +60,102 @@ app.component("eventocrea",{
     methods:{ 
         incrementaCounter1(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
-                this.cart1++;
+                cart11++;
+                $("#evento1").val(cart11);
                 this.nome_classi_eventi[0].cart++;
-                this.cart_tot++;
-                console.log(this.nome_classi_eventi[0].cart);
+                cart_tot+=20;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
+                console.log(cart_tot);
                 this.nome_classi_eventi[0].n_biglietti--;
             }
         },
         decrementaCounter1(){
             if(this.nome_classi_eventi[0].cart>0){
-                this.cart1--;
+                cart11--;
+                $("#evento1").val(cart11);
                 this.nome_classi_eventi[0].cart--;
-                this.cart_tot--;
+                cart_tot-=20;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[0].n_biglietti++;
             }
         },
         incrementaCounter2(){
             if(this.nome_classi_eventi[1].n_biglietti>0){
-                this.cart2++;
+                cart12++;
+                $("#evento2").val(cart12);
                 this.nome_classi_eventi[1].cart++;
-                this.cart_tot++;
+                cart_tot+=14;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[1].n_biglietti--;
             }
         },
         decrementaCounter2(){
             if(this.nome_classi_eventi[1].cart>0){
-                this.cart2--;
+                cart12--;
+                $("#evento2").val(cart12);
                 this.nome_classi_eventi[1].cart--;
-                this.cart_tot--;
+                cart_tot-=14;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[1].n_biglietti++;
             }
         },
         incrementaCounter3(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
-                this.cart3++;
+                cart13++;
+                $("#evento3").val(cart13);
                 this.nome_classi_eventi[2].cart++;
-                this.cart_tot++;
+                this.cart_tot+=32;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti--;
             }
         },
         decrementaCounter3(){
             if(this.nome_classi_eventi[2].cart>0){
-                this.cart3--;
+                cart13--;
+                $("#evento3").val(cart13);
                 this.nome_classi_eventi[2].cart--;
-                this.cart_tot--;
+                this.cart_tot-=32;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti++;
             }
         },
         incrementaCounter4(){
             if(this.nome_classi_eventi[3].n_biglietti>0){
-                this.cart4++;
+                cart14++;
+                $("#evento4").val(cart14);
                 this.nome_classi_eventi[3].cart++;
-                this.cart_tot++;
+                this.cart_tot+=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[3].n_biglietti--;
             }
         },
         decrementaCounter4(){
             if(this.nome_classi_eventi[3].cart>0){
-                this.cart4--;
+                cart14--;
+                $("#evento4").val(cart14);
                 this.nome_classi_eventi[3].cart--;
-                this.cart_tot--;
+                this.cart_tot-=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[3].n_biglietti++;
             }
         },
         incrementaCounter5(){
             if(this.nome_classi_eventi[4].n_biglietti>0){
-                this.cart5++;
+                cart15++;
+                $("#evento5").val(cart15);
                 this.nome_classi_eventi[4].cart++;
-                this.cart_tot++;
+                this.cart_tot+=50;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[4].n_biglietti--;
             }
         },
         decrementaCounter5(){
             if(this.nome_classi_eventi[4].cart>0){
-                this.cart5--;
+                cart15--;
+                $("#evento5").val(cart15);
                 this.nome_classi_eventi[4].cart--;
-                this.cart_tot--;
+                this.cart_tot-=50;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[4].n_biglietti++;
             }
         },
@@ -177,86 +207,122 @@ app.component("museocrea",{
     methods:{ 
         incrementaCounter6(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
+                cart21++;
+                $("#museo1").val(cart21);
                 this.nome_classi_eventi[0].cart++;
-                this.cart_tot++;
+                this.cart_tot+=18;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 console.log(this.nome_classi_eventi[0].cart);
                 this.nome_classi_eventi[0].n_biglietti--;
             }
         },
         decrementaCounter6(){
             if(this.nome_classi_eventi[0].cart>0){
+                cart21--;
+                $("#museo1").val(cart21);
                 this.nome_classi_eventi[0].cart--;
-                this.cart_tot--;
+                this.cart_tot-=18;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[0].n_biglietti++;
             }
         },
         incrementaCounter7(){
             if(this.nome_classi_eventi[1].n_biglietti>0){
+                cart22++;
+                $("#museo2").val(cart22);
                 this.nome_classi_eventi[1].cart++;
-                this.cart_tot++;
+                cart_tot+=11;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[1].n_biglietti--;
             }
         },
         decrementaCounter7(){
             if(this.nome_classi_eventi[1].cart>0){
+                cart22--;
+                $("#museo2").val(cart22);
                 this.nome_classi_eventi[1].cart--;
-                this.cart_tot--;
+                cart_tot-=11;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[1].n_biglietti++;
             }
         },
         incrementaCounter8(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
+                cart23++;
+                $("#museo3").val(cart23);
                 this.nome_classi_eventi[2].cart++;
-                this.cart_tot++;
+                cart_tot+=13;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti--;
             }
         },
         decrementaCounter8(){
             if(this.nome_classi_eventi[2].cart>0){
+                cart23--;
+                $("#museo3").val(cart23);
                 this.nome_classi_eventi[2].cart--;
-                this.cart_tot--;
+                cart_tot-=13;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti++;
             }
         },
         incrementaCounter9(){
             if(this.nome_classi_eventi[3].n_biglietti>0){
+                cart24++;
+                $("#museo4").val(cart24);
                 this.nome_classi_eventi[3].cart++;
-                this.cart_tot++;
+                cart_tot+=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[3].n_biglietti--;
             }
         },
         decrementaCounter9(){
             if(this.nome_classi_eventi[3].cart>0){
+                cart24--;
+                $("#museo4").val(cart24);
                 this.nome_classi_eventi[3].cart--;
-                this.cart_tot--;
+                cart_tot-=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[3].n_biglietti++;
             }
         },
         incrementaCounter10(){
             if(this.nome_classi_eventi[4].n_biglietti>0){
+                cart25++;
+                $("#museo5").val(cart25);
                 this.nome_classi_eventi[4].cart++;
-                this.cart_tot++;
+                cart_tot+=10;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[4].n_biglietti--;
             }
         },
         decrementaCounter10(){
             if(this.nome_classi_eventi[4].cart>0){
+                cart25--;
+                $("#museo5").val(cart25);
                 this.nome_classi_eventi[4].cart--;
-                this.cart_tot--;
+                cart_tot-=10;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[4].n_biglietti++;
             }
         },
         incrementaCounter11(){
             if(this.nome_classi_eventi[5].n_biglietti>0){
+                cart26++;
+                $("#museo6").val(cart26);
                 this.nome_classi_eventi[5].cart++;
-                this.cart_tot++;
+                cart_tot+=12;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[5].n_biglietti--;
             }
         },
         decrementaCounter11(){
             if(this.nome_classi_eventi[5].cart>0){
+                cart26--;
+                $("#museo6").val(cart26);
                 this.nome_classi_eventi[5].cart--;
-                this.cart_tot--;
+                cart_tot-=12;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[5].n_biglietti++;
             }
         },
@@ -296,14 +362,9 @@ app.component("monumenticrea",{
         return{
             nome_classi_eventi:[
             {n_biglietti:0,cart:0,id:12,nome:"Colosseo - Costo Biglietto: 16€",classe_nome:"monumento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
-            {n_biglietti:0,cart:0,id:13,nome:"Piazza di spagna - Costo Biglietto: 0€",classe_nome:"monumento2",nome_funzioneI:() => {this.incrementaCounter2();},nome_funzioneD:() => {this.decrementaCounter2();}},
             {n_biglietti:0,cart:0,id:14,nome:"Ara Pacis - Costo Biglietto: 14€",classe_nome:"monumento3",nome_funzioneI:() => {this.incrementaCounter3();},nome_funzioneD:() => {this.decrementaCounter3();}},
-            {n_biglietti:0,cart:0,id:15,nome:"San Pietro - Costo Biglietto: 0€",classe_nome:"monumento4",nome_funzioneI:() => {this.incrementaCounter4();},nome_funzioneD:() => {this.decrementaCounter4();}},
-            {n_biglietti:0,cart:0,id:16,nome:"Piazza Navona - Costo Biglietto: 0€",classe_nome:"monumento5",nome_funzioneI:() => {this.incrementaCounter5();},nome_funzioneD:() => {this.decrementaCounter5();}},
-            {n_biglietti:0,cart:0,id:17,nome:"Pantheon - Costo Biglietto: 0€",classe_nome:"munumento6",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
             {n_biglietti:0,cart:0,id:18,nome:"Castel Sant'Angelo - Costo Biglietto: 15€",classe_nome:"monumento7",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
             {n_biglietti:0,cart:0,id:19,nome:"Altare della Patria - Costo Biglietto: 18€",classe_nome:"monumento8",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
-            {n_biglietti:0,cart:0,id:20,nome:"Piazza del Popolo - Costo Biglietto: 0€",classe_nome:"monumento9",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
         ],  
             numero_biglietti:[],
         }
@@ -312,130 +373,84 @@ app.component("monumenticrea",{
     methods:{ 
         incrementaCounter1(){
             if(this.nome_classi_eventi[0].n_biglietti>0){
+                cart31++;
+                $("#monumento1").val(cart31);
                 this.nome_classi_eventi[0].cart++;
-                this.cart_tot++;
+                cart_tot+=16;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 console.log(this.nome_classi_eventi[0].cart);
                 this.nome_classi_eventi[0].n_biglietti--;
             }
         },
         decrementaCounter1(){
             if(this.nome_classi_eventi[0].cart>0){
+                cart31--;
+                $("#monumento1").val(cart31);
                 this.nome_classi_eventi[0].cart--;
-                this.cart_tot--;
+                cart_tot-=16;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[0].n_biglietti++;
-            }
-        },
-        incrementaCounter2(){
-            if(this.nome_classi_eventi[1].n_biglietti>0){
-                this.nome_classi_eventi[1].cart++;
-                this.cart_tot++;
-                this.nome_classi_eventi[1].n_biglietti--;
-            }
-        },
-        decrementaCounter2(){
-            if(this.nome_classi_eventi[1].cart>0){
-                this.nome_classi_eventi[1].cart--;
-                this.cart_tot--;
-                this.nome_classi_eventi[1].n_biglietti++;
             }
         },
         incrementaCounter3(){
             if(this.nome_classi_eventi[2].n_biglietti>0){
+                cart32++;
+                $("#monumento2").val(cart32);
                 this.nome_classi_eventi[2].cart++;
-                this.cart_tot++;
+                cart_tot+=14;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti--;
             }
         },
         decrementaCounter3(){
             if(this.nome_classi_eventi[2].cart>0){
+                cart32--;
+                $("#monumento2").val(cart32);
                 this.nome_classi_eventi[2].cart--;
-                this.cart_tot--;
+                cart_tot-=14;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[2].n_biglietti++;
-            }
-        },
-        incrementaCounter4(){
-            if(this.nome_classi_eventi[3].n_biglietti>0){
-                this.nome_classi_eventi[3].cart++;
-                this.cart_tot++;
-                this.nome_classi_eventi[3].n_biglietti--;
-            }
-        },
-        decrementaCounter4(){
-            if(this.nome_classi_eventi[3].cart>0){
-                this.nome_classi_eventi[3].cart--;
-                this.cart_tot--;
-                this.nome_classi_eventi[3].n_biglietti++;
-            }
-        },
-        incrementaCounter5(){
-            if(this.nome_classi_eventi[4].n_biglietti>0){
-                this.nome_classi_eventi[4].cart++;
-                this.cart_tot++;
-                this.nome_classi_eventi[4].n_biglietti--;
-            }
-        },
-        decrementaCounter5(){
-            if(this.nome_classi_eventi[4].cart>0){
-                this.nome_classi_eventi[4].cart--;
-                this.cart_tot--;
-                this.nome_classi_eventi[4].n_biglietti++;
-            }
-        },
-        incrementaCounter6(){
-            if(this.nome_classi_eventi[5].n_biglietti>0){
-                this.nome_classi_eventi[5].cart++;
-                this.cart_tot++;
-                this.nome_classi_eventi[5].n_biglietti--;
-            }
-        },
-        decrementaCounter6(){
-            if(this.nome_classi_eventi[5].cart>0){
-                this.nome_classi_eventi[5].cart--;
-                this.cart_tot--;
-                this.nome_classi_eventi[5].n_biglietti++;
             }
         },
         incrementaCounter7(){
             if(this.nome_classi_eventi[6].n_biglietti>0){
+                cart34++;
+                $("#monumento4").val(cart34);
                 this.nome_classi_eventi[6].cart++;
-                this.cart_tot++;
+                cart_tot+=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 console.log(this.nome_classi_eventi[0].cart);
                 this.nome_classi_eventi[6].n_biglietti--;
             }
         },
         decrementaCounter7(){
             if(this.nome_classi_eventi[6].cart>0){
+                this.cart34--;
+                $("#monumento4").val(cart34);
                 this.nome_classi_eventi[6].cart--;
-                this.cart_tot--;
+                cart_tot-=15;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[6].n_biglietti++;
             }
         },
         incrementaCounter8(){
             if(this.nome_classi_eventi[7].n_biglietti>0){
+                cart33++;
+                $("#monumento3").val(cart33);
                 this.nome_classi_eventi[7].cart++;
-                this.cart_tot++;
+                cart_tot+=18;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[7].n_biglietti--;
             }
         },
         decrementaCounter8(){
             if(this.nome_classi_eventi[7].cart>0){
+                cart33--;
+                $("#monumento3").val(cart33);
                 this.nome_classi_eventi[7].cart--;
-                this.cart_tot--;
+                cart_tot-=18;
+                $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
                 this.nome_classi_eventi[7].n_biglietti++;
-            }
-        },
-        incrementaCounter9(){
-            if(this.nome_classi_eventi[8].n_biglietti>0){
-                this.nome_classi_eventi[8].cart++;
-                this.cart_tot++;
-                this.nome_classi_eventi[8].n_biglietti--;
-            }
-        },
-        decrementaCounter9(){
-            if(this.nome_classi_eventi[8].cart>0){
-                this.nome_classi_eventi[8].cart--;
-                this.cart_tot--;
-                this.nome_classi_eventi[8].n_biglietti++;
             }
         },
         
@@ -445,14 +460,9 @@ app.component("monumenticrea",{
             console.log(data); 
             this.numero_biglietti = JSON.parse(data);
             this.nome_classi_eventi[0].n_biglietti=this.numero_biglietti.monumento1;
-            this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.monumento2;
-            this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.monumento3;
-            this.nome_classi_eventi[3].n_biglietti=this.numero_biglietti.monumento4;
-            this.nome_classi_eventi[4].n_biglietti=this.numero_biglietti.monumento5;
-            this.nome_classi_eventi[5].n_biglietti=this.numero_biglietti.monumento6;
-            this.nome_classi_eventi[6].n_biglietti=this.numero_biglietti.monumento7;
-            this.nome_classi_eventi[7].n_biglietti=this.numero_biglietti.monumento8;
-            this.nome_classi_eventi[8].n_biglietti=this.numero_biglietti.monumento9;
+            this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.monumento3;
+            this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.monumento7;
+            this.nome_classi_eventi[3].n_biglietti=this.numero_biglietti.monumento8;
         
             
         })
