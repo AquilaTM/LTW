@@ -69,13 +69,13 @@ if ($count > 0) {
             museo5 =  museo5+$conta_museo5,
             museo6 = museo6+$conta_museo6,
             monumento1 =monumento1+ $conta_monumento1,
-            monumento2 = monumento2+$conta_monumento2,
+            monumento2 =monumento2+$conta_monumento2,
             monumento3 =monumento3+ $conta_monumento3,
             monumento4 =monumento4+ $conta_monumento4
           WHERE email = $1";
 
     $result = pg_query_params($dbconn, $query, [$email]);
-    $query = "UPDATE biglietto SET 
+    $query = "UPDATE biglietti SET 
                 evento1=evento1-$conta_evento1,
                 evento2=evento2-$conta_evento2,
                 evento3=evento3-$conta_evento3,
@@ -116,26 +116,7 @@ if ($count > 0) {
     $result = pg_query($dbconn, $query);
 }
 
-$query = "SELECT * FROM acquista WHERE email = '$email'";
-$result = pg_query($dbconn, $query);
-$row = pg_fetch_assoc($result);
 
-if ($row) {
-    $_SESSION['concerto-primo-maggio'] = $row['evento1'];
-    $_SESSION['boccea-street'] = $row['evento2'];
-    $_SESSION['festival-delle-scienze'] = $row['evento3'];
-    $_SESSION['vinalia-priora'] = $row['evento4'];
-    $_SESSION['rugantino-al-sistina'] = $row['evento5'];
-    $_SESSION['musei-vaticani'] = $row['museo1'];
-    $_SESSION['musei-capitolini'] = $row['museo2'];
-    $_SESSION['galleria-borghese'] = $row['museo3'];
-    $_SESSION['galleria-doria-pamphilj'] = $row['museo4'];
-    $_SESSION['museo-nazionale-di-arte-moderna'] = $row['museo5'];
-    $_SESSION['colosseo'] = $row['monumento1'];
-    $_SESSION['ara-pacis'] = $row['monumento2'];
-    $_SESSION['altare-della-patria'] = $row['monumento3'];
-    $_SESSION['castel-sant-angelo'] = $row['monumento4'];
-}
 
 
 ?>

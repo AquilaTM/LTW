@@ -62,24 +62,19 @@ app.component("eventocrea",{
     created() {
         if(tipo=="Concerto Primo Maggio" ){
             cart11=contatore_iniziale;
-            $("#evento1").val(contatore_iniziale);
             this.nome_classi_eventi[0].cart=contatore_iniziale;
         }else if(tipo=="Bocccea Street"){
             cart12=contatore_iniziale;
-            $("#evento2").val(contatore_iniziale);
             entrato=false;
             this.nome_classi_eventi[1].cart=contatore_iniziale;
         }else if(tipo=="Festival Delle Scienze"){
             cart13=contatore_iniziale;
-            $("#evento3").val(contatore_iniziale);
             this.nome_classi_eventi[2].cart=contatore_iniziale;
         }else if(tipo=="Vinalia Priora"&&p=="Vinalia Priora" && entrato){
             cart14=contatore_iniziale;
-            $("#evento4").val(contatore_iniziale);
             this.nome_classi_eventi[3].cart=contatore_iniziale;
         }else if(tipo=="Rugantino al Sistina"&&p=="Rugantino al Sistina"&& entrato ){
             cart15=contatore_iniziale;
-            $("#evento5").val(contatore_iniziale);
             this.nome_classi_eventi[4].cart=contatore_iniziale;
         }
     },
@@ -273,26 +268,22 @@ app.component("museocrea",{
         if (tipo === "Musei Vaticani") {
           cart21=contatore_iniziale;
           this.nome_classi_eventi[0].cart=contatore_iniziale;
-          $("#museo1").val(contatore_iniziale);
+        
         } else if (tipo === "Musei Capitolini") {
             conta22=contatore_iniziale;
             this.nome_classi_eventi[1].cart=contatore_iniziale;
-            $("#museo2").val(contatore_iniziale);
+            console.log(cart21);
         }else if(tipo==="Galleria Borghese"){
             cart23=contatore_iniziale;
-            $("#museo3").val(contatore_iniziale);
             this.nome_classi_eventi[2].cart=contatore_iniziale;
         }else if(tipo==="Galleria Doria Pamphiji"){
             cart24=contatore_iniziale;
-            $("#museo4").val(contatore_iniziale);
             this.nome_classi_eventi[4].cart=contatore_iniziale;
         }else if(tipo==="Galleria Nazionale d'Arte Moderna e Contemporanea"){
             cart25=contatore_iniziale;
-            $("#museo5").val(contatore_iniziale);
             this.nome_classi_eventi[5].cart=contatore_iniziale;
         }else if(tipo=="MAXXI"){
             cart26=contatore_iniziale;
-            $("#museo6").val(contatore_iniziale);
             this.nome_classi_eventi[2].cart=contatore_iniziale;
         }
     },
@@ -301,10 +292,13 @@ app.component("museocrea",{
         incrementaCounter6(){
             if(parseInt(cart21)>0 && iniziale){
                 this.nome_classi_eventi[0].n_biglietti-=cart21;
+                console.log(cart21)
+                console.log(this.nome_classi_eventi[0].n_biglietti)
                 iniziale=false
             }
             if(this.nome_classi_eventi[0].n_biglietti>0){
                 cart21++;
+                console.log(cart21)
                 $("#museo1").val(cart21);
                 this.nome_classi_eventi[0].cart++;
                 cart_tot+=18;
@@ -513,19 +507,15 @@ app.component("monumenticrea",{
     created() {
         if(tipo=="Colosseo"){
             cart31=contatore_iniziale;
-            $("#monumento1").val(contatore_iniziale);
             this.nome_classi_eventi[0].cart=contatore_iniziale;
         }else if(tipo=="Ara Pacis"){
             cart32=contatore_iniziale;
-            $("#monumento2").val(contatore_iniziale);
             this.nome_classi_eventi[1].cart=contatore_iniziale;
         }else if(tipo=="Castel Sant'Angelo"){
             cart34=contatore_iniziale;
-            $("#monumento3").val(contatore_iniziale);
             this.nome_classi_eventi[2].cart=contatore_iniziale;
         }else if(tipo=="Altare della Patria"){
             cart33=contatore_iniziale;
-            $("#monumento4").val(contatore_iniziale);
             this.nome_classi_eventi[3].cart=contatore_iniziale;
         }
     },
@@ -665,49 +655,64 @@ app.mount(".content");
 
 function getImporto() {
     if(tipo=="Musei Vaticani" && iniziale){
+        $("#museo1").val(contatore_iniziale);
         cart_tot=contatore_iniziale*18;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Musei Capitolini" && iniziale){
         cart_tot=contatore_iniziale*11;
+        $("#museo2").val(contatore_iniziale);
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Galleria Borghese" && iniziale){
         cart_tot=contatore_iniziale*13;
+        $("#museo3").val(contatore_iniziale);
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Galleria Doria Pamphiji" && iniziale){
+        $("#museo4").val(contatore_iniziale);
         cart_tot=contatore_iniziale*15;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
         return contatore_iniziale;
     }else if(tipo=="Galleria Nazionale d'Arte Moderna e Contemporanea" && iniziale){
+        $("#museo5").val(contatore_iniziale);
         cart_tot=contatore_iniziale*10;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="MAXXI" && iniziale){
+        $("#museo6").val(contatore_iniziale);
         cart_tot=contatore_iniziale*12;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Colosseo" && iniziale){
+        $("#monumento1").val(contatore_iniziale);
         cart_tot=contatore_iniziale*16;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Ara Pacis" && iniziale){
+        $("#monumento2").val(contatore_iniziale);
         cart_tot=contatore_iniziale*14;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Castel Sant'Angelo" && iniziale){
+        $("#monumento4").val(contatore_iniziale);
         cart_tot=contatore_iniziale*15;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Altare della Patria" && iniziale){
+        $("#monumento3").val(contatore_iniziale);
         cart_tot=contatore_iniziale*18;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Concerto Primo Maggio" && iniziale){
+        $("#evento1").val(contatore_iniziale);
         cart_tot=contatore_iniziale*20;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Boccea Street" && iniziale){
+        $("#evento2").val(contatore_iniziale);
         cart_tot=contatore_iniziale*14;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Festival Delle Scienze" && iniziale){
+        $("#evento3").val(contatore_iniziale);
         cart_tot=contatore_iniziale*32;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Vinalia Priora" && iniziale){
+        $("#evento4").val(contatore_iniziale);
         cart_tot=contatore_iniziale*15;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }else if(tipo=="Rugantino al Sistina" && iniziale){
+        $("#evento5").val(contatore_iniziale);
         cart_tot=contatore_iniziale*50;
         $('#importo-totale').text('Importo totale: ' + cart_tot + '€');
     }

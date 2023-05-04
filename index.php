@@ -30,7 +30,7 @@
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/salvo-pagina-interna.js"></script>
-
+  <script src="assets/js/account-utente.js"></script>
 </head>
 
 <body">
@@ -85,25 +85,26 @@
         <div class="account">
           <div class="user-info">
             <img src="assets/img/bg-colosseo.jpg" alt="">
-            <h4>Riccardo Aquilanti</h4>
+            <h4 id="nome_cognome">Riccardo Aquilanti</h4>
           </div>
           <hr>
           <h4>Biglietti Acquistati:</h4>
           <ul>
-            <li><p>Concerto Primo Maggio: 0</p></li>
-            <li><p>Boccea Street: 0</p></li>
-            <li><p>Festival delle Scienze: 0</p></li>
-            <li><p>Vinalia Priora: 0</p></li>
-            <li><p>Rugantino al Sistina: 0</p></li>
-            <li><p>Musei Vaticani: 0</p></li>
-            <li><p>Galleria Borghese: 0</p></li>
-            <li><p>Galleria Doria Pamphilj: 0</p></li>
-            <li><p>Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
-            <li><p>MAXXI: 0</p></li>
-            <li><p>Colosseo: 0</p></li>
-            <li><p>Ara Pacis: 0</p></li>
-            <li><p>Castel Sant\'Angelo: 0</p></li>
-            <li><p>Altare della Patria: 0</p></li>
+            <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
+            <li><p id="evento2">Boccea Street: 0</p></li>
+            <li><p id="evento3">Festival delle Scienze: 0</p></li>
+            <li><p id="evento4">Vinalia Priora: 0</p></li>
+            <li><p id="evento5">Rugantino al Sistina: 0</p></li>
+            <li><p id="museo1">Musei Vaticani: 0</p></li>
+            <li><p id="museo2">Musei Capitolini: 0</p></li>
+            <li><p id="museo3">Galleria Borghese: 0</p></li>
+            <li><p id="museo4">Galleria Doria Pamphilj: 0</p></li>
+            <li><p id="museo5">Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
+            <li><p id="museo6">MAXXI: 0</p></li>
+            <li><p id="monumento1">Colosseo: 0</p></li>
+            <li><p id="monumento2">Ara Pacis: 0</p></li>
+            <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
+            <li><p id="monumento4">Altare della Patria: 0</p></li>
             </ul>
         </div>
       </div>'
