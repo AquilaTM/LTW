@@ -8,6 +8,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/musei vaticani storia.jpg")
         localStorage.setItem("hero","hero6")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",18)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo1);
+        })
     });
  
      $(".Capitolini").click(function(){
@@ -18,6 +23,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/musei capitolini storia.jpg")
         localStorage.setItem("hero","hero11")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",11)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo2);
+        })
 
      });
 
@@ -29,6 +39,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/galleria borghese storia.jpg")
         localStorage.setItem("hero","hero7")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",13)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo3);
+        })
      });
 
      $(".doria-pamphiji").click(function(){
@@ -39,6 +54,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/galleria doria pamphiji storia.jpg")
         localStorage.setItem("hero","hero10")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",15)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo4);
+        })
      });
 
      $(".museo-nazionale").click(function(){
@@ -49,6 +69,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/galleria nazionale storia.jpg")
         localStorage.setItem("hero","hero9")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",10)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo5);
+        })
      });
 
      $(".MAXXI").click(function(){
@@ -59,6 +84,11 @@ $(document).ready(function(){
         localStorage.setItem("immagine","/assets/img/MAXXI storia.jpg")
         localStorage.setItem("hero","hero8")
         localStorage.setItem("vedo",true)
+        localStorage.setItem("prezzo biglietto",12)
+        $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.museo6);
+      })
      });
      
      //inizio monumenti
@@ -71,6 +101,11 @@ $(document).ready(function(){
       localStorage.setItem("immagine","/assets/img/colosseum-description.jpg")
       localStorage.setItem("hero","hero")
       localStorage.setItem("vedo",true)
+      localStorage.setItem("prezzo biglietto",16)
+      $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.monumento1);
+      })
   });
 
    $(".ara_pacis").click(function(){
@@ -81,6 +116,11 @@ $(document).ready(function(){
       localStorage.setItem("immagine","/assets/img/ara pacis-storia.jpeg")
       localStorage.setItem("hero","hero1")
       localStorage.setItem("vedo",true)
+      localStorage.setItem("prezzo biglietto",14)
+      $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.monumento2);
+      })
 
    });
 
@@ -92,6 +132,8 @@ $(document).ready(function(){
       localStorage.setItem("immagine","/assets/img/pantheon storia.jpg")
       localStorage.setItem("hero","hero4")
       localStorage.setItem("vedo",false)
+
+    
    });
 
    $(".san-pietro").click(function(){
@@ -101,7 +143,8 @@ $(document).ready(function(){
       localStorage.setItem("storia","La basilica fu costruita nel XVI secolo sul sito della tomba di San Pietro, che si trova sotto l'altare maggiore. Il progetto originale fu affidato a Donato Bramante, ma dopo la sua morte nel 1514, il progetto passò a molti altri architetti tra cui Michelangelo, che fu incaricato di costruire la cupola che domina il cielo di Roma. \n La basilica presenta un'architettura grandiosa, con un vasto portico, una navata centrale e numerose cappelle laterali, alcune delle quali contengono opere d'arte di grandi maestri come Michelangelo e Bernini. \n All'interno della basilica, si possono ammirare numerosi tesori artistici e religiosi, tra cui la statua di San Pietro seduto, la Pietà di Michelangelo e il baldacchino di Bernini sopra l'altare maggiore.\n La Basilica di San Pietro è anche il luogo in cui si svolgono le principali cerimonie della Chiesa cattolica, tra cui la Messa papale e la celebrazione della Pasqua. La sua grandiosità e bellezza la rendono una delle principali attrazioni turistiche di Roma e del mondo intero.")
       localStorage.setItem("immagine","/assets/img/san pietro storia.jpg")
       localStorage.setItem("hero","hero5")
-      localStorage.setItem("vedo",true)
+      localStorage.setItem("vedo",false)
+     
    });
 
    $(".sant-angelo").click(function(){
@@ -112,6 +155,11 @@ $(document).ready(function(){
       localStorage.setItem("immagine","/assets/img/Castel Sant'Angelo storia.jpg")
       localStorage.setItem("hero","hero3")
       localStorage.setItem("vedo",true)
+      localStorage.setItem("prezzo biglietto",15)
+      $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.monumento4);
+      })
    });
 
    $(".altare-patria").click(function(){
@@ -121,7 +169,12 @@ $(document).ready(function(){
       localStorage.setItem("storia","L'Altare della Patria è un monumento situato a Roma, in Italia, costruito per onorare Vittorio Emanuele II, il primo re d'Italia. Il monumento è stato inaugurato nel 1911, in occasione del cinquantenario dell'unificazione italiana. \n La costruzione dell'Altare della Patria venne decisa nel 1885, ma la sua realizzazione fu molto controversa. L'idea di costruire un monumento a Vittorio Emanuele II era stata proposta da Enrico Bindi, un architetto italiano, ma molti critici ritennero che il progetto fosse eccessivamente monumentale e costoso.\n Il progetto fu affidato all'architetto Giuseppe Sacconi, che si ispirò all'architettura classica per creare una struttura imponente che includesse un grande altare all'aperto e una serie di edifici e monumenti circostanti. Il monumento comprende anche una grande statua equestre di Vittorio Emanuele II e una serie di bassorilievi che rappresentano importanti eventi storici dell'Italia. \n L'Altare della Patria è diventato un simbolo dell'identità nazionale italiana e un luogo di celebrazione per molte importanti occasioni, come la Festa della Repubblica e la Giornata dell'Unità Nazionale e delle Forze Armate. Tuttavia, è stato anche oggetto di molte critiche da parte di coloro che lo considerano troppo imponente e troppo costoso per la sua funzione simbolica.")
       localStorage.setItem("immagine","/assets/img/altare della patria storia.jpg")
       localStorage.setItem("hero","hero2")
-      localStorage.setItem("vedo",false)
+      localStorage.setItem("vedo",true)
+      localStorage.setItem("prezzo biglietto",18)
+      $.get("biglietti.php",(data,state)=>{
+         numero_biglietti= JSON.parse(data); 
+         localStorage.setItem("max_numero_biglietti",numero_biglietti.monumento3);
+      })
    });
 
    $(".piazza-spagna").click(function(){
