@@ -1,3 +1,4 @@
+
 <?php
   session_start();
 ?>
@@ -24,12 +25,13 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/account-dropdown-menu.css" rel="stylesheet">
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/salvo-pagina-interna.js"></script>
-
+  <script src="assets/js/account-utente.js"></script>
 </head>
 
 <body">
@@ -76,10 +78,38 @@
         </nav><!-- .navbar -->
 
         <div class="header-account-dropdowns d-flex align-items-center">
-          <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+          <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
           <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
-        </div>';
-      }
+        </div>
+
+        <div class="account-dropdown" id="dropdown">
+        <div class="account">
+          <div class="user-info">
+            <img src="assets/img/bg-colosseo.jpg" alt="">
+            <h4 id="nome_cognome">Riccardo Aquilanti</h4>
+          </div>
+          <hr>
+          <h4>Biglietti Acquistati:</h4>
+          <ul>
+            <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
+            <li><p id="evento2">Boccea Street: 0</p></li>
+            <li><p id="evento3">Festival delle Scienze: 0</p></li>
+            <li><p id="evento4">Vinalia Priora: 0</p></li>
+            <li><p id="evento5">Rugantino al Sistina: 0</p></li>
+            <li><p id="museo1">Musei Vaticani: 0</p></li>
+            <li><p id="museo2">Musei Capitolini: 0</p></li>
+            <li><p id="museo3">Galleria Borghese: 0</p></li>
+            <li><p id="museo4">Galleria Doria Pamphilj: 0</p></li>
+            <li><p id="museo5">Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
+            <li><p id="museo6">MAXXI: 0</p></li>
+            <li><p id="monumento1">Colosseo: 0</p></li>
+            <li><p id="monumento2">Ara Pacis: 0</p></li>
+            <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
+            <li><p id="monumento4">Altare della Patria: 0</p></li>
+            </ul>
+        </div>
+      </div>'
+      ;}
       ?>
   </header><!-- End Header Section -->
 
@@ -87,7 +117,7 @@
   <section id="home" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Life In Rome</h1>
-      <h2>Un sito dove esplorare e conoscere gli eventi, i musei, i monumenti e le aree verdi della nostra città.</h2>
+      <h2>Esplora il patrimonio artistico e naturale della città eterna e acquista biglietti per visitare le meraviglie senza tempo nel mondo dell'arte e della storia.</h2>
       
       <?php
         if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
@@ -120,7 +150,7 @@
               <div class="card">
                 <img src="assets/img/concertoPrimoMaggio.jpg" class="card-img">
                 <div class="card-body text-center">
-                  <h1>Concerto Primo Maggio</h1>
+                  <h4><a class="primo-maggio" href="pagina-interna.php">concerto Primo Maggio</a></h4>
                 </div>
               </div>
             </div>
@@ -129,7 +159,7 @@
               <div class="card">
                 <img src="assets/img/Boccea Street.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Boccea Street</h1>
+                  <h4><a class="boccea-street" href="pagina-interna.php">Boccea street</a></h4>
                 </div>
               </div>
             </div>
@@ -138,7 +168,7 @@
               <div class="card">
                 <img src="assets/img/festival scienze.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Festival delle Scienze</h1>
+                  <h4><a class="festival-scienze" href="pagina-interna.php">Festival delle Scienze </a></h4>
                 </div>
               </div>
             </div>
@@ -147,7 +177,7 @@
               <div class="card">
                 <img src="assets/img/vinalia.jpeg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Vinalia Priora</h1>
+                  <h4><a class="Vinalia-priora" href="pagina-interna.php">Vinalia Priora</a></h4>
                 </div>
               </div>
             </div>
@@ -156,7 +186,7 @@
               <div class="card">
                 <img src="assets/img/rugantino al sistina.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Rugantino al Sistina</h1>
+                  <h4><a class="rugantino-sistina" href="pagina-interna.php">Rugantino al sistina</a></h4>
                 </div>
               </div>
             </div>
@@ -503,16 +533,16 @@
               <div class="card">
                 <img src="assets/img/villa ada.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Ada</h1>
+                  <h4><a class="villa-ada" href="pagina-interna.php">Villa Ada</a></h4>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/villa pamphili.jpg" class="card-img-top">
+                <img src="assets/img/villa pamphiji.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Pamphili</h1>
+                  <h4><a class="villa-pamphiji" href="pagina-interna.php">Villa Pamphiji</a></h4>
                 </div>
               </div>
             </div>
@@ -521,7 +551,7 @@
               <div class="card">
                 <img src="assets/img/villa torlonia.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Torlonia</h1>
+                  <h4><a class="villa-torlonia" href="pagina-interna.php">Villa Torlonia</a></h4>
                 </div>
               </div>
             </div>
@@ -530,25 +560,44 @@
               <div class="card">
                 <img src="assets/img/villa borghese.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Villa Borghese</h1>
+                  <h4><a class="villa-borghese" href="pagina-interna.php">Villa Borghese</a></h4>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/villa paganini.jpg" class="card-img-top" alt="">
+                <img src="assets/img/parco appia antica.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Villa Paganini</h1>
+                  <h4><a class="appia-antica" href="pagina-interna.php">Parco Appia Antica</a></h4>
                 </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/parco degli acquedotti.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h4><a class="parco-acquedotti" href="pagina-interna1.html">Parco degli acquedotti</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/villa d'este.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h4><a class="villa-este" href="pagina-interna.php">Villa D'este</a></h4>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End testimonial Section -->
+    </section><!-- End Aree Verdi Section -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -606,7 +655,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -614,7 +662,14 @@
   <script src="assets/js/label-behaviour.js"></script>
 
   <script>textFit(document.querySelector("h1"));</script>
-
+  
+  <script>
+    let dropdown = document.getElementById("dropdown");
+    
+    function toggleMenu(){
+      dropdown.classList.toggle("open");
+    }
+  </script>
 </body>
 
 </html>

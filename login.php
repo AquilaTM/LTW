@@ -3,7 +3,8 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
     header("Location: /");
 }else{
-    $dbconn = pg_connect("host=localhost port=5432 dbname=db_server user=postgres password=valerio101") or die("errore entrato" . pg_lost_error());
+    $dbconn=pg_connect("host=localhost port=5432 dbname=prova user=postgres password=riaq4500") or die("errore entrato" . pg_lost_error());
+    //$dbconn = pg_connect("host=localhost port=5432 dbname=db_server user=postgres password=valerio101") or die("errore entrato" . pg_lost_error());
 }
 ?>
 

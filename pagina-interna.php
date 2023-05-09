@@ -51,13 +51,14 @@
           <li><a class="nav-link" href="#introduction">Introduzione</a></li>
           <li><a class="nav-link" href="#location">Posizione</a></li>
           <li><a class="nav-link" href="#description">Descrizione</a></li>
-          <li><a class="nav-link" href="#musei">Biglietti e Orari</a></li>
+          <li><a class="nav-link" href="#orari">Orari</a></li>
+          <li><a class="nav-link" href="#biglietti">Biglietti</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        <a href="carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>
 
     </div>
@@ -105,33 +106,36 @@
                 </p>
             </div>
         </div>
-        <!-- riga uno-->
-        <div class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
-            <div class="col-lg-6">
-                <div class="terza text-center text-lg-left">
-                    <h4 class="titolo_terza">Orari</h4>
-                    <p class="descrizione_terza">Aperto ogni giorno dalle 9 alle 19:15.</p>
+        
+        <div class="biglietti-orari">
+            <!-- riga uno-->
+            <div id="orari" class="row justify-content-center">
+                <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
+                <div class="col-lg-6">
+                    <div class="terza text-center text-lg-left">
+                        <h4 class="titolo_terza">Orari</h4>
+                        <p class="descrizione_terza">Aperto ogni giorno dalle 9 alle 19:15.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- riga due-->
-        <div id="biglietto"class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
-            <div class="col-lg-6 order-lg-first">
-                <div class="terza text-center h-100">
-                    <h4 class="titolo_terza">Biglietti</h4>
-                    <p class="descrizione_terza ">24 ore -> 16,00€</p>
-                    <div class="touchspin d-flex align-items-center gap-2 text-center" style="max-width: 200px; display: block;
-                    margin-left: auto;
-                    margin-right: auto;">
-                        <p>Compra biglietti: </p>
-                        <button class="btn btn-danger" type="button" data-touchspin-down>-</button>
-                        <input type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
-                        <button class="btn btn-primary" type="button" data-touchspin-up>+</button>
+            <!-- riga due-->
+            <div id="biglietti"class="row justify-content-center">
+                <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="terza text-center h-100">
+                        <h4 class="titolo_terza">Biglietti</h4>
+                        <p class="descrizione_terza ">24 ore -> 16,00€</p>
+                        <div class="touchspin d-flex align-items-center gap-2 text-center" style="max-width: 200px; display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                            <p>Compra biglietti: </p>
+                            <button class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+                            <input type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
+                            <button class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+                        </div>
+                        <p>Importo totale: x,xx€</p>
+                        <button id="compra" class="btn">Compra</button>
                     </div>
-                    <p>Importo totale: x,xx€</p>
-                    <button id="compra" class="btn btn-dark">Compra</button>
                 </div>
             </div>
         </div>
