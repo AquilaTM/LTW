@@ -28,9 +28,10 @@
   <link href="assets/css/style-pagina-interna.css" rel="stylesheet">
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/pagina-interna.js"></script>
 
   <script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.3/dist/input-touchspin.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="assets/js/pagina-interna.js"></script>
 
 </head>
 
@@ -106,36 +107,37 @@
                 </p>
             </div>
         </div>
-        
         <div class="biglietti-orari">
-            <!-- riga uno-->
-            <div id="orari" class="row justify-content-center">
-                <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
-                <div class="col-lg-6">
-                    <div class="terza text-center text-lg-left">
-                        <h4 class="titolo_terza">Orari</h4>
-                        <p class="descrizione_terza">Aperto ogni giorno dalle 9 alle 19:15.</p>
-                    </div>
+        <!-- riga uno-->
+        <div id="orari" class="row justify-content-center">
+            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
+            <div class="col-lg-6">
+                <div class="terza text-center text-lg-left">
+                    <h4 class="titolo_terza">Orari</h4>
+                    <p class="descrizione_terza">Aperto ogni giorno dalle 9 alle 19:15.</p>
                 </div>
             </div>
-            <!-- riga due-->
-            <div id="biglietti"class="row justify-content-center">
-                <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="terza text-center h-100">
-                        <h4 class="titolo_terza">Biglietti</h4>
-                        <p class="descrizione_terza ">24 ore -> 16,00€</p>
-                        <div class="touchspin d-flex align-items-center gap-2 text-center" style="max-width: 200px; display: block;
-                        margin-left: auto;
-                        margin-right: auto;">
-                            <p>Compra biglietti: </p>
-                            <button class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-                            <input type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
-                            <button class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
-                        </div>
-                        <p>Importo totale: x,xx€</p>
-                        <button id="compra" class="btn">Compra</button>
+        </div>
+        <!-- riga due-->
+        <div id="biglietti"class="row justify-content-center">
+            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="terza text-center h-100">
+                    <h4 class="titolo_terza">Biglietti</h4>
+                    <p id="valore_biglietto" class="descrizione_terza ">24 ore -> 16,00€</p>
+                    <div class="touchspin d-flex align-items-center gap-2 text-center" style="max-width: 200px; display: block;
+                    margin-left: auto;
+                    margin-right: auto;">
+                        <p>Compra biglietti: </p>
+                        <button id="bottone_meno" class="btn btn-touchspin"type="button" data-touchspin-down>-</button>
+                        <input id="contatore"type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
+                        <button id="bottone_piu" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
                     </div>
+                    <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
+                    <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
+                    <p id="disponibile" >Disponibile</p>
+                    <p id="ultimi" >Ultime scorte</p>
+                    <p id="finiti" >Non disponibile</p>
                 </div>
             </div>
         </div>
@@ -154,6 +156,5 @@
     new InputTouchspin(document.querySelector('.touchspin'))
 </script>
 <script>textFit(document.querySelector("p"));</script>
-
 </body>
 </html>
