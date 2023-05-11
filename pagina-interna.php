@@ -11,6 +11,7 @@
   <title>LifeInRome</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -26,12 +27,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/header.css" rel="stylesheet">
   <link href="assets/css/style-pagina-interna.css" rel="stylesheet">
+  
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-
   <script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.3/dist/input-touchspin.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
   <script src="assets/js/pagina-interna.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </head>
 
@@ -49,11 +51,11 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
         <ul>
-          <li><a class="nav-link" href="#introduction">Introduzione</a></li>
-          <li><a class="nav-link" href="#location">Posizione</a></li>
-          <li><a class="nav-link" href="#description">Descrizione</a></li>
-          <li><a class="nav-link" href="#orari">Orari</a></li>
-          <li><a class="nav-link" href="#biglietti">Biglietti</a></li>
+          <li><a class="nav-link scrollto active" href="#introduction">Introduzione</a></li>
+          <li><a class="nav-link scrollto" href="#location">Posizione</a></li>
+          <li><a class="nav-link scrollto" href="#description">Descrizione</a></li>
+          <li><a class="nav-link scrollto" href="#orari">Orari</a></li>
+          <li><a class="nav-link scrollto" href="#biglietti">Biglietti</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -85,7 +87,7 @@
         </p>
     </div>
     <div class="location-map">    
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4501.861536393463!2d12.4894457200809!3d41.89025547990332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1682350448633!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 

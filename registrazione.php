@@ -38,8 +38,8 @@ else {
                     $q2 = "INSERT INTO utenti VALUES ($1,$2,$3,$4,$5,$6)";
                     $data = pg_query_params($dbconn, $q2,array($nome, $cognome,$email, $telefono, $data_dinascita,$password));
                     if ($data) {
-                        $q3="INSERT INTO acquista VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21)";
-                        $data1=pg_query_params($dbconn, $q3,array($email,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0));
+                        $q3="INSERT INTO acquista VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)";
+                        $data1=pg_query_params($dbconn, $q3,array($email,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0));
                         header("Location: ./pagina-login.html");
                     }
                 }

@@ -85,12 +85,12 @@
         <div class="account-dropdown" id="dropdown">
         <div class="account">
           <div class="user-info">
-            <img src="assets/img/bg-colosseo.jpg" alt="">
-            <h4 id="nome_cognome">Riccardo Aquilanti</h4>
+            <img src="assets/img/account-image.png" alt="">
+            <h4 id="nome_cognome"></h4>
           </div>
           <hr>
           <h4>Biglietti Acquistati:</h4>
-          <ul>
+          <ul class="list">
             <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
             <li><p id="evento2">Boccea Street: 0</p></li>
             <li><p id="evento3">Festival delle Scienze: 0</p></li>
@@ -106,7 +106,8 @@
             <li><p id="monumento2">Ara Pacis: 0</p></li>
             <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
             <li><p id="monumento4">Altare della Patria: 0</p></li>
-            </ul>
+            <a class="btn btn-primary" href="logout.php">Log Out</a>
+          </ul>
         </div>
       </div>'
       ;}
@@ -150,7 +151,7 @@
               <div class="card">
                 <img src="assets/img/concertoPrimoMaggio.jpg" class="card-img">
                 <div class="card-body text-center">
-                  <h4><a class="primo-maggio" href="pagina-interna.php">concerto Primo Maggio</a></h4>
+                  <h4><a class="primo-maggio" href="pagina-interna.php">Concerto Primo Maggio</a></h4>
                 </div>
               </div>
             </div>
@@ -621,24 +622,24 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Riccardo Aquilanti</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="/assets/img/team/team-2.jpg" alt="">
-              <h4>Valerio Lubrano</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Matteo Ancona</h4>
+              <h6>1883608</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <h4>Riccardo Aquilanti</h4>
+              <h6>1907798</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <h4>Valerio Lubrano</h4>
+              <h6>1935801</h6>
             </div>
           </div>
 

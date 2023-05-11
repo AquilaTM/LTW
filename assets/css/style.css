@@ -22,10 +22,6 @@
 # General
 --------------------------------------------------------------*/
 
-body {
-  color: #444444;
-}
-
 a {
   color: #b4001e;
   text-decoration: none;
@@ -547,8 +543,13 @@ section {
   overflow: hidden;
 }
 
-.swiper-wrapper .swiper-slide .card .card-body h1{
+.swiper-wrapper .swiper-slide .card .card-body h4 a{
+  color: #444;
   cursor: pointer;
+}
+
+.swiper-wrapper .swiper-slide .card .card-body h4 a:hover{
+  color: #820016;
 }
 
 .swiper{
@@ -897,6 +898,13 @@ section {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
+  color: #384046 ;
+}
+
+.team .member h6 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #384046 ;
 }
 
 .team .member span {
