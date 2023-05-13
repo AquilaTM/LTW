@@ -1,3 +1,4 @@
+
 <?php
   session_start();
 ?>
@@ -84,12 +85,12 @@
         <div class="account-dropdown" id="dropdown">
         <div class="account">
           <div class="user-info">
-            <img src="assets/img/bg-colosseo.jpg" alt="">
-            <h4 id="nome_cognome">Riccardo Aquilanti</h4>
+            <img src="assets/img/account-image.png" alt="">
+            <h4 id="nome_cognome"></h4>
           </div>
           <hr>
           <h4>Biglietti Acquistati:</h4>
-          <ul>
+          <ul class="list">
             <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
             <li><p id="evento2">Boccea Street: 0</p></li>
             <li><p id="evento3">Festival delle Scienze: 0</p></li>
@@ -105,7 +106,8 @@
             <li><p id="monumento2">Ara Pacis: 0</p></li>
             <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
             <li><p id="monumento4">Altare della Patria: 0</p></li>
-            </ul>
+            <a class="btn btn-primary" href="logout.php">Log Out</a>
+          </ul>
         </div>
       </div>'
       ;}
@@ -149,7 +151,7 @@
               <div class="card">
                 <img src="assets/img/concertoPrimoMaggio.jpg" class="card-img">
                 <div class="card-body text-center">
-                  <h1>Concerto Primo Maggio</h1>
+                  <h4><a class="primo-maggio" href="pagina-interna.php">Concerto Primo Maggio</a></h4>
                 </div>
               </div>
             </div>
@@ -158,7 +160,7 @@
               <div class="card">
                 <img src="assets/img/Boccea Street.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Boccea Street</h1>
+                  <h4><a class="boccea-street" href="pagina-interna.php">Boccea street</a></h4>
                 </div>
               </div>
             </div>
@@ -167,7 +169,7 @@
               <div class="card">
                 <img src="assets/img/festival scienze.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Festival delle Scienze</h1>
+                  <h4><a class="festival-scienze" href="pagina-interna.php">Festival delle Scienze </a></h4>
                 </div>
               </div>
             </div>
@@ -176,7 +178,7 @@
               <div class="card">
                 <img src="assets/img/vinalia.jpeg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Vinalia Priora</h1>
+                  <h4><a class="Vinalia-priora" href="pagina-interna.php">Vinalia Priora</a></h4>
                 </div>
               </div>
             </div>
@@ -185,7 +187,7 @@
               <div class="card">
                 <img src="assets/img/rugantino al sistina.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Rugantino al Sistina</h1>
+                  <h4><a class="rugantino-sistina" href="pagina-interna.php">Rugantino al sistina</a></h4>
                 </div>
               </div>
             </div>
@@ -532,16 +534,16 @@
               <div class="card">
                 <img src="assets/img/villa ada.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Ada</h1>
+                  <h4><a class="villa-ada" href="pagina-interna.php">Villa Ada</a></h4>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/villa pamphili.jpg" class="card-img-top">
+                <img src="assets/img/villa pamphiji.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Pamphili</h1>
+                  <h4><a class="villa-pamphiji" href="pagina-interna.php">Villa Pamphiji</a></h4>
                 </div>
               </div>
             </div>
@@ -550,7 +552,7 @@
               <div class="card">
                 <img src="assets/img/villa torlonia.jpg" class="card-img-top">
                 <div class="card-body">
-                  <h1>Villa Torlonia</h1>
+                  <h4><a class="villa-torlonia" href="pagina-interna.php">Villa Torlonia</a></h4>
                 </div>
               </div>
             </div>
@@ -559,19 +561,38 @@
               <div class="card">
                 <img src="assets/img/villa borghese.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Villa Borghese</h1>
+                  <h4><a class="villa-borghese" href="pagina-interna.php">Villa Borghese</a></h4>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="card">
-                <img src="assets/img/villa paganini.jpg" class="card-img-top" alt="">
+                <img src="assets/img/parco appia antica.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h1>Villa Paganini</h1>
+                  <h4><a class="appia-antica" href="pagina-interna.php">Parco Appia Antica</a></h4>
                 </div>
               </div>
             </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/parco degli acquedotti.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h4><a class="parco-acquedotti" href="pagina-interna1.html">Parco degli acquedotti</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="assets/img/villa d'este.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h4><a class="villa-este" href="pagina-interna.php">Villa D'este</a></h4>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -601,24 +622,24 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Riccardo Aquilanti</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="/assets/img/team/team-2.jpg" alt="">
-              <h4>Valerio Lubrano</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
               <h4>Matteo Ancona</h4>
+              <h6>1883608</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <h4>Riccardo Aquilanti</h4>
+              <h6>1907798</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <h4>Valerio Lubrano</h4>
+              <h6>1935801</h6>
             </div>
           </div>
 

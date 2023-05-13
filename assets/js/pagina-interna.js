@@ -10,6 +10,7 @@ $(document).ready(function(){
        $(".storia").text(localStorage.getItem("storia"))
        $("#introduction").attr("class",localStorage.getItem("hero"));
        $(".description-image").attr("src",localStorage.getItem("immagine"))
+       $(".img-terza").attr("src",localStorage.getItem("immagine1"))
        $("#valore_biglietto").text("24 ore -> "+ prezzo_biglietto+"€");
        var numero_biglietti=[];
        $.get("biglietti.php",(data,state)=>{

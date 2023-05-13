@@ -14,7 +14,6 @@ h1,h2,h3,h4,p{
 }
 
 .hero{
-    margin-top: 50px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -28,7 +27,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero1{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -41,7 +40,7 @@ h1,h2,h3,h4,p{
     background-size: cover;
 }
 .hero2{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -55,7 +54,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero3{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -68,7 +67,7 @@ h1,h2,h3,h4,p{
     background-size: cover;
 }
 .hero4{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -82,7 +81,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero5{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -96,7 +95,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero6{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -110,7 +109,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero7{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -124,7 +123,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero8{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -138,7 +137,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero9{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -152,7 +151,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero10{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -166,7 +165,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero11{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -180,7 +179,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero12{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -194,7 +193,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero13{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -208,7 +207,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero14{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -222,7 +221,7 @@ h1,h2,h3,h4,p{
 }
 
 .hero15{
-    margin-top: 50px;
+    
     position: relative;
     width: 100%;
     height: 100%;
@@ -236,6 +235,117 @@ h1,h2,h3,h4,p{
 }
 
 
+.hero16{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ ada.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero17{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ pamphiji.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero18{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ torlonia.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero19{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ borghese.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero20{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/parco\ appia\ antica.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero21{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ d\'este.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero22{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/parco\ degli\ acquedotti\ storia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero23{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/eventi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .hero:before {
     content: "";
@@ -400,6 +510,87 @@ h1,h2,h3,h4,p{
     right: 0;
   }
 
+  
+  .hero16:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero17:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero18:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero19:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero20:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero21:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero22:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero23:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
 
 .container{
   display: flex;
@@ -516,7 +707,7 @@ h1,h2,h3,h4,p{
 .location{
     width: 100%;
     min-height: 100vh;
-    padding-top: 160px;
+    padding-top: 100px;
     padding-bottom: 30px;
     background: linear-gradient( rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 30%);
     backdrop-filter: blur(20px);

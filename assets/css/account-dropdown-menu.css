@@ -1,3 +1,7 @@
+h4, p{
+   color: #fff;
+}
+
 .account-dropdown{
     position: absolute;
     top: 100%;
@@ -10,12 +14,11 @@
 
 .account-dropdown.open{
     max-height: 400px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow:hidden;
 }
 
  .account{
-    background: #fff;
+    background: #212529;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -28,18 +31,24 @@
 
  .user-info h4{
     font-weight: 500;
+    color: #fff;
  }
 
  .user-info img{
     width: 60px;
-    border-radius: 50%;
     margin-right: 15px;
+    filter: invert(80%);
  }
 
 .account hr{
     border: 0;
     height: 2px;
     width: 100%;
-    background: #aaa;
+    background: #dbdbdb;
     margin: 15px 0 10px;
+}
+
+.list{
+   max-height: 200px;
+   overflow-y: scroll;
 }
