@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
         prezzo_biglietto=parseInt(localStorage.getItem("prezzo biglietto"));
+        var max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
        $(".titolo").text(localStorage.getItem("titolo"));
        $(".introduzione").css("white-space", "pre-line");
        $(".introduzione").text(localStorage.getItem("introduzione"))
@@ -10,6 +11,30 @@ $(document).ready(function(){
        $("#introduction").attr("class",localStorage.getItem("hero"));
        $(".description-image").attr("src",localStorage.getItem("immagine"))
        $("#valore_biglietto").text("24 ore -> "+ prezzo_biglietto+"€");
+       var numero_biglietti=[];
+       $.get("biglietti.php",(data,state)=>{
+        numero_biglietti = JSON.parse(data);
+        if(localStorage.getItem("titolo")=="Colosseo"){
+         
+          max_numero_biglietti=numero_biglietti.monumento1;
+          console.log(max_numero_biglietti)
+        }
+        if(localStorage.getItem("titolo")=="Musei Vaticani"){
+          
+          max_numero_biglietti=numero_biglietti.museo1;
+          console.log(max_numero_biglietti)
+        }
+         
+        if(localStorage.getItem("titolo")=="Musei Capitolini"){
+     
+          
+          max_numero_biglietti=numero_biglietti.museo2;
+          console.log(max_numero_biglietti)
+        }
+          
+      })
+
+
 
        var mostraTag = localStorage.getItem("vedo"); 
        if (mostraTag === "true") {
@@ -20,7 +45,6 @@ $(document).ready(function(){
       var conta=0;
       var conta_tot=0;
       var contatore_max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
-      var max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
       $("#importo").text("Importo totale: "+conta_tot+"€");
 
       if ( contatore_max_numero_biglietti>5) {
@@ -36,7 +60,7 @@ $(document).ready(function(){
         $("#ultimi").hide();
         $("#disponibile").hide();
       }
-
+      
       $("#bottone_piu").click(function(){
         if(conta<max_numero_biglietti && max_numero_biglietti!=0){
           conta++;

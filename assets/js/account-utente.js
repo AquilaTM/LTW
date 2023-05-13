@@ -21,7 +21,7 @@ $(document).ready(function(){
             $("#museo1").text("Musei Vaticani: "+numero_biglietti.museo1)
         }
         if(numero_biglietti.museo2>0){
-            $("#museo2").text("Musei Vaticani: "+numero_biglietti.museo2)
+            $("#museo2").text("Musei Capitolini: "+numero_biglietti.museo2)
         }
         if(numero_biglietti.museo3>0){
             $("#museo3").text("Galleria Borghese: "+numero_biglietti.museo3)

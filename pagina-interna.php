@@ -31,7 +31,6 @@
 
   <script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.3/dist/input-touchspin.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
-  <script src="assets/js/pagina-interna.js"></script>
 
 </head>
 
@@ -130,7 +129,7 @@
                     margin-right: auto;">
                         <p>Compra biglietti: </p>
                         <button id="bottone_meno" class="btn btn-touchspin"type="button" data-touchspin-down>-</button>
-                        <input id="contatore"type="number" value="0" min="0" class="form-control text-center" data-touchspin-input>
+                        <input id="contatore"type="text" value="0" min="0" class="form-control text-center" data-touchspin-input>
                         <button id="bottone_piu" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
@@ -151,10 +150,7 @@
       }
 ?>
 
-
-<script>
-    new InputTouchspin(document.querySelector('.touchspin'))
-</script>
+<script src="./assets/js/pagina-interna.js"></script>
 <script>textFit(document.querySelector("p"));</script>
 </body>
 </html>

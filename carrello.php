@@ -117,7 +117,7 @@ if ($count > 0) {
 }
 
 
-
+header("Location: ./index.php");
 
 ?>
     
