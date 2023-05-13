@@ -2,6 +2,7 @@
 $(document).ready(function(){
         prezzo_biglietto=parseInt(localStorage.getItem("prezzo biglietto"));
         var max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
+        var contatore_max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
        $(".titolo").text(localStorage.getItem("titolo"));
        $(".introduzione").css("white-space", "pre-line");
        $(".introduzione").text(localStorage.getItem("introduzione"))
@@ -16,24 +17,37 @@ $(document).ready(function(){
        $.get("biglietti.php",(data,state)=>{
         numero_biglietti = JSON.parse(data);
         if(localStorage.getItem("titolo")=="Colosseo"){
-         
+          contatore_max_numero_biglietti=numero_biglietti.monumento1;
           max_numero_biglietti=numero_biglietti.monumento1;
-          console.log(max_numero_biglietti)
+          console.log(max_numero_biglietti);
+          console.log(contatore_max_numero_biglietti);
         }
         if(localStorage.getItem("titolo")=="Musei Vaticani"){
-          
+          contatore_max_numero_biglietti=numero_biglietti.museo1;
           max_numero_biglietti=numero_biglietti.museo1;
-          console.log(max_numero_biglietti)
+          console.log(max_numero_biglietti);
+          console.log(contatore_max_numero_biglietti);
         }
          
         if(localStorage.getItem("titolo")=="Musei Capitolini"){
      
-          
+          contatore_max_numero_biglietti=numero_biglietti.museo2;
           max_numero_biglietti=numero_biglietti.museo2;
-          console.log(max_numero_biglietti)
+          console.log(max_numero_biglietti);
+          console.log(contatore_max_numero_biglietti);
         }
           
-      })
+      });
+      if ( contatore_max_numero_biglietti>5) {
+
+      }else if(contatore_max_numero_biglietti>0 && contatore_max_numero_biglietti<=5) {
+        console.log("entro1");
+        $("#disponibile").text("ultime scorte");
+        
+      }else if(contatore_max_numero_biglietti==0){
+        console.log("entro2");
+        $("#disponibile").text("non disponibili");
+      };
 
 
 
@@ -45,22 +59,7 @@ $(document).ready(function(){
         }
       var conta=0;
       var conta_tot=0;
-      var contatore_max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
       $("#importo").text("Importo totale: "+conta_tot+"€");
-
-      if ( contatore_max_numero_biglietti>5) {
-        $("#disponibile").show();
-        $("#ultimi").hide();
-        $("#finiti").hide();
-      }else if(contatore_max_numero_biglietti>0 && contatore_max_numero_biglietti<=5) {
-        $("#ultimi").show();
-        $("#disponibile").hide();
-        $("#finiti").hide();
-      }else if(contatore_max_numero_biglietti==0){
-        $("#finiti").show();
-        $("#ultimi").hide();
-        $("#disponibile").hide();
-      }
       
       $("#bottone_piu").click(function(){
         if(conta<max_numero_biglietti && max_numero_biglietti!=0){
@@ -71,18 +70,16 @@ $(document).ready(function(){
           $("#importo").text("Importo totale: "+conta_tot+"€");
           console.log(contatore_max_numero_biglietti)
           if ( contatore_max_numero_biglietti>5) {
-            $("#disponibile").show();
-            $("#ultimi").hide();
-            $("#finiti").hide();
+
           }else if(contatore_max_numero_biglietti>0 && contatore_max_numero_biglietti<=5) {
-            $("#ultimi").show();
-            $("#disponibile").hide();
-            $("#finiti").hide();
+            
+            $("#disponibile").text("ultime scorte");
+            
           }else if(contatore_max_numero_biglietti==0){
-            $("#finiti").show();
-            $("#ultimi").hide();
-            $("#disponibile").hide();
+            
+            $("#disponibile").text("non disponibili");
           }
+          
         }
       });
       $("#bottone_meno").click(function(){
@@ -94,17 +91,14 @@ $(document).ready(function(){
           $("#importo").text("Importo totale: "+conta_tot+"€");
 
           if ( contatore_max_numero_biglietti>5) {
-            $("#disponibile").show();
-            $("#ultimi").hide();
-            $("#finiti").hide();
+
           }else if(contatore_max_numero_biglietti>0 && contatore_max_numero_biglietti<=5) {
-            $("#ultimi").show();
-            $("#disponibile").hide();
-            $("#finiti").hide();
+            
+            $("#disponibile").text("ultime scorte");
+            
           }else if(contatore_max_numero_biglietti==0){
-            $("#finiti").show();
-            $("#ultimi").hide();
-            $("#disponibile").hide();
+            
+            $("#disponibile").text("non disponibili");
           }
         }
       });
