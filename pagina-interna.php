@@ -137,7 +137,7 @@
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
                     <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
-                    <p id="disponibile" >Disponibile</p>
+                    
                 </div>
             </div>
         </div>
