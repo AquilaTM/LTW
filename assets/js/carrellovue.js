@@ -33,13 +33,13 @@ app.component("eventocrea",{
     <ul class="eventi" v-for="x in nome_classi_eventi" :key="x.id">
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
-    <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
-        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+    <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">  
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
+        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
+        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
 
     </div>
 </div></li>
@@ -239,13 +239,12 @@ app.component("museocrea",{
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
+        <p v-if="x.n_biglietti > 10">Disponibile</p>
+        <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
+        <p v-else-if="x.n_biglietti <= 0">Non Disponibile</p>
         <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
         <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
         <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
-        <p v-if="x.n_biglietti > 10">Disponibile</p>
-        <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
-        <p v-else-if="x.n_biglietti <= 0">No</p>
-
     </div>
 </div></li>
 </ul>`,
@@ -482,13 +481,12 @@ app.component("monumenticrea",{
     <li><div :class="x.classe_nome">
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
-        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
-        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
-
+        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
+        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
     </div>
 </div></li>
 </ul>`,

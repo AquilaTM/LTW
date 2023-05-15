@@ -11,31 +11,27 @@
   <title>LifeInRome</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="./assets/css/header.css" rel="stylesheet">
-  <link href="./assets/css/style-pagina-interna.css" rel="stylesheet">
-  <link href="./assets/css/account-dropdown-menu.css" rel="stylesheet">
-  
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/style-pagina-interna.css" rel="stylesheet">
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.3/dist/input-touchspin.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
-  <script src="./assets/js/pagina-interna.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="assets/js/account-utente.js"></script>
+  <script src="assets/js/pagina-interna.js"></script>
 
 </head>
 
@@ -53,58 +49,18 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
         <ul>
-          <li><a class="nav-link scrollto active" href="#introduction">Introduzione</a></li>
-          <li><a class="nav-link scrollto" href="#location">Posizione</a></li>
-          <li><a class="nav-link scrollto" href="#description">Descrizione</a></li>
-          <li><a class="nav-link scrollto" href="#orari">Orari</a></li>
-          <li><a class="nav-link scrollto" href="#biglietti">Biglietti</a></li>
+          <li><a class="nav-link" href="#introduction">Introduzione</a></li>
+          <li><a class="nav-link" href="#location">Posizione</a></li>
+          <li><a class="nav-link" href="#description">Descrizione</a></li>
+          <li><a class="nav-link" href="#orari">Orari</a></li>
+          <li><a class="nav-link" href="#biglietti">Biglietti</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <?php
-      if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
-        echo '
-        <div class="header-account-dropdowns d-flex align-items-center">
-          <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
-        </div>';
-      }else{
-        echo '
-        <div class="header-account-dropdowns d-flex align-items-center">
-          <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
-          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
-        </div>
-
-        <div class="account-dropdown" id="dropdown">
-        <div class="account">
-          <div class="user-info">
-            <img src="assets/img/account-image.png" alt="">
-            <h4 id="nome_cognome"></h4>
-          </div>
-          <hr>
-          <h4>Biglietti Acquistati:</h4>
-          <ul class="list">
-            <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
-            <li><p id="evento2">Boccea Street: 0</p></li>
-            <li><p id="evento3">Festival delle Scienze: 0</p></li>
-            <li><p id="evento4">Vinalia Priora: 0</p></li>
-            <li><p id="evento5">Rugantino al Sistina: 0</p></li>
-            <li><p id="museo1">Musei Vaticani: 0</p></li>
-            <li><p id="museo2">Musei Capitolini: 0</p></li>
-            <li><p id="museo3">Galleria Borghese: 0</p></li>
-            <li><p id="museo4">Galleria Doria Pamphilj: 0</p></li>
-            <li><p id="museo5">Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
-            <li><p id="museo6">MAXXI: 0</p></li>
-            <li><p id="monumento1">Colosseo: 0</p></li>
-            <li><p id="monumento2">Ara Pacis: 0</p></li>
-            <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
-            <li><p id="monumento4">Altare della Patria: 0</p></li>
-            <a class="btn btn-primary" href="logout.php">Log Out</a>
-          </ul>
-        </div>
-      </div>'
-      ;}
-      ?>
+      <div class="header-account-dropdowns d-flex align-items-center">
+        <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+        <a href="carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+      </div>
 
     </div>
 </header><!-- End Header Section -->
@@ -129,13 +85,13 @@
         </p>
     </div>
     <div class="location-map">    
-        <iframe class="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4501.861536393463!2d12.4894457200809!3d41.89025547990332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1682350448633!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 
 <section class="terza-parte" id="terza">
         <div class="description" id="description">
-            <img class="description-image" src="./assets/img/colosseum-description.jpg" alt="">
+            <img class="description-image" src="/assets/img/colosseum-description.jpg" alt="">
             <div class="description-box text-block">
                 <h4>Descrizione e Storia</h4>
                 <p class ="storia" > Il Colosseo era anticamente chiamato Amphitheatrum Flavium e fu progettato come arena di spettacoli per contenere un numero di spettatori compreso fra i 50mila e i 75mila. 
@@ -154,7 +110,7 @@
         <div class="biglietti-orari">
         <!-- riga uno-->
         <div id="orari" class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="./assets/img/bg-colosseo.jpg"/></div>
+            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
             <div class="col-lg-6">
                 <div class="terza text-center text-lg-left">
                     <h4 class="titolo_terza">Orari</h4>
@@ -164,7 +120,7 @@
         </div>
         <!-- riga due-->
         <div id="biglietti"class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="./assets/img/bg-colosseo.jpg" alt="..." /></div>
+            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="terza text-center h-100">
                     <h4 class="titolo_terza">Biglietti</h4>
@@ -179,7 +135,9 @@
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
                     <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
-                    
+                    <p id="disponibile" >Disponibile</p>
+                    <p id="ultimi" >Ultime scorte</p>
+                    <p id="finiti" >Non disponibile</p>
                 </div>
             </div>
         </div>
@@ -193,13 +151,6 @@
       }
 ?>
 
-<script src="./assets/js/pagina-interna.js"></script>
-<script>
-    let dropdown = document.getElementById("dropdown");
-    
-    function toggleMenu(){
-      dropdown.classList.toggle("open");
-    }
-  </script>
+<script>textFit(document.querySelector("p"));</script>
 </body>
 </html>

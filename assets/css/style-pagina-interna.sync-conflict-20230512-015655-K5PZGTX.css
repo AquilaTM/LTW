@@ -1,0 +1,887 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/bg-colosseo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero1{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/ara\ pacis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero2{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/altare\ della\ patria.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero3{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/castel\ sant\'angelo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero4{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/pantheon.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero5{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/san\ pietro.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero6{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/musei vaticani.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero7{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria-borghese.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero8{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/MAXXI.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero9{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria\ nazionale.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero10{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/galleria\ doria\ pamphiji.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero11{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/musei\ capitolini.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero12{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/nero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero13{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ di\ spagna.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero14{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ navona.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero15{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/piazza\ del\ popolo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.hero16{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ ada.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero17{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ pamphiji.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero18{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ torlonia.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero19{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ borghese.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero20{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/parco\ appia\ antica.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero21{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/villa\ d\'este.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero22{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/parco\ degli\ acquedotti\ storia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero23{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 200px 0;
+    background: url("../img/eventi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .hero1:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero2:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 55%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero3:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 35%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero4:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .hero5:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero6:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero7:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+  .hero8:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero9:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
+
+  .hero10:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero11:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  .hero12:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero13:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero14:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero15:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  
+  .hero16:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero17:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero18:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero19:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero20:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero21:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero22:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero23:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 85%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100% ;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+ .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+    .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+    .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+   .container {
+    max-width: 1320px;
+  }
+}
+
+.fadeInRight{
+    -webkit-animation: fadeInRight 0.5s both;
+    -moz-animation: fadeInRight 0.5s both;
+    -o-animation: fadeInRight 0.5s both;
+    animation: fadeInRight 0.5s both;
+}
+
+@-webkit-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -moz-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+
+@-o-keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -o-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.text-block{
+    z-index: 10;
+    display: inline;
+    justify-content: center;
+    perspective: 10px;
+}
+
+.titolo{
+    z-index: 20;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0 ;
+    text-transform: uppercase;
+    transform: translateY(10px);
+    transition: ease-out 0.3s;
+}
+
+.introduzione{
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:  8px;
+    margin-bottom: 8px;
+}
+
+.location{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    background: linear-gradient( rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 30%);
+    backdrop-filter: blur(20px);
+    display: inline-flex;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.location-description{
+    font-family: 'Poppins';
+    margin: 0 20px;
+    justify-content: center;
+    width: 40%;
+}
+
+.location-map{
+    margin: 0 20px;
+    justify-content: center;
+    width: 60%;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.location-header{
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+}
+
+.location-paragraph{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.img-seconda{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.terza-parte {
+    background-color: #fff;
+}
+
+.terza.parte .featured-text {
+    padding: 32px;
+}
+
+  @media (min-width: 992px) {
+    .projects-section .featured-text {
+      padding: 0 0 0 32px;
+      border-left: 8px solid #64a19d;
+    }
+  }
+  .projects-section .project-text {
+    padding: 48px;
+    font-size: 90%;
+  }
+  @media (min-width: 992px) {
+    .projects-section .project-text {
+      padding: 80px;
+    }
+  }
+
+.description{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.description-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(30px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.description-box h4{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: x-large;
+}
+
+.description-box p{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: calc(0.1rem + 0.5vh + 0.5vw);
+}
+
+.row{
+    height: 100vh;
+    margin-bottom: 0px !important;
+}
+
+.terza{
+    padding: 48px;
+    font-size: 90%;
+    width: 100%;
+    height: 100%;
+    margin-right: auto ;
+    margin-left: auto ;
+    background-color: #000;
+}
+
+.titolo_terza{
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+}
+
+.descrizione_terza{
+    color: #fff;
+}
+
+.img-terza{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.terza p{
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .terza-parte-text {
+      padding: 5rem;
+    }
+}
+
+.biglietti-orari{
+    height: 100vh;
+}
+
+.btn-touchspin{
+    background: rgb(130, 0, 22);
+    backdrop-filter: blur(30px);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+}
+
+.btn-touchspin:hover{
+    background: rgb(130, 0, 22);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#compra{
+    background-color: rgb(130, 0, 22);
+    color: white;
+}
+
+.col-lg-6 {
+    /* padding: 0 !important; */
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.order-lg-first {
+    order: -1 !important;  /*ordinamento nel contenitore flex all'inzio per -1*/
+}
