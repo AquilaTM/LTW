@@ -27,6 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="./assets/css/header.css" rel="stylesheet">
   <link href="./assets/css/style-pagina-interna.css" rel="stylesheet">
+  <link href="./assets/css/account-dropdown-menu.css" rel="stylesheet">
   
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -34,6 +35,7 @@
   <script src="https://unpkg.com/vue"></script>
   <script src="./assets/js/pagina-interna.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="assets/js/account-utente.js"></script>
 
 </head>
 
@@ -59,10 +61,50 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="header-account-dropdowns d-flex align-items-center">
-        <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a href="carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
-      </div>
+      <?php
+      if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
+        echo '
+        <div class="header-account-dropdowns d-flex align-items-center">
+          <a class="nav-link"><i class="bi bi-person-fill"></i></a>
+          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        </div>';
+      }else{
+        echo '
+        <div class="header-account-dropdowns d-flex align-items-center">
+          <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
+          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        </div>
+
+        <div class="account-dropdown" id="dropdown">
+        <div class="account">
+          <div class="user-info">
+            <img src="assets/img/account-image.png" alt="">
+            <h4 id="nome_cognome"></h4>
+          </div>
+          <hr>
+          <h4>Biglietti Acquistati:</h4>
+          <ul class="list">
+            <li><p id="evento1">Concerto Primo Maggio: 0</p></li>
+            <li><p id="evento2">Boccea Street: 0</p></li>
+            <li><p id="evento3">Festival delle Scienze: 0</p></li>
+            <li><p id="evento4">Vinalia Priora: 0</p></li>
+            <li><p id="evento5">Rugantino al Sistina: 0</p></li>
+            <li><p id="museo1">Musei Vaticani: 0</p></li>
+            <li><p id="museo2">Musei Capitolini: 0</p></li>
+            <li><p id="museo3">Galleria Borghese: 0</p></li>
+            <li><p id="museo4">Galleria Doria Pamphilj: 0</p></li>
+            <li><p id="museo5">Museo Nazionale di Arte Moderna e Contemporanea: 0</p></li>
+            <li><p id="museo6">MAXXI: 0</p></li>
+            <li><p id="monumento1">Colosseo: 0</p></li>
+            <li><p id="monumento2">Ara Pacis: 0</p></li>
+            <li><p id="monumento3">Castel Sant\'Angelo: 0</p></li>
+            <li><p id="monumento4">Altare della Patria: 0</p></li>
+            <a class="btn btn-primary" href="logout.php">Log Out</a>
+          </ul>
+        </div>
+      </div>'
+      ;}
+      ?>
 
     </div>
 </header><!-- End Header Section -->
@@ -152,6 +194,12 @@
 ?>
 
 <script src="./assets/js/pagina-interna.js"></script>
-<script>textFit(document.querySelector("p"));</script>
+<script>
+    let dropdown = document.getElementById("dropdown");
+    
+    function toggleMenu(){
+      dropdown.classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
