@@ -116,8 +116,8 @@ if ($count > 0) {
     $result = pg_query($dbconn, $query);
 }
 
-header("Location: ./index.php");
 
+header("Location: ./index.php");
 
 ?>
     

@@ -35,7 +35,7 @@ app.component("eventocrea",{
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
         <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
         <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
@@ -240,7 +240,7 @@ app.component("museocrea",{
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
         <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
         <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
@@ -483,7 +483,7 @@ app.component("monumenticrea",{
     <p>{{x.nome}}</p>
     <div class="acquisto-biglietti touchspin d-flex align-items-center gap-2 text-center">
         <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input>
+        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
         <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>

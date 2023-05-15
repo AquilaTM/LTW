@@ -13,27 +13,27 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/header.css" rel="stylesheet">
-  <link href="assets/css/style-pagina-interna.css" rel="stylesheet">
+  <link href="./assets/css/header.css" rel="stylesheet">
+  <link href="./assets/css/style-pagina-interna.css" rel="stylesheet">
   
 
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.3/dist/input-touchspin.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
-  <script src="assets/js/pagina-interna.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/pagina-interna.js"></script>
+  <script src="./assets/js/main.js"></script>
 
 </head>
 
@@ -93,7 +93,7 @@
 
 <section class="terza-parte" id="terza">
         <div class="description" id="description">
-            <img class="description-image" src="/assets/img/colosseum-description.jpg" alt="">
+            <img class="description-image" src="./assets/img/colosseum-description.jpg" alt="">
             <div class="description-box text-block">
                 <h4>Descrizione e Storia</h4>
                 <p class ="storia" > Il Colosseo era anticamente chiamato Amphitheatrum Flavium e fu progettato come arena di spettacoli per contenere un numero di spettatori compreso fra i 50mila e i 75mila. 
@@ -112,7 +112,7 @@
         <div class="biglietti-orari">
         <!-- riga uno-->
         <div id="orari" class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg"/></div>
+            <div class="col-lg-6"><img class="img-terza" src="./assets/img/bg-colosseo.jpg"/></div>
             <div class="col-lg-6">
                 <div class="terza text-center text-lg-left">
                     <h4 class="titolo_terza">Orari</h4>
@@ -122,7 +122,7 @@
         </div>
         <!-- riga due-->
         <div id="biglietti"class="row justify-content-center">
-            <div class="col-lg-6"><img class="img-terza" src="assets/img/bg-colosseo.jpg" alt="..." /></div>
+            <div class="col-lg-6"><img class="img-terza" src="./assets/img/bg-colosseo.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="terza text-center h-100">
                     <h4 class="titolo_terza">Biglietti</h4>
@@ -137,9 +137,7 @@
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
                     <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
-                    <p id="disponibile" >Disponibile</p>
-                    <p id="ultimi" >Ultime scorte</p>
-                    <p id="finiti" >Non disponibile</p>
+                    
                 </div>
             </div>
         </div>
@@ -153,6 +151,7 @@
       }
 ?>
 
+<script src="./assets/js/pagina-interna.js"></script>
 <script>textFit(document.querySelector("p"));</script>
 </body>
 </html>
