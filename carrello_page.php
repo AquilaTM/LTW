@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/carrello.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/collapsable.js"></script>
+
+    <!-- Favicons -->
+    <link href="./assets/img/colosseum.png" rel="icon">
+    <link href="./assets/img/colosseum.png" rel="apple-touch-icon">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,9 @@
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="./assets/js/account-utente.js"></script>
+    <script src="assets/js/carrello.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/collapsable.js"></script>
 </head>
 <body>
 
