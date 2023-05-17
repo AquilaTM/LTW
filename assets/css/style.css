@@ -599,6 +599,7 @@ section {
   border-style: solid;
   border-width: 1px;
   border-color: #acb6c0;
+  height: 150px;
 }
 
 .musei .musei-card i {
@@ -635,8 +636,8 @@ section {
 }
 
 .musei-card .musei-section-img {
-  width: 35vw;
-  min-width: 150px;
+  max-width: 20vw;
+  min-width: 20vw;
   height: auto;
   display: flex;
   flex-direction: row;

@@ -62,7 +62,7 @@
 
       <div class="header-account-dropdowns d-flex align-items-center">
         <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-        <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+        <a href="./carrello_page.php" class="nax-link"><i class="bi bi-cart-fill"></i></a>
       </div>';
       }else{
         echo '
@@ -79,7 +79,7 @@
 
         <div class="header-account-dropdowns d-flex align-items-center">
           <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
-          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+          <a href="./carrello_page.php" class="nax-link"><i class="bi bi-cart-fill"></i></a>
         </div>
 
         <div class="account-dropdown" id="dropdown">
@@ -315,21 +315,19 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 mt-4">
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/musei-vaticani.webp">
               <div>
                 <h4><a class="Musei-Vaticani" href="pagina-interna.php">Musei Vaticani</a></h4><!--cambiato//////////////////////////////// -->
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mt-4 mt-lg-0">
+          <div class="col-md-6 mt-4">
             <div class="musei-card">
               <img class="musei-section-img" src="assets/img/musei-capitolini.webp">
               <div>
                 <h4><a class="Capitolini" href="pagina-interna.php">Musei Capitolini</a></h4> <!--cambiato//////////////////////////////// -->
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div>
@@ -338,7 +336,6 @@
               <img class="musei-section-img" src="assets/img/galleria-borghese.jpg">
               <div>
                 <h4><a  class="borghese" href="pagina-interna.php" >Galleria Borghese</a></h4>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div>
@@ -347,7 +344,6 @@
               <img class="musei-section-img" src="assets/img/galleria-doria-pamphilj.jpeg">
               <div>
                 <h4><a class="doria-pamphiji" href="pagina-interna.php">Galleria Doria Pamphilj</a></h4>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div>
@@ -356,7 +352,6 @@
               <img class="musei-section-img" src="assets/img/museo-nazionale-di-arte-moderna.jpg">
               <div>
                 <h4><a class="museo-nazionale" href="pagina-interna.php">Museo Nazionale di Arte Moderna e Contemporanea</a></h4>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div>
@@ -365,7 +360,6 @@
               <img class="musei-section-img" src="assets/img/maxxi.jpg">
               <div>
                 <h4><a class="MAXXI" href="pagina-interna.php">MAXXI</a></h4>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
           </div>

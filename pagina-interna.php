@@ -35,7 +35,7 @@
   <script src="https://unpkg.com/vue"></script>
   <script src="./assets/js/pagina-interna.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script src="assets/js/account-utente.js"></script>
+  <script src="./assets/js/account-utente.js"></script>
 
 </head>
 
@@ -66,13 +66,13 @@
         echo '
         <div class="header-account-dropdowns d-flex align-items-center">
           <a class="nav-link"><i class="bi bi-person-fill"></i></a>
-          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+          <a href="./carrello_page.php" class="nax-link"><i class="bi bi-cart-fill"></i></a>
         </div>';
       }else{
         echo '
         <div class="header-account-dropdowns d-flex align-items-center">
           <a class="nav-link"><i class="bi bi-person-fill" onclick="toggleMenu()"></i></a>
-          <a href="./carrello.html" class="nax-link"><i class="bi bi-cart-fill"></i></a>
+          <a href="./carrello_page.php" class="nax-link"><i class="bi bi-cart-fill"></i></a>
         </div>
 
         <div class="account-dropdown" id="dropdown">
@@ -178,7 +178,7 @@
                         <button id="bottone_piu" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
                     </div>
                     <p id="importo" class="importo_totale">Importo totale: x,xx€</p>
-                    <a href="carrello.html"><button id="compra" class="btn btn-dark">Compra</button></a>
+                    <a href="carrello_page.php"><button id="compra" class="btn btn-dark">Compra</button></a>
                     
                 </div>
             </div>
@@ -193,8 +193,8 @@
       }
 ?>
 
-<script src="./assets/js/pagina-interna.js"></script>
-<script>
+  <script src="./assets/js/pagina-interna.js"></script>
+  <script>
     let dropdown = document.getElementById("dropdown");
     
     function toggleMenu(){
