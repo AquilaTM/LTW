@@ -53,7 +53,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0 dropdown">
         <ul>
-          <li><a class="nav-link scrollto active" href="#introduction">Introduzione</a></li>
+          <li><a class="nav-link scrollto" href="#introduction">Introduzione</a></li>
           <li><a class="nav-link scrollto" href="#location">Posizione</a></li>
           <li><a class="nav-link scrollto" href="#description">Descrizione</a></li>
           <li><a class="nav-link scrollto" href="#orari">Orari</a></li>

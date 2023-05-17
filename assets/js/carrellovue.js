@@ -63,7 +63,7 @@ app.component("eventocrea",{
         if(tipo=="Concerto Primo Maggio" ){
             cart11=contatore_iniziale;
             this.nome_classi_eventi[0].cart=contatore_iniziale;
-        }else if(tipo=="Bocccea Street"){
+        }else if(tipo=="Boccea Street"){
             cart12=contatore_iniziale;
             entrato=false;
             this.nome_classi_eventi[1].cart=contatore_iniziale;

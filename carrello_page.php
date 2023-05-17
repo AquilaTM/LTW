@@ -21,7 +21,6 @@
     <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="./assets/js/account-utente.js"></script>
-    <script src="assets/js/carrello.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/collapsable.js"></script>
 </head>
