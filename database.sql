@@ -42,5 +42,10 @@ CREATE TABLE biglietti(
     monumento2 integer not null,
     monumento3 integer not null,
     monumento4 integer not null,
+    monumento5 integer not null,
+    monumento6 integer not null,
+    monumento7 integer not null,
+    monumento8 integer not null,
+    monumento9 integer not null,
     numero_riga integer default 1
 );

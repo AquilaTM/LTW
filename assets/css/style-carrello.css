@@ -121,8 +121,12 @@ a, a:hover {
 .acquisto-biglietti{
   display: flex;
   justify-content:space-between;
-  width: 300px;
+  width: 400px;
   right: 0;
+}
+
+.acquisto-biglietti p{
+  left: 0;
 }
 
 .btn-touchspin{
@@ -130,6 +134,7 @@ a, a:hover {
   backdrop-filter: blur(30px);
   color: white;
   border: 2px solid rgba(255, 255, 255, .5);
+  margin: 0px 10px;
 }
 
 .btn-touchspin:hover{
@@ -140,6 +145,12 @@ a, a:hover {
 .btn-acquista{
   display: flex;
   justify-content: center;
+}
+
+.tspin{
+  justify-content: space-between;
+  width: 60%;
+  right: 0;
 }
 
 @media (max-width: 992px) {

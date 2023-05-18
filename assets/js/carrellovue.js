@@ -37,10 +37,11 @@ app.component("eventocrea",{
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
-        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
-        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
-
+        <div class="tspin">
+            <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+            <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
+            <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+        </div>
     </div>
 </div></li>
 </ul>`,
@@ -222,7 +223,12 @@ app.component("eventocrea",{
     },
     mounted(){ //fa al'inizio del server
         $.get("biglietti.php",(data,state)=>{
-            this.numero_biglietti = JSON.parse(data);
+            try {
+                this.numero_biglietti = JSON.parse(data);
+            }
+            catch (error) {
+                console.log('Error parsing JSON:', error, data);
+            }
             this.nome_classi_eventi[0].n_biglietti=this.numero_biglietti.evento1;
             this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.evento2;
             this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.evento3;
@@ -242,9 +248,11 @@ app.component("museocrea",{
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non Disponibile</p>
-        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
-        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+        <div class="tspin">
+            <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+            <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
+            <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+        </div>
     </div>
 </div></li>
 </ul>`,
@@ -255,7 +263,7 @@ app.component("museocrea",{
             {n_biglietti:0,cart:0,id:7,nome:"Musei Capitolini - Costo Biglietto: 11€",classe_nome:"museo2",nome_funzioneI:() => {this.incrementaCounter7();},nome_funzioneD:() => {this.decrementaCounter7();}},
             {n_biglietti:0,cart:0,id:8,nome:"Galleria Borghese - Costo Biglietto: 13€",classe_nome:"museo3",nome_funzioneI:() => {this.incrementaCounter8();},nome_funzioneD:() => {this.decrementaCounter8();}},
             {n_biglietti:0,cart:0,id:9,nome:"Galleria Doria Pamphilj - Costo Biglietto: 15€",classe_nome:"museo4",nome_funzioneI:() => {this.incrementaCounter9();},nome_funzioneD:() => {this.decrementaCounter9();}},
-            {n_biglietti:0,cart:0,id:10,nome:"Museo Nazionale di Arte Moderna e Contemporanea - Costo Biglietto: 10€",classe_nome:"museo5",nome_funzioneI:() => {this.incrementaCounter10();},nome_funzioneD:() => {this.decrementaCounter10();}},
+            {n_biglietti:0,cart:0,id:10,nome:"Museo Nazionale di Arte Moderna - Costo Biglietto: 10€",classe_nome:"museo5",nome_funzioneI:() => {this.incrementaCounter10();},nome_funzioneD:() => {this.decrementaCounter10();}},
             {n_biglietti:0,cart:0,id:11,nome:"MAXXI - Costo Biglietto: 12€",classe_nome:"museo6",nome_funzioneI:() => {this.incrementaCounter11();},nome_funzioneD:() => {this.decrementaCounter11();}},
         ],
             numero_biglietti:[],
@@ -463,7 +471,12 @@ app.component("museocrea",{
     },
     mounted(){ //fa al'inizio del server
         $.get("biglietti.php",(data,state)=>{
-            this.numero_biglietti = JSON.parse(data);
+            try {
+                this.numero_biglietti = JSON.parse(data);
+            }
+            catch (error) {
+                console.log('Error parsing JSON:', error, data);
+            }
             this.nome_classi_eventi[0].n_biglietti=this.numero_biglietti.museo1;
             this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.museo2;
             this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.museo3;
@@ -484,9 +497,11 @@ app.component("monumenticrea",{
         <p v-if="x.n_biglietti > 10">Disponibile</p>
         <p v-else-if="x.n_biglietti > 0 && x.n_biglietti <= 5">Ultime scorte</p>
         <p v-else-if="x.n_biglietti <= 0">Non disponibile</p>
-        <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
-        <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
-        <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+        <div class="tspin">
+            <button @click="x.nome_funzioneD" class="btn btn-touchspin" type="button" data-touchspin-down>-</button>
+            <input type="number" :value="x.cart" min="0" class="form-control text-center" data-touchspin-input disabled>
+            <button @click="x.nome_funzioneI" class="btn btn-touchspin" type="button" data-touchspin-up>+</button>
+        </div>
     </div>
 </div></li>
 </ul>`,
@@ -637,7 +652,12 @@ app.component("monumenticrea",{
     mounted(){ //fa al'inizio del server
         $.get("biglietti.php",(data,state)=>{
         
-            this.numero_biglietti = JSON.parse(data);
+            try {
+                this.numero_biglietti = JSON.parse(data);
+            }
+            catch (error) {
+                console.log('Error parsing JSON:', error, data);
+            }
             this.nome_classi_eventi[0].n_biglietti=this.numero_biglietti.monumento1;
             this.nome_classi_eventi[1].n_biglietti=this.numero_biglietti.monumento3;
             this.nome_classi_eventi[2].n_biglietti=this.numero_biglietti.monumento7;
