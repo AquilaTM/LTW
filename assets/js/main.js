@@ -149,22 +149,22 @@
     }
   });
 
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
+  // /**
+  //  * Skills animation
+  //  */
+  // let skilsContent = select('.skills-content');
+  // if (skilsContent) {
+  //   new Waypoint({
+  //     element: skilsContent,
+  //     offset: '80%',
+  //     handler: function(direction) {
+  //       let progress = select('.progress .progress-bar', true);
+  //       progress.forEach((el) => {
+  //         el.style.width = el.getAttribute('aria-valuenow') + '%'
+  //       });
+  //     }
+  //   })
+  // }
 
   /**
    * Monuments isotope and filter
@@ -194,27 +194,28 @@
 
   });
 
-  /**
-   * monuments details slider
-   */
-  new Swiper('.monumenti-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // /**
+  //  * monumenti slider
+  //  */
+  // new Swiper('.mySwiper', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 3,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
   /**
    * Aree verdi slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.mySwiper', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -233,7 +234,7 @@
         spaceBetween: 20
       },
 
-      1200: {
+      900: {
         slidesPerView: 3,
         spaceBetween: 20
       }
