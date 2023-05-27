@@ -61,6 +61,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+      <!-- cambiamenti alla navbar se è stato effettuato l'accesso o meno -->
       <?php
       if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
         echo '
@@ -113,14 +114,15 @@
     <div class="container">
         <div class="text-block fadeInRight">
             <div class="text-center">
-                <h1 class="titolo"></h1> <!--tolto perchè se no si vedeva la scritta sullo sfondo quando caricava-->
+                <h1 class="titolo"></h1> 
                 <h2 class="introduzione"></h2> 
             </div>
         </div>
     </div>
 </header>
 
-<section class="location text-center" id="location">  <!--dividere la pagina-->
+<!-- sezione location -->
+<section class="location text-center" id="location">
     <div class="location-description">
         <h2 class="location-header">Localizza con Maps</h2>
         <p class="location-paragraph">
@@ -133,6 +135,7 @@
     </div>
 </section>
 
+<!-- descrizione, storia, orari e biglietti -->
 <section class="terza-parte" id="terza">
         <div class="description" id="description">
             <img class="description-image" src="./assets/img/colosseum-description.jpg" alt="">
@@ -185,6 +188,8 @@
         </div>
     </div>
 </section>
+
+<!-- se l'utente non è loggato disabilita il bottone Compra biglietti -->
 <?php
       if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
         echo '<script>document.getElementById("compra").disabled = true;</script>';
@@ -194,6 +199,8 @@
 ?>
 
   <script src="./assets/js/pagina-interna.js"></script>
+
+  <!-- script per il dropdown menu dell'account -->
   <script>
     let dropdown = document.getElementById("dropdown");
     

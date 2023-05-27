@@ -36,6 +36,7 @@
             </a>
         </div>
 
+        <!-- cambiamenti alla navbar se è stato effettuato l'accesso o meno -->
         <?php
       if(!isset($_SESSION["condizione"]) ||$_SESSION["condizione"]!=true){
         echo '
@@ -142,26 +143,9 @@
         </form>
     </div>
 
-    <!-- <form action="carrello.php" method="post">
-        <div>
-            Evento 1:
-            <br></br>
-            <button type="button" class="evento1">+</button>
-            <input type="text" name="conta_evento1" class="contatore_evento1" value="0" readonly></input>
-            <button type="button" class="evento1_-">-</button>
-        </div>
-        <div>
-            Evento 2:
-            <button type="button" class="evento2">+</button>
-            <input type="text" name="conta_evento2" class="contatore_evento2" value="0" readonly></input>
-            <button  type="button" class="evento2_-">-</button>
-    
-            <button type="submit" class="acquista">Acquista</input>
-            <p>costo totale:</p>
-            <p class="contatore_totale">0</p>
-        </div>
-    </form> -->
     <script src="./assets/js/carrellovue.js"></script>
+
+    <!-- script per il dropdown menu dell'account -->
     <script>
         let dropdown = document.getElementById("dropdown");
         

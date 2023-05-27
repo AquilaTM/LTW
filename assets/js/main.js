@@ -1,9 +1,7 @@
 
 (function() {
-  "use strict";
-
   /**
-   * Easy selector helper function
+   * funzione selector usata qui sotto
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -15,7 +13,7 @@
   }
 
   /**
-   * Easy event listener function
+   * semplice funzione event listener che uso qui sotto
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -29,14 +27,14 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * creo una funzione che aggiunge un eventListener che esegue la funzione listener ad ogni 'scroll'
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
   /**
-   * Navbar links active state on scroll
+   * Attivo i links della navbar a seconda della posizione durante lo scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -56,7 +54,7 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * prendo in considerazione l'altezza dell'header per posizionarmi dopo lo scrollto
    */
   const scrollto = (el) => {
     let header = select('#header')
@@ -69,24 +67,7 @@
     })
   }
 
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-
-  /**
-   * Back to top button
+  /**bottone back to top
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -102,7 +83,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * se clicco su elemento mobile-nav-toggle #navbar ottiene classe navbar-mobile e scambio di bi-list con bi-x
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -111,7 +92,7 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * attivo il dropdown in versione mobile
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
@@ -121,7 +102,7 @@
   }, true)
 
   /**
-   * Scrool with offset on links with a class name .scrollto
+   * uso lo scroll con offset per gli elementi con classe .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -139,7 +120,7 @@
   }, true)
 
   /**
-   * Scroll with offset on page load with hash links in the url
+   * Scroll con offset a caricamento pagina se c'è hash nell'url
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -149,25 +130,8 @@
     }
   });
 
-  // /**
-  //  * Skills animation
-  //  */
-  // let skilsContent = select('.skills-content');
-  // if (skilsContent) {
-  //   new Waypoint({
-  //     element: skilsContent,
-  //     offset: '80%',
-  //     handler: function(direction) {
-  //       let progress = select('.progress .progress-bar', true);
-  //       progress.forEach((el) => {
-  //         el.style.width = el.getAttribute('aria-valuenow') + '%'
-  //       });
-  //     }
-  //   })
-  // }
-
   /**
-   * Monuments isotope and filter
+   * uso isotope layout per la sezione monumenti
    */
   window.addEventListener('load', () => {
     let monumentiContainer = select('.monumenti-container');
@@ -194,26 +158,8 @@
 
   });
 
-  // /**
-  //  * monumenti slider
-  //  */
-  // new Swiper('.mySwiper', {
-  //   speed: 400,
-  //   loop: true,
-  //   autoplay: {
-  //     delay: 5000,
-  //     disableOnInteraction: false
-  //   },
-  //   slidesPerView: 3,
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: 'bullets',
-  //     clickable: true
-  //   }
-  // });
-
   /**
-   * Aree verdi slider
+   * uso swiper per la sezione musei e la sezione aree verdi
    */
   new Swiper('.mySwiper', {
     speed: 600,
@@ -240,10 +186,5 @@
       }
     }
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
 
 })()
