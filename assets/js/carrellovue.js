@@ -15,19 +15,22 @@ var cart31=0;
 var cart32=0;
 var cart33=0;
 var cart34=0;
+//bigleitti comprati
 var contatore_iniziale=localStorage.getItem("contatore");
+//identifica di quale museo,evento o monumento i biglietti sono stati comprati
 var tipo=localStorage.getItem("titolo");
 console.log(tipo);
 var iniziale=true;
 var entrato=true;
+//serve a settare le variabile all'apertura della pagina, la funzione vede se l'utente a comprato dei biglietti
 var t=getImporto();
-let app =Vue.createApp({ //costruttore
-    data: function(){ //mettiamo coppie chiave-valore
+let app =Vue.createApp({ 
+    data: function(){ 
        return{
         }
     },
 });
-
+//è il codice del tag eventocrea
 app.component("eventocrea",{
     template:` 
     <ul class="eventi" v-for="x in nome_classi_eventi" :key="x.id">
@@ -45,8 +48,10 @@ app.component("eventocrea",{
     </div>
 </div></li>
 </ul>`,
-    data(){ //mettiamo tutti e varibiali che stanno nello script sopra
+    data(){ 
         return{
+            //sono le variabili per impostare i biglietti dove n_biglietti è il numero massimo di biglietti da poter comprare
+            //cart è una variabile contatore che tiene conto dei biglietti comprati
             numero_biglietti1:0,
             numero_biglietti2:0,
             nome_classi_eventi:[
@@ -61,6 +66,7 @@ app.component("eventocrea",{
         
     },
     created() {
+        //inizializziamo i valori
         if(tipo=="Concerto Primo Maggio" ){
             cart11=contatore_iniziale;
             this.nome_classi_eventi[0].cart=contatore_iniziale;
@@ -80,6 +86,9 @@ app.component("eventocrea",{
         }
     },
     methods:{ 
+        //la funzione Incrementa e Decrementa è usato per aumentare o diminuire il numero di biglietti comprati
+        //attraverso i bottoni sulla pagina "carrello_page"
+        //ogni evento ha la sua funzione incrementa o decrementa 
         incrementaCounter1(){
             if(parseInt(cart11)>0 && iniziale){
                 this.nome_classi_eventi[0].n_biglietti-=cart11;
@@ -221,7 +230,8 @@ app.component("eventocrea",{
             }
         },
     },
-    mounted(){ //fa al'inizio del server
+    mounted(){ 
+        //prendiamo i valori tramite JSON del massimo numero di biglietti disponibili
         $.get("biglietti.php",(data,state)=>{
             try {
                 this.numero_biglietti = JSON.parse(data);
@@ -239,6 +249,7 @@ app.component("eventocrea",{
     }
 
 });
+//fa la stessa cosa di eventocrea ma per i musei
 app.component("museocrea",{
     template:` 
     <ul class="eventi" v-for="x in nome_classi_eventi" :key="x.id">
@@ -256,7 +267,7 @@ app.component("museocrea",{
     </div>
 </div></li>
 </ul>`,
-    data(){ //mettiamo tutti e varibiali che stanno nello script sopra
+    data(){ 
         return{
             nome_classi_eventi:[
             {n_biglietti:0,cart:0,id:6,nome:"Musei Vaticani - Costo Biglietto: 18€",classe_nome:"museo1",nome_funzioneI:() => {this.incrementaCounter6();},nome_funzioneD:() => {this.decrementaCounter6();}},
@@ -488,6 +499,7 @@ app.component("museocrea",{
     }
 
 });
+//fa la stessa cosa di eventicrea ma per i monumenti 
 app.component("monumenticrea",{
     template:` 
     <ul class="eventi" v-for="x in nome_classi_eventi" :key="x.id">
@@ -505,7 +517,7 @@ app.component("monumenticrea",{
     </div>
 </div></li>
 </ul>`,
-    data(){ //mettiamo tutti e varibiali che stanno nello script sopra
+    data(){
         return{
             nome_classi_eventi:[
             {n_biglietti:0,cart:0,id:12,nome:"Colosseo - Costo Biglietto: 16€",classe_nome:"monumento1",nome_funzioneI:() => {this.incrementaCounter1();},nome_funzioneD:() => {this.decrementaCounter1();}},
@@ -670,8 +682,9 @@ app.component("monumenticrea",{
 });
 app.mount(".content");
 
-
+//questa funzione vede se l'utente ha comprato dei biglietti su pagina interna e modifca il numero biglietti
 function getImporto() {
+    //controlla attraverso "tipo" quale biglietto a comprato e iniziale fa si che questa operazione venga fatta solo all'inzio
     if(tipo=="Musei Vaticani" && iniziale){
         $("#museo1").val(contatore_iniziale);
         cart_tot=contatore_iniziale*18;

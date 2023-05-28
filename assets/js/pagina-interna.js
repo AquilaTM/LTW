@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+        //prendaimo le varaibile dal localStorage
         prezzo_biglietto=parseInt(localStorage.getItem("prezzo biglietto"));
         var max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
         var contatore_max_numero_biglietti=parseInt(localStorage.getItem("max_numero_biglietti"));
@@ -42,7 +43,7 @@ $(document).ready(function(){
       });
       
 
-
+      //vede se mostrare o no il contatore per l'acquisto dei biglietti
        var mostraTag = localStorage.getItem("vedo"); 
        if (mostraTag === "true") {
               $("#biglietti").show();
@@ -52,7 +53,7 @@ $(document).ready(function(){
       var conta=0;
       var conta_tot=0;
       $("#importo").text("Importo totale: "+conta_tot+"€");
-      
+      //funzione per incrementare biglietti
       $("#bottone_piu").click(function(){
         if(conta<max_numero_biglietti && max_numero_biglietti!=0){
           conta++;
@@ -65,6 +66,7 @@ $(document).ready(function(){
           
         }
       });
+      //funzione per descrementare i biglietti
       $("#bottone_meno").click(function(){
         if(conta>0){
           conta--;
@@ -75,7 +77,8 @@ $(document).ready(function(){
 
         }
       });
-      
+      //funzione che mette nella variabile del localStorage quanti biglietti sono stati comprati
+      //La varaibile "contatore" sarà poi usato in "carrellovue.js" per inizializzare il numero di biglietti 
       $("#compra").click(function(){
         console.log("entro")
         localStorage.setItem("contatore",conta);
