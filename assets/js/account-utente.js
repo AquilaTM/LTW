@@ -1,7 +1,10 @@
 $(document).ready(function(){ 
+    //questo serve a settare il dropdown dell'utente 
     var numero_biglietti=[];
     $.get("carrello1.php", (data, state) => {
+        // traimite JSON andiamo a prendere il numero dei biglietti comprati dall'utente
         numero_biglietti = JSON.parse(data);
+        // se il numero è magiore di zero allora tramite JSon modifichiamo il testo con il numero di biglietti
         if(numero_biglietti.evento1>0){
             $("#evento1").text("Concerto Primo Maggio: "+numero_biglietti.evento1)
         }
@@ -49,10 +52,9 @@ $(document).ready(function(){
         }
     })
     var informazioni=[];
+    //tramite JSON e JQuery prendiamo il nome e cognome utente e lo inseriamo nell'id nome_cognome
     $.get("nome_utente.php", (data, state) => {
-        console.log("prova")
         informazioni = JSON.parse(data);
-        console.log(informazioni)
         $("#nome_cognome").text(informazioni.nome+" "+informazioni.cognome)
     })
 

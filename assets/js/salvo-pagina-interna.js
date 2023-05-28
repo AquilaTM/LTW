@@ -1,21 +1,29 @@
 $(document).ready(function(){
-   //inzio musei
+   //abbaimo usato Jquery per catturare l'evento su cosa clicca l'utente 
     $(".Musei-Vaticani").click(function(){
+         //salva il nome del museo
         localStorage.setItem("titolo", "Musei Vaticani");
+        //introduzione museo
         localStorage.setItem("introduzione","I Musei Vaticani sono un vero e proprio scrigno di tesori, una testimonianza dell'arte e della cultura di ogni epoca.\n - Gabriele D'Annunzio");
+        //salva il link per settare la mappa
         localStorage.setItem("map","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3659257618892!2d12.451066376146175!3d41.90649176363587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6063839bc129%3A0xcfe0eca0526416b6!2sMusei%20Vaticani!5e0!3m2!1sit!2sit!4v1682691769307!5m2!1sit!2sit");
+        //salva la storia del museo
         localStorage.setItem("storia","I Musei Vaticani hanno una lunga e ricca storia che risale al XV secolo, quando il Papa Sisto IV fondò la Biblioteca Vaticana nel 1475, dando così inizio alla collezione di manoscritti e libri antichi. Nel corso del tempo, i Papi successivi hanno continuato ad arricchire le collezioni con opere d'arte e oggetti di valore. Nel 1506, Papa Giulio II acquistò la statua del Laocoonte e, poco dopo, commissionò a Michelangelo il famoso ciclo di affreschi nella Cappella Sistina. Nel 1514, Papa Leone X aprì la Biblioteca Vaticana al pubblico, dando inizio alla tradizione di accessibilità delle collezioni papali.Nel 1756, Papa Benedetto XIV aprì la Pinacoteca Vaticana, una galleria d'arte che raccoglieva le opere più importanti della collezione pontificia. Nel corso dei secoli successivi, i Musei Vaticani si sono arricchiti di nuove collezioni e nuovi spazi espositivi, tra cui la Sala degli Animali, il Museo Egizio, il Museo Pio-Clementino e la Stanza di Raffaello. Nel XX secolo, i Musei Vaticani sono stati ulteriormente ampliati e modernizzati, con la creazione di nuovi edifici espositivi e la realizzazione di importanti opere di restauro e conservazione. Oggi i Musei Vaticani sono uno dei più importanti musei del mondo, con una collezione di opere d'arte e oggetti di valore che spaziano dall'antichità al Rinascimento, fino ai tempi moderni.")
+        //i relativi percorsi 
         localStorage.setItem("immagine","./assets/img/musei vaticani storia.jpg")
         localStorage.setItem("immagine1","./assets/img/musei vaticani.jpg")
+        //modifica gli attributi di CSS
         localStorage.setItem("hero","hero6")
+        //serve per dire se ci deve essere la parte dove si vede il contatore di biglietti
         localStorage.setItem("vedo",true)
         localStorage.setItem("prezzo biglietto",18)
+        //tramite JSON prendiamo il numero massimo di biglietti disponibili
         $.get("biglietti.php",(data,state)=>{
          numero_biglietti= JSON.parse(data); 
          localStorage.setItem("max_numero_biglietti",numero_biglietti.museo1);
         })
     });
- 
+    // lo facciamo per tutti musei eventi e monumenti
      $(".Capitolini").click(function(){
         localStorage.setItem("titolo", "Musei Capitolini");
         localStorage.setItem("introduzione","I Musei Capitolini sono il cuore della Roma antica, una finestra sulla grandezza dell'impero.\n - Robert Hughes, critico d'arte e scrittore australiano.");
